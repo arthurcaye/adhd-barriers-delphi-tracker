@@ -1,0 +1,54 @@
+name: Update Delphi dashboard
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # a cada 15 minutos (UTC)
+  workflow_dispatch:          # permite rodar na mao pelo botao "Run workflow"
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull aggregate counts from REDCap
+        env:
+          REDCAP_API_URL: ${{ secrets.REDCAP_API_URL }}
+          REDCAP_API_TOKEN: ${{ secrets.REDCAP_API_TOKEN }}
+          EXCLUDE_EMAILS: ${{ secrets.EXCLUDE_EMAILS }}
+        run: python redcap_aggregate.py
+
+      - name: Abortar se algum arquivo sensivel entrou no repositorio
+        run: |
+          for f in .env registros.txt paises_inferidos.txt metadata.json; do
+            if git ls-files --error-unmatch "$f" >/dev/null 2>&1; then
+              echo "PARADO: $f esta versionado e nao deveria estar."
+              exit 1
+            fi
+          done
+          echo "nenhum arquivo sensivel versionado"
+
+      - name: Commit data.json if it changed
+        run: |
+          git config user.name  "delphi-dashboard-bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain data.json)" ]; then
+            git add data.json
+            git commit -m "chore: refresh counts $(date -u +'%Y-%m-%dT%H:%MZ')"
+            git push
+          else
+            echo "sem mudancas"
+          fi

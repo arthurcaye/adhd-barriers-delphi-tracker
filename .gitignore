@@ -1,0 +1,15 @@
+# === NUNCA versionar: token ===
+.env
+
+# === NUNCA versionar: dados de participante ===
+# registros.txt tem nome/e-mail de quem respondeu
+registros.txt
+paises_inferidos.txt
+paises_nao_reconhecidos.txt
+
+# === desnecessario no repositorio ===
+metadata.json
+campos.txt
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,45 @@
+{
+  "_comment": "Copie para config.json e ajuste os nomes de campo. Rode `python redcap_aggregate.py --discover` para ver os campos reais do projeto.",
+
+  "country_field": "country",
+  "category_field": "stakeholder_group",
+  "complete_field": "barriers_survey_complete",
+  "only_complete": true,
+
+  "categories": [
+    "Clinical practitioners",
+    "Academic researchers",
+    "Policy & system leaders",
+    "Advocacy & lived experience",
+    "Equity specialists"
+  ],
+
+  "targets": {
+    "Clinical practitioners": 15,
+    "Academic researchers": 10,
+    "Policy & system leaders": 10,
+    "Advocacy & lived experience": 10,
+    "Equity specialists": 5
+  },
+
+  "category_map": {
+    "Psychiatrist": "Clinical practitioners",
+    "Psychologist": "Clinical practitioners",
+    "Pediatric neurologist": "Clinical practitioners",
+    "Developmental pediatrician": "Clinical practitioners",
+    "Researcher": "Academic researchers",
+    "Policy maker": "Policy & system leaders",
+    "Health system manager": "Policy & system leaders",
+    "Patient": "Advocacy & lived experience",
+    "Family member": "Advocacy & lived experience",
+    "Patient advocate": "Advocacy & lived experience",
+    "Equity / cultural competence specialist": "Equity specialists"
+  },
+
+  "country_map": {
+    "Brasil": "Brazil",
+    "Estados Unidos": "United States"
+  },
+
+  "suppress_cells_below": 0
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADHD Barriers Delphi — live response tracker</title>
+<style>
+  :root{
+    --teal:#1d4e5e;
+    --teal-soft:#2e6d80;
+    --cream:#faf1e7;
+    --cream-2:#f4e7d9;
+    --orange:#c2562e;
+    --ink:#22303a;
+    --muted:#6b7c86;
+    --line:#e6dbcd;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;padding:32px 20px 72px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--ink);background:#fff;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  header{margin-bottom:28px}
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:30px;line-height:1.15;margin:0 0 6px;color:var(--teal);
+  }
+  .sub{color:var(--muted);font-size:15px;margin:0}
+  .stamp{margin-top:10px;font-size:13px;color:var(--muted)}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;
+       background:#3fa06b;margin-right:6px;vertical-align:middle}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+         gap:12px;margin:24px 0 28px}
+  .card{background:var(--cream);border-radius:8px;padding:16px 18px}
+  .card .n{font-family:Georgia,serif;font-size:34px;color:var(--orange);line-height:1}
+  .card .l{font-size:13px;color:var(--muted);margin-top:4px}
+
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+  input[type=search]{
+    flex:1;min-width:220px;padding:10px 13px;border:1px solid var(--line);
+    border-radius:7px;font-size:14px;background:#fff;color:var(--ink);
+  }
+  input[type=search]:focus{outline:2px solid var(--teal-soft);outline-offset:-1px}
+  .hint{font-size:13px;color:var(--muted)}
+
+  .tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:9px}
+  table{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}
+  thead th{
+    background:var(--teal);color:#fff;text-align:center;padding:11px 10px;
+    font-weight:600;font-size:12.5px;line-height:1.25;position:sticky;top:0;
+    cursor:pointer;user-select:none;white-space:normal;
+  }
+  thead th:first-child{text-align:left}
+  thead th .tgt{display:block;font-weight:400;opacity:.72;font-size:11px;margin-top:3px}
+  thead th.sorted::after{content:" \25BE";opacity:.85}
+  tbody td{padding:9px 10px;text-align:center;border-top:1px solid var(--line)}
+  tbody td:first-child{text-align:left;font-weight:600;white-space:nowrap}
+  tbody tr:nth-child(odd){background:#fdf9f4}
+  tbody tr:hover{background:var(--cream-2)}
+  td.total{font-weight:700;color:var(--orange)}
+  td.zero{color:#c3ccd2}
+  tfoot td{padding:11px 10px;text-align:center;border-top:2px solid var(--teal);
+           font-weight:700;background:var(--cream)}
+  tfoot td:first-child{text-align:left}
+
+  .met{position:relative}
+  .met::after{
+    content:"";position:absolute;left:50%;transform:translateX(-50%);
+    bottom:3px;width:20px;height:2px;border-radius:2px;background:#3fa06b;
+  }
+
+  .empty{padding:44px;text-align:center;color:var(--muted);
+         background:var(--cream);border-radius:9px}
+  .banner{background:#fdeee6;border:1px solid #f0c4ae;color:#8f3d1c;
+          padding:11px 15px;border-radius:8px;font-size:13.5px;margin-bottom:20px}
+  footer{margin-top:26px;font-size:12.5px;color:var(--muted);line-height:1.6}
+  code{background:var(--cream);padding:1px 5px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Worldwide barriers to ADHD care — Delphi panel</h1>
+    <p class="sub">Live count of completed responses, by country and stakeholder group.<br>
+       Part of the <em>Lancet Psychiatry</em> Series on ADHD.</p>
+    <p class="stamp" id="stamp"><span class="dot"></span>loading…</p>
+  </header>
+
+  <div id="demo"></div>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Filter by country…" autocomplete="off">
+    <span class="hint">Click a column header to sort. Green underline = country target met.</span>
+  </div>
+
+  <div id="out"></div>
+
+  <footer>
+    Aggregate counts only — no individual responses, names or free-text are published here.
+    Refreshes automatically every 5 minutes.
+  </footer>
+</div>
+
+<script>
+const OUT = document.getElementById('out');
+const CARDS = document.getElementById('cards');
+const STAMP = document.getElementById('stamp');
+const Q = document.getElementById('q');
+
+let DATA = null;
+let sortKey = '__total';
+let sortAsc = false;
+
+function fmtStamp(iso){
+  try{
+    const d = new Date(iso);
+    return d.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
+  }catch(e){ return iso; }
+}
+
+function cards(d){
+  const items = [
+    ['Responses', d.totals.responses],
+    ['Countries', d.totals.countries]
+  ];
+  for(const c of d.columns) items.push([c, d.totals.by_category[c] || 0]);
+  CARDS.innerHTML = items.map(([l,n]) =>
+    `<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`
+  ).join('');
+}
+
+function render(){
+  if(!DATA) return;
+  const d = DATA;
+  const term = Q.value.trim().toLowerCase();
+  let rows = d.rows.filter(r => !term || r.country.toLowerCase().includes(term));
+
+  rows.sort((a,b)=>{
+    let va, vb;
+    if(sortKey === '__country'){ va=a.country.toLowerCase(); vb=b.country.toLowerCase(); }
+    else if(sortKey === '__total'){ va=a.total; vb=b.total; }
+    else { va=a.cells[sortKey]||0; vb=b.cells[sortKey]||0; }
+    if(va<vb) return sortAsc?-1:1;
+    if(va>vb) return sortAsc?1:-1;
+    return a.country.localeCompare(b.country);
+  });
+
+  if(!rows.length){
+    OUT.innerHTML = `<div class="empty">No countries match “${Q.value}”.</div>`;
+    return;
+  }
+
+  const th = (key,label,target)=>{
+    const cls = sortKey===key ? 'sorted' : '';
+    const tgt = target ? `<span class="tgt">target ${target}/country</span>` : '';
+    return `<th class="${cls}" data-k="${key}">${label}${tgt}</th>`;
+  };
+
+  let html = '<div class="tablebox"><table><thead><tr>';
+  html += th('__country','Country','');
+  for(const c of d.columns) html += th(c, c, d.targets && d.targets[c]);
+  html += th('__total','Total','');
+  html += '</tr></thead><tbody>';
+
+  for(const r of rows){
+    html += `<tr><td>${r.country}</td>`;
+    for(const c of d.columns){
+      const n = r.cells[c] || 0;
+      const tgt = d.targets ? d.targets[c] : null;
+      const met = tgt && n >= tgt ? ' met' : '';
+      html += `<td class="${n?'':'zero'}${met}">${n}</td>`;
+    }
+    html += `<td class="total">${r.total}</td></tr>`;
+  }
+  html += '</tbody><tfoot><tr><td>All countries</td>';
+  for(const c of d.columns) html += `<td>${d.totals.by_category[c]||0}</td>`;
+  html += `<td>${d.totals.responses}</td></tr></tfoot></table></div>`;
+
+  OUT.innerHTML = html;
+  OUT.querySelectorAll('th').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const k = el.dataset.k;
+      if(sortKey === k) sortAsc = !sortAsc;
+      else { sortKey = k; sortAsc = (k === '__country'); }
+      render();
+    });
+  });
+}
+
+async function load(){
+  try{
+    const r = await fetch('data.json?t=' + Date.now(), {cache:'no-store'});
+    if(!r.ok) throw new Error(r.status);
+    DATA = await r.json();
+    STAMP.innerHTML = `<span class="dot"></span>Last updated ${fmtStamp(DATA.generated_at)}`;
+    document.getElementById('demo').innerHTML = DATA.demo
+      ? '<div class="banner"><strong>Demo data.</strong> These are randomly generated numbers used to preview the layout. They are replaced the first time the aggregator runs against REDCap.</div>'
+      : '';
+    cards(DATA);
+    render();
+  }catch(e){
+    STAMP.textContent = 'Waiting for the first sync with REDCap.';
+    OUT.innerHTML = `<div class="empty">No <code>data.json</code> yet.<br>
+      Run <code>python redcap_aggregate.py</code> to generate it.</div>`;
+  }
+}
+
+Q.addEventListener('input', render);
+load();
+setInterval(load, 5*60*1000);
+</script>
+</body>
+</html>

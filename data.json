@@ -1,0 +1,53 @@
+{
+ "demo": true,
+ "generated_at": "2026-08-04T01:33:46+00:00",
+ "columns": [
+  "Clinical practitioners",
+  "Academic researchers",
+  "Policy & system leaders",
+  "Advocacy & lived experience",
+  "Equity specialists"
+ ],
+ "targets": {
+  "Clinical practitioners": 15,
+  "Academic researchers": 10,
+  "Policy & system leaders": 10,
+  "Advocacy & lived experience": 10,
+  "Equity specialists": 5
+ },
+ "rows": [
+  {
+   "country": "Kenya",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0
+   },
+   "total": 1
+  }
+ ],
+ "totals": {
+  "responses": 1,
+  "countries": 1,
+  "by_category": {
+   "Clinical practitioners": 0,
+   "Academic researchers": 1,
+   "Policy & system leaders": 0,
+   "Advocacy & lived experience": 0,
+   "Equity specialists": 0
+  },
+  "by_language": {
+   "en": 1
+  }
+ },
+ "notes": {
+  "only_complete": true,
+  "skipped_incomplete": 0,
+  "skipped_no_country": 0,
+  "suppress_cells_below": 0,
+  "inferred_from_email": 0,
+  "excluded_records": 3
+ }
+}
