@@ -405,5 +405,8 @@
  "infer_country_from_email": false,
  "exclude_record_ids": [],
  "exclude_emails": [],
- "_nota_exclusao": "E-mails de teste NAO ficam aqui (repo e publico). Use a variavel EXCLUDE_EMAILS no .env local e no secret do GitHub. Aqui so entram record_id, que sao inofensivos."
+ "_nota_exclusao": "E-mails de teste NAO ficam aqui (repo e publico). Use a variavel EXCLUDE_EMAILS no .env local e no secret do GitHub. Aqui so entram record_id, que sao inofensivos.",
+ "require_known_country": true,
+ "exclude_before": "",
+ "_nota_filtros": "require_known_country: texto de pais que nao esta em country_aliases nao vira linha no painel, so vai para paises_nao_reconhecidos.txt. exclude_before: data ISO (ex 2026-06-01) para descartar respostas anteriores, uteis para cortar a fase de teste."
 }

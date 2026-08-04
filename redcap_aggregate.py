@@ -148,6 +148,7 @@ def list_records():
             fields.append(src["complete_field"])
 
     records = api({"content": "record", "type": "flat", "rawOrLabel": "raw",
+                   "exportSurveyFields": "true",
                    "fields": ",".join(sorted(set(fields)))})
 
     path = os.path.join(HERE, "registros.txt")
@@ -155,17 +156,20 @@ def list_records():
         fh.write("Lista local para identificar registros de teste.\n")
         fh.write("Copie os record_id dos testes para exclude_record_ids no config.json.\n")
         fh.write("Este arquivo NAO e publicado - fica so na sua maquina.\n\n")
-        fh.write(f"{'record':<10} {'idioma':<7} {'compl':<6} {'e-mail':<38} pais\n")
-        fh.write("-" * 100 + "\n")
+        fh.write(f"{'record':<10} {'idioma':<7} {'compl':<6} {'quando':<18} "
+                 f"{'e-mail':<36} pais\n")
+        fh.write("-" * 120 + "\n")
         for rec in records:
             rid = rec.get("record_id", "?")
             for src in sources:
                 country = (rec.get(src["country_field"]) or "").strip()
                 email = (rec.get(src.get("email_field", "")) or "").strip()
                 comp = str(rec.get(src.get("complete_field", ""), ""))
+                when = str(rec.get(src["form"] + "_timestamp", "") or "")[:16]
                 if not country and not email:
                     continue
-                fh.write(f"{rid:<10} {src['lang']:<7} {comp:<6} {email[:36]:<38} {country[:40]}\n")
+                fh.write(f"{rid:<10} {src['lang']:<7} {comp:<6} {when:<18} "
+                         f"{email[:34]:<36} {country[:40]}\n")
     print(f"OK  {len(records)} registros -> {path}")
     print("    marque os testes e liste os record_id em exclude_record_ids no config.json")
 
@@ -274,6 +278,8 @@ def main():
     infer_from_email = bool(cfg.get("infer_country_from_email", False))
     inferred_log = []
     drop_ids = {str(x) for x in cfg.get("exclude_record_ids", [])}
+    require_known = bool(cfg.get("require_known_country", True))
+    cutoff = str(cfg.get("exclude_before", "") or "")
     drop_mails = {str(x).strip().lower() for x in cfg.get("exclude_emails", [])}
     # e-mails de teste vem por variavel de ambiente para nao ficarem num repo publico
     drop_mails |= {e.strip().lower()
@@ -294,6 +300,7 @@ def main():
         "content": "record",
         "type": "flat",
         "rawOrLabel": "raw",
+        "exportSurveyFields": "true",
         "fields": ",".join(sorted(set(fields))),
     })
 
@@ -315,6 +322,14 @@ def main():
             mails = {str(rec.get(s2.get("email_field"), "")).strip().lower()
                      for s2 in sources if s2.get("email_field")}
             if mails & drop_mails:
+                excluded[0] += 1
+                continue
+
+        if cutoff:
+            stamps = [str(rec.get(s2["form"] + "_timestamp", "") or "")
+                      for s2 in sources]
+            stamps = [t for t in stamps if t and t[0].isdigit()]
+            if stamps and max(stamps) < cutoff:
                 excluded[0] += 1
                 continue
 
@@ -357,9 +372,14 @@ def main():
                 name = alias.get(country_key(piece))
                 if name is None:
                     unknown_countries[piece] += 1
+                    if require_known:
+                        continue          # texto nao reconhecido nao vira pais
                     name = piece.title()
                 countries.append(name)
-            countries = list(dict.fromkeys(countries)) or ["Not reported"]
+            countries = list(dict.fromkeys(countries))
+            if not countries:
+                skipped_no_country += 1
+                continue
 
             for country in countries:
                 for cat in cats:

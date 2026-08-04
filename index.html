@@ -76,6 +76,18 @@
          background:var(--cream);border-radius:9px}
   .banner{background:#fdeee6;border:1px solid #f0c4ae;color:#8f3d1c;
           padding:11px 15px;border-radius:8px;font-size:13.5px;margin-bottom:20px}
+  .dot.stale{background:#d8912b}
+  .dot.dead{background:#c94a3d}
+  .langs{margin:0 0 26px}
+  .langs h2{font-size:12.5px;font-weight:600;color:var(--muted);margin:0 0 9px;
+            text-transform:uppercase;letter-spacing:.05em}
+  .langrow{display:flex;flex-wrap:wrap;gap:9px}
+  .lang{background:var(--cream);border-radius:7px;padding:9px 14px;min-width:96px}
+  .lang b{display:block;font-family:Georgia,serif;font-size:21px;
+          color:var(--orange);font-weight:400;line-height:1.1}
+  .lang span{font-size:12.5px;color:var(--muted)}
+  .lang.off{background:#f6f6f4}
+  .lang.off b{color:#c3ccd2}
   footer{margin-top:26px;font-size:12.5px;color:var(--muted);line-height:1.6}
   code{background:var(--cream);padding:1px 5px;border-radius:4px;font-size:12px}
 </style>
@@ -93,6 +105,8 @@
   <div id="demo"></div>
 
   <div class="cards" id="cards"></div>
+
+  <div id="langbox"></div>
 
   <div class="toolbar">
     <input type="search" id="q" placeholder="Filter by country…" autocomplete="off">
@@ -133,6 +147,25 @@ function cards(d){
   CARDS.innerHTML = items.map(([l,n]) =>
     `<div class="card"><div class="n">${n}</div><div class="l">${l}</div></div>`
   ).join('');
+}
+
+const LANGS = [
+  ['en','English'], ['ptbr','Português'], ['es','Español'],
+  ['fr','Français'], ['ar','العربية'], ['zh','中文']
+];
+
+function langs(d){
+  const by = (d.totals && d.totals.by_language) || {};
+  const seen = new Set(LANGS.map(l => l[0]));
+  const list = LANGS.slice();
+  for(const k of Object.keys(by)) if(!seen.has(k)) list.push([k, k]);
+
+  document.getElementById('langbox').innerHTML =
+    '<div class="langs"><h2>Responses by survey language</h2><div class="langrow">' +
+    list.map(([code,label]) => {
+      const n = by[code] || 0;
+      return `<div class="lang${n?'':' off'}"><b>${n}</b><span>${label}</span></div>`;
+    }).join('') + '</div></div>';
 }
 
 function render(){
@@ -198,11 +231,27 @@ async function load(){
     const r = await fetch('data.json?t=' + Date.now(), {cache:'no-store'});
     if(!r.ok) throw new Error(r.status);
     DATA = await r.json();
-    STAMP.innerHTML = `<span class="dot"></span>Last updated ${fmtStamp(DATA.generated_at)}`;
-    document.getElementById('demo').innerHTML = DATA.demo
-      ? '<div class="banner"><strong>Demo data.</strong> These are randomly generated numbers used to preview the layout. They are replaced the first time the aggregator runs against REDCap.</div>'
-      : '';
+
+    const ageH = (Date.now() - new Date(DATA.generated_at).getTime()) / 3600000;
+    const level = ageH > 24 ? 'dead' : (ageH > 2 ? 'stale' : '');
+    const ageTxt = ageH < 1 ? '' :
+      ageH < 48 ? ` — ${Math.round(ageH)} h ago` : ` — ${Math.round(ageH/24)} days ago`;
+    STAMP.innerHTML = `<span class="dot ${level}"></span>Last updated ` +
+                      fmtStamp(DATA.generated_at) + ageTxt;
+
+    let warn = '';
+    if(DATA.demo){
+      warn = '<div class="banner"><strong>Demo data.</strong> These are randomly generated ' +
+             'numbers used to preview the layout. They are replaced the first time the ' +
+             'aggregator runs against REDCap.</div>';
+    } else if(level === 'dead'){
+      warn = '<div class="banner"><strong>These numbers are stale.</strong> The counts have ' +
+             'not refreshed in over 24 hours, so the automatic update is probably broken. ' +
+             'Treat what you see below as out of date.</div>';
+    }
+    document.getElementById('demo').innerHTML = warn;
     cards(DATA);
+    langs(DATA);
     render();
   }catch(e){
     STAMP.textContent = 'Waiting for the first sync with REDCap.';
