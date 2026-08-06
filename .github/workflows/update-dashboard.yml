@@ -4,15 +4,16 @@ on:
   schedule:
     - cron: "*/15 * * * *"   # a cada 15 minutos (UTC)
   workflow_dispatch:          # permite rodar na mao pelo botao "Run workflow"
-  push:
-    branches: [main]
+
+# Sem gatilho por push: subir codigo nao precisa disparar uma coleta, e era isso
+# que colidia com a execucao agendada e gerava e-mail de "job cancelled".
 
 permissions:
   contents: write
 
 concurrency:
   group: update-dashboard
-  cancel-in-progress: true
+  cancel-in-progress: false   # se duas coincidirem, a segunda espera em vez de matar a primeira
 
 jobs:
   refresh:
