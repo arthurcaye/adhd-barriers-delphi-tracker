@@ -46,10 +46,28 @@ jobs:
         run: |
           git config user.name  "delphi-dashboard-bot"
           git config user.email "actions@github.com"
-          if [ -n "$(git status --porcelain data.json)" ]; then
-            git add data.json
-            git commit -m "chore: refresh counts $(date -u +'%Y-%m-%dT%H:%MZ')"
-            git push
-          else
+
+          if [ -z "$(git status --porcelain data.json)" ]; then
             echo "sem mudancas"
+            exit 0
           fi
+
+          git add data.json
+          git commit -m "chore: refresh counts $(date -u +'%Y-%m-%dT%H:%MZ')"
+
+          # O remote pode ter andado enquanto este job rodava (push seu, ou outra
+          # execucao). Nesse caso reintegramos e tentamos de novo, em vez de morrer.
+          # No rebase, -X theirs mantem o data.json recem-gerado, que e o mais novo.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "publicado na tentativa $i"
+              exit 0
+            fi
+            echo "remote mudou; reintegrando (tentativa $i)"
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+            sleep 3
+          done
+
+          echo "nao consegui publicar depois de 5 tentativas"
+          exit 1
