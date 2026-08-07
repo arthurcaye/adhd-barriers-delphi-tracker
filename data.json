@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-07T09:40:39+00:00",
+ "generated_at": "2026-08-07T12:02:05+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -61,7 +61,7 @@
   {
    "country": "Portugal",
    "cells": {
-    "Clinical practitioners": 12,
+    "Clinical practitioners": 13,
     "Academic researchers": 4,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 2,
@@ -69,7 +69,7 @@
     "Education": 3,
     "Other": 1
    },
-   "total": 15
+   "total": 16
   },
   {
    "country": "Mozambique",
@@ -645,10 +645,10 @@
   }
  ],
  "totals": {
-  "responses": 180,
+  "responses": 181,
   "countries": 48,
   "by_category": {
-   "Clinical practitioners": 163,
+   "Clinical practitioners": 164,
    "Academic researchers": 79,
    "Policy & system leaders": 19,
    "Advocacy & lived experience": 55,
@@ -657,7 +657,7 @@
    "Other": 15
   },
   "by_language": {
-   "ptbr": 74,
+   "ptbr": 75,
    "en": 50,
    "es": 22,
    "fr": 31,
@@ -666,7 +666,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 272,
+  "skipped_incomplete": 274,
   "skipped_no_country": 2,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
