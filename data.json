@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-08T19:45:29+00:00",
+ "generated_at": "2026-08-08T21:04:20+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -98,6 +98,19 @@
    "total": 12
   },
   {
+   "country": "Peru",
+   "cells": {
+    "Clinical practitioners": 7,
+    "Academic researchers": 6,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 1,
+    "Education": 0,
+    "Other": 1
+   },
+   "total": 8
+  },
+  {
    "country": "Colombia",
    "cells": {
     "Clinical practitioners": 7,
@@ -107,19 +120,6 @@
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
-   },
-   "total": 7
-  },
-  {
-   "country": "Peru",
-   "cells": {
-    "Clinical practitioners": 6,
-    "Academic researchers": 5,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 1
    },
    "total": 7
   },
@@ -658,21 +658,21 @@
   }
  ],
  "totals": {
-  "responses": 195,
+  "responses": 196,
   "countries": 49,
   "by_category": {
-   "Clinical practitioners": 169,
-   "Academic researchers": 86,
-   "Policy & system leaders": 20,
+   "Clinical practitioners": 170,
+   "Academic researchers": 87,
+   "Policy & system leaders": 21,
    "Advocacy & lived experience": 61,
-   "Equity specialists": 8,
+   "Equity specialists": 9,
    "Education": 23,
    "Other": 16
   },
   "by_language": {
    "ptbr": 76,
    "en": 58,
-   "es": 26,
+   "es": 27,
    "fr": 32,
    "ar": 3
   }
