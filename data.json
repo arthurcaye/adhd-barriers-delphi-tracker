@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-08T17:05:08+00:00",
+ "generated_at": "2026-08-08T18:04:30+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -66,10 +66,10 @@
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 2,
     "Equity specialists": 1,
-    "Education": 3,
+    "Education": 4,
     "Other": 1
    },
-   "total": 16
+   "total": 17
   },
   {
    "country": "South Africa",
@@ -658,7 +658,7 @@
   }
  ],
  "totals": {
-  "responses": 193,
+  "responses": 194,
   "countries": 49,
   "by_category": {
    "Clinical practitioners": 169,
@@ -666,11 +666,11 @@
    "Policy & system leaders": 20,
    "Advocacy & lived experience": 60,
    "Equity specialists": 8,
-   "Education": 22,
+   "Education": 23,
    "Other": 16
   },
   "by_language": {
-   "ptbr": 75,
+   "ptbr": 76,
    "en": 57,
    "es": 26,
    "fr": 32,
@@ -679,7 +679,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 284,
+  "skipped_incomplete": 286,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
