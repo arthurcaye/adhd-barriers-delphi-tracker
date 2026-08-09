@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T06:31:40+00:00",
+ "generated_at": "2026-08-09T09:10:21+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -202,6 +202,19 @@
    "total": 3
   },
   {
+   "country": "Israel",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Romania",
    "cells": {
     "Clinical practitioners": 3,
@@ -267,7 +280,7 @@
    "total": 2
   },
   {
-   "country": "Israel",
+   "country": "Nigeria",
    "cells": {
     "Clinical practitioners": 2,
     "Academic researchers": 1,
@@ -280,14 +293,14 @@
    "total": 2
   },
   {
-   "country": "Nigeria",
+   "country": "Philippines",
    "cells": {
     "Clinical practitioners": 2,
     "Academic researchers": 1,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
+    "Advocacy & lived experience": 1,
     "Equity specialists": 0,
-    "Education": 0,
+    "Education": 1,
     "Other": 0
    },
    "total": 2
@@ -553,19 +566,6 @@
    "total": 1
   },
   {
-   "country": "Philippines",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
    "country": "Poland",
    "cells": {
     "Clinical practitioners": 1,
@@ -658,20 +658,20 @@
   }
  ],
  "totals": {
-  "responses": 196,
+  "responses": 198,
   "countries": 49,
   "by_category": {
-   "Clinical practitioners": 170,
-   "Academic researchers": 87,
+   "Clinical practitioners": 172,
+   "Academic researchers": 88,
    "Policy & system leaders": 21,
-   "Advocacy & lived experience": 61,
+   "Advocacy & lived experience": 62,
    "Equity specialists": 9,
-   "Education": 23,
+   "Education": 24,
    "Other": 16
   },
   "by_language": {
    "ptbr": 76,
-   "en": 58,
+   "en": 60,
    "es": 27,
    "fr": 32,
    "ar": 3
