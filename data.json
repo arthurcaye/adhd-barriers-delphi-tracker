@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T21:04:33+00:00",
+ "generated_at": "2026-08-09T22:14:52+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -124,6 +124,19 @@
    "total": 7
   },
   {
+   "country": "Argentina",
+   "cells": {
+    "Clinical practitioners": 6,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 6
+  },
+  {
    "country": "Mexico",
    "cells": {
     "Clinical practitioners": 6,
@@ -135,19 +148,6 @@
     "Other": 0
    },
    "total": 6
-  },
-  {
-   "country": "Argentina",
-   "cells": {
-    "Clinical practitioners": 4,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 4
   },
   {
    "country": "Dominican Republic",
@@ -671,10 +671,10 @@
   }
  ],
  "totals": {
-  "responses": 205,
+  "responses": 207,
   "countries": 50,
   "by_category": {
-   "Clinical practitioners": 178,
+   "Clinical practitioners": 180,
    "Academic researchers": 92,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 63,
@@ -685,14 +685,14 @@
   "by_language": {
    "ptbr": 76,
    "en": 64,
-   "es": 29,
+   "es": 31,
    "fr": 33,
    "ar": 3
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 294,
+  "skipped_incomplete": 295,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
