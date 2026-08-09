@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T14:10:44+00:00",
+ "generated_at": "2026-08-09T15:53:03+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -35,15 +35,15 @@
   {
    "country": "France",
    "cells": {
-    "Clinical practitioners": 23,
+    "Clinical practitioners": 24,
     "Academic researchers": 6,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 8,
     "Equity specialists": 0,
-    "Education": 1,
+    "Education": 2,
     "Other": 6
    },
-   "total": 31
+   "total": 32
   },
   {
    "country": "United States",
@@ -137,6 +137,19 @@
    "total": 6
   },
   {
+   "country": "Argentina",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Nigeria",
    "cells": {
     "Clinical practitioners": 4,
@@ -161,19 +174,6 @@
     "Other": 0
    },
    "total": 4
-  },
-  {
-   "country": "Argentina",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
   },
   {
    "country": "Canada",
@@ -671,29 +671,29 @@
   }
  ],
  "totals": {
-  "responses": 200,
+  "responses": 202,
   "countries": 50,
   "by_category": {
-   "Clinical practitioners": 175,
+   "Clinical practitioners": 177,
    "Academic researchers": 90,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 62,
    "Equity specialists": 9,
-   "Education": 24,
+   "Education": 25,
    "Other": 16
   },
   "by_language": {
    "ptbr": 76,
    "en": 62,
-   "es": 27,
-   "fr": 32,
+   "es": 28,
+   "fr": 33,
    "ar": 3
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 290,
-  "skipped_no_country": 3,
+  "skipped_incomplete": 291,
+  "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
