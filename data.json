@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T12:03:45+00:00",
+ "generated_at": "2026-08-09T14:10:44+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -137,6 +137,19 @@
    "total": 6
   },
   {
+   "country": "Nigeria",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Spain",
    "cells": {
     "Clinical practitioners": 3,
@@ -207,19 +220,6 @@
     "Clinical practitioners": 3,
     "Academic researchers": 1,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Nigeria",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 2,
-    "Policy & system leaders": 1,
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
@@ -671,10 +671,10 @@
   }
  ],
  "totals": {
-  "responses": 199,
+  "responses": 200,
   "countries": 50,
   "by_category": {
-   "Clinical practitioners": 174,
+   "Clinical practitioners": 175,
    "Academic researchers": 90,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 62,
@@ -684,7 +684,7 @@
   },
   "by_language": {
    "ptbr": 76,
-   "en": 61,
+   "en": 62,
    "es": 27,
    "fr": 32,
    "ar": 3
