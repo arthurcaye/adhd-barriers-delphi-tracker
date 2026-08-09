@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-09T15:53:03+00:00",
+ "generated_at": "2026-08-09T17:17:48+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -150,6 +150,19 @@
    "total": 4
   },
   {
+   "country": "Dominican Republic",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Nigeria",
    "cells": {
     "Clinical practitioners": 4,
@@ -183,19 +196,6 @@
     "Policy & system leaders": 2,
     "Advocacy & lived experience": 0,
     "Equity specialists": 1,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Dominican Republic",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
     "Education": 0,
     "Other": 0
    },
@@ -671,11 +671,11 @@
   }
  ],
  "totals": {
-  "responses": 202,
+  "responses": 203,
   "countries": 50,
   "by_category": {
-   "Clinical practitioners": 177,
-   "Academic researchers": 90,
+   "Clinical practitioners": 178,
+   "Academic researchers": 91,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 62,
    "Equity specialists": 9,
@@ -685,14 +685,14 @@
   "by_language": {
    "ptbr": 76,
    "en": 62,
-   "es": 28,
+   "es": 29,
    "fr": 33,
    "ar": 3
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 291,
+  "skipped_incomplete": 290,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
