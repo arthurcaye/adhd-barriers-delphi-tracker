@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-10T22:09:57+00:00",
+ "generated_at": "2026-08-10T23:57:16+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -25,12 +25,12 @@
     "Clinical practitioners": 26,
     "Academic researchers": 12,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 21,
+    "Advocacy & lived experience": 22,
     "Equity specialists": 4,
     "Education": 7,
-    "Other": 4
+    "Other": 5
    },
-   "total": 45
+   "total": 46
   },
   {
    "country": "France",
@@ -48,15 +48,15 @@
   {
    "country": "United States",
    "cells": {
-    "Clinical practitioners": 17,
+    "Clinical practitioners": 18,
     "Academic researchers": 14,
     "Policy & system leaders": 1,
-    "Advocacy & lived experience": 11,
+    "Advocacy & lived experience": 12,
     "Equity specialists": 1,
     "Education": 2,
     "Other": 2
    },
-   "total": 29
+   "total": 30
   },
   {
    "country": "Portugal",
@@ -85,6 +85,19 @@
    "total": 13
   },
   {
+   "country": "Mexico",
+   "cells": {
+    "Clinical practitioners": 12,
+    "Academic researchers": 4,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 5,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 12
+  },
+  {
    "country": "Mozambique",
    "cells": {
     "Clinical practitioners": 10,
@@ -96,19 +109,6 @@
     "Other": 0
    },
    "total": 12
-  },
-  {
-   "country": "Mexico",
-   "cells": {
-    "Clinical practitioners": 10,
-    "Academic researchers": 4,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 4,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 10
   },
   {
    "country": "Peru",
@@ -697,28 +697,28 @@
   }
  ],
  "totals": {
-  "responses": 222,
+  "responses": 225,
   "countries": 52,
   "by_category": {
-   "Clinical practitioners": 191,
+   "Clinical practitioners": 194,
    "Academic researchers": 104,
    "Policy & system leaders": 23,
-   "Advocacy & lived experience": 66,
+   "Advocacy & lived experience": 69,
    "Equity specialists": 9,
    "Education": 26,
-   "Other": 16
+   "Other": 17
   },
   "by_language": {
-   "ptbr": 76,
+   "ptbr": 77,
    "en": 74,
-   "es": 35,
+   "es": 37,
    "fr": 34,
    "ar": 3
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 315,
+  "skipped_incomplete": 319,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
