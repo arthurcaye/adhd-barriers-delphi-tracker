@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-11T18:04:19+00:00",
+ "generated_at": "2026-08-11T20:26:05+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -48,15 +48,15 @@
   {
    "country": "United States",
    "cells": {
-    "Clinical practitioners": 18,
-    "Academic researchers": 14,
+    "Clinical practitioners": 20,
+    "Academic researchers": 15,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 12,
-    "Equity specialists": 1,
-    "Education": 2,
+    "Equity specialists": 2,
+    "Education": 3,
     "Other": 2
    },
-   "total": 30
+   "total": 32
   },
   {
    "country": "Portugal",
@@ -215,6 +215,19 @@
    "total": 3
   },
   {
+   "country": "Egypt",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Honduras",
    "cells": {
     "Clinical practitioners": 1,
@@ -281,19 +294,6 @@
   },
   {
    "country": "Belgium",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 2,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Egypt",
    "cells": {
     "Clinical practitioners": 2,
     "Academic researchers": 2,
@@ -697,28 +697,28 @@
   }
  ],
  "totals": {
-  "responses": 233,
+  "responses": 236,
   "countries": 52,
   "by_category": {
-   "Clinical practitioners": 197,
-   "Academic researchers": 107,
+   "Clinical practitioners": 200,
+   "Academic researchers": 108,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 74,
-   "Equity specialists": 9,
-   "Education": 28,
+   "Equity specialists": 10,
+   "Education": 29,
    "Other": 17
   },
   "by_language": {
    "ptbr": 82,
-   "en": 76,
+   "en": 78,
    "es": 37,
    "fr": 34,
-   "ar": 4
+   "ar": 5
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 332,
+  "skipped_incomplete": 333,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
