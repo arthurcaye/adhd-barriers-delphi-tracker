@@ -55,17 +55,25 @@ jobs:
           git add data.json
           git commit -m "chore: refresh counts $(date -u +'%Y-%m-%dT%H:%MZ')"
 
-          # O remote pode ter andado enquanto este job rodava (push seu, ou outra
-          # execucao). Nesse caso reintegramos e tentamos de novo, em vez de morrer.
-          # No rebase, -X theirs mantem o data.json recem-gerado, que e o mais novo.
+          # Se o remote andou durante o job, NAO fazemos merge nem rebase deste
+          # arquivo: o git juntaria linha a linha duas versoes do JSON e produziria
+          # um arquivo incoerente. Em vez disso descartamos nosso commit, voltamos
+          # ao estado do servidor e geramos o data.json de novo, inteiro.
           for i in 1 2 3 4 5; do
             if git push; then
               echo "publicado na tentativa $i"
               exit 0
             fi
-            echo "remote mudou; reintegrando (tentativa $i)"
+            echo "remote mudou; regerando do zero (tentativa $i)"
             git fetch origin main
-            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+            git reset --hard origin/main
+            python redcap_aggregate.py
+            if [ -z "$(git status --porcelain data.json)" ]; then
+              echo "sem mudancas apos regerar"
+              exit 0
+            fi
+            git add data.json
+            git commit -m "chore: refresh counts $(date -u +'%Y-%m-%dT%H:%MZ')"
             sleep 3
           done
 

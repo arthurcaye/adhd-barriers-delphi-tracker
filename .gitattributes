@@ -1,0 +1,5 @@
+# data.json e gerado por script, nunca editado a mao.
+# Sem esta linha, o git tenta juntar duas versoes linha a linha num conflito e
+# produz um JSON incoerente (colunas de uma execucao, linhas de outra).
+# Com -merge, o git recusa o merge automatico em vez de inventar um arquivo.
+data.json -merge -diff
