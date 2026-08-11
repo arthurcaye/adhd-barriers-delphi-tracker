@@ -130,6 +130,25 @@
     "99": "Other"
    },
    "email_field": "zh_email"
+  },
+  {
+   "lang": "zhcn",
+   "form": "delphi_round1_zh_cn",
+   "country_field": "zhcn_bg_countries",
+   "category_field": "zhcn_bg_expertise",
+   "complete_field": "delphi_round1_zh_cn_complete",
+   "email_field": "zhcn_email",
+   "category_map": {
+    "1": "Clinical practitioners",
+    "2": "Clinical practitioners",
+    "3": "Academic researchers",
+    "4": "Policy & system leaders",
+    "5": "Advocacy & lived experience",
+    "6": "Equity specialists",
+    "7": "Education",
+    "8": "Advocacy & lived experience",
+    "99": "Other"
+   }
   }
  ],
  "country_aliases": {
@@ -400,7 +419,20 @@
   "África": "— resposta regional, sem país —",
   "Africa": "— resposta regional, sem país —",
   "Ásia": "— resposta regional, sem país —",
-  "Asia": "— resposta regional, sem país —"
+  "Asia": "— resposta regional, sem país —",
+  "中国大陆": "China",
+  "台湾": "Taiwan",
+  "澳门": "Macau",
+  "韩国": "South Korea",
+  "新加坡": "Singapore",
+  "马来西亚": "Malaysia",
+  "美国": "United States",
+  "英国": "United Kingdom",
+  "加拿大": "Canada",
+  "澳大利亚": "Australia",
+  "法国": "France",
+  "德国": "Germany",
+  "西班牙": "Spain"
  },
  "infer_country_from_email": false,
  "exclude_record_ids": [],

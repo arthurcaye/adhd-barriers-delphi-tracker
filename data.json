@@ -5,18 +5,14 @@
   "Academic researchers",
   "Policy & system leaders",
   "Advocacy & lived experience",
-  "Equity specialists",
-  "Education",
-  "Other"
+  "Equity specialists"
  ],
  "targets": {
   "Clinical practitioners": 15,
   "Academic researchers": 10,
   "Policy & system leaders": 10,
   "Advocacy & lived experience": 10,
-  "Equity specialists": 5,
-  "Education": null,
-  "Other": null
+  "Equity specialists": 5
  },
  "rows": [
   {
@@ -390,11 +386,9 @@
     "Academic researchers": 1,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
+    "Equity specialists": 1
    },
-   "total": 1
+   "total": 2
   },
   {
    "country": "Australia",
@@ -722,6 +716,6 @@
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
-  "excluded_records": 7
+  "excluded_records": 0
  }
 }
