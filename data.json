@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T18:35:48+00:00",
+ "generated_at": "2026-08-12T21:25:15+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -22,7 +22,7 @@
   {
    "country": "Brazil",
    "cells": {
-    "Clinical practitioners": 28,
+    "Clinical practitioners": 29,
     "Academic researchers": 13,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 27,
@@ -30,7 +30,7 @@
     "Education": 11,
     "Other": 5
    },
-   "total": 53
+   "total": 54
   },
   {
    "country": "France",
@@ -49,14 +49,14 @@
    "country": "United States",
    "cells": {
     "Clinical practitioners": 20,
-    "Academic researchers": 15,
+    "Academic researchers": 16,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 12,
     "Equity specialists": 2,
     "Education": 3,
     "Other": 2
    },
-   "total": 32
+   "total": 33
   },
   {
    "country": "Portugal",
@@ -631,6 +631,19 @@
    "total": 1
   },
   {
+   "country": "Russia",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Sudan",
    "cells": {
     "Clinical practitioners": 1,
@@ -697,11 +710,11 @@
   }
  ],
  "totals": {
-  "responses": 238,
-  "countries": 52,
+  "responses": 241,
+  "countries": 53,
   "by_category": {
-   "Clinical practitioners": 200,
-   "Academic researchers": 109,
+   "Clinical practitioners": 202,
+   "Academic researchers": 110,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 75,
    "Equity specialists": 10,
@@ -709,8 +722,8 @@
    "Other": 17
   },
   "by_language": {
-   "ptbr": 84,
-   "en": 78,
+   "ptbr": 85,
+   "en": 80,
    "es": 37,
    "fr": 34,
    "ar": 5
@@ -718,7 +731,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 355,
+  "skipped_incomplete": 358,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
