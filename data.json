@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-12T21:25:15+00:00",
+ "generated_at": "2026-08-12T23:24:31+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -23,14 +23,14 @@
    "country": "Brazil",
    "cells": {
     "Clinical practitioners": 29,
-    "Academic researchers": 13,
+    "Academic researchers": 14,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 27,
     "Equity specialists": 4,
     "Education": 11,
     "Other": 5
    },
-   "total": 54
+   "total": 55
   },
   {
    "country": "France",
@@ -189,6 +189,19 @@
    "total": 4
   },
   {
+   "country": "Egypt",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Spain",
    "cells": {
     "Clinical practitioners": 3,
@@ -209,19 +222,6 @@
     "Policy & system leaders": 2,
     "Advocacy & lived experience": 0,
     "Equity specialists": 1,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Egypt",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 2,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
     "Education": 0,
     "Other": 0
    },
@@ -710,11 +710,11 @@
   }
  ],
  "totals": {
-  "responses": 241,
+  "responses": 243,
   "countries": 53,
   "by_category": {
-   "Clinical practitioners": 202,
-   "Academic researchers": 110,
+   "Clinical practitioners": 203,
+   "Academic researchers": 111,
    "Policy & system leaders": 23,
    "Advocacy & lived experience": 75,
    "Equity specialists": 10,
@@ -722,11 +722,11 @@
    "Other": 17
   },
   "by_language": {
-   "ptbr": 85,
+   "ptbr": 86,
    "en": 80,
    "es": 37,
    "fr": 34,
-   "ar": 5
+   "ar": 6
   }
  },
  "notes": {
