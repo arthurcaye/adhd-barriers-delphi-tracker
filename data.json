@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-16T12:01:02+00:00",
+ "generated_at": "2026-08-16T13:46:32+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -22,15 +22,15 @@
   {
    "country": "Brazil",
    "cells": {
-    "Clinical practitioners": 30,
+    "Clinical practitioners": 31,
     "Academic researchers": 14,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 29,
+    "Advocacy & lived experience": 30,
     "Equity specialists": 4,
     "Education": 13,
     "Other": 5
    },
-   "total": 59
+   "total": 60
   },
   {
    "country": "France",
@@ -124,6 +124,19 @@
    "total": 12
   },
   {
+   "country": "Argentina",
+   "cells": {
+    "Clinical practitioners": 8,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 8
+  },
+  {
    "country": "Peru",
    "cells": {
     "Clinical practitioners": 7,
@@ -135,19 +148,6 @@
     "Other": 1
    },
    "total": 8
-  },
-  {
-   "country": "Argentina",
-   "cells": {
-    "Clinical practitioners": 7,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 7
   },
   {
    "country": "Colombia",
@@ -723,28 +723,28 @@
   }
  ],
  "totals": {
-  "responses": 259,
+  "responses": 261,
   "countries": 54,
   "by_category": {
-   "Clinical practitioners": 215,
+   "Clinical practitioners": 217,
    "Academic researchers": 117,
    "Policy & system leaders": 23,
-   "Advocacy & lived experience": 80,
+   "Advocacy & lived experience": 81,
    "Equity specialists": 10,
    "Education": 34,
    "Other": 17
   },
   "by_language": {
-   "ptbr": 90,
+   "ptbr": 91,
    "en": 90,
-   "es": 38,
+   "es": 39,
    "fr": 35,
    "ar": 6
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 378,
+  "skipped_incomplete": 377,
   "skipped_no_country": 5,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
