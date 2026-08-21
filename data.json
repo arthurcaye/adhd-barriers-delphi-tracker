@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-21T19:33:07+00:00",
+ "generated_at": "2026-08-21T20:44:47+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -100,7 +100,7 @@
   {
    "country": "South Africa",
    "cells": {
-    "Clinical practitioners": 11,
+    "Clinical practitioners": 12,
     "Academic researchers": 5,
     "Policy & system leaders": 2,
     "Advocacy & lived experience": 6,
@@ -108,7 +108,7 @@
     "Education": 2,
     "Other": 0
    },
-   "total": 13
+   "total": 14
   },
   {
    "country": "Mozambique",
@@ -736,10 +736,10 @@
   }
  ],
  "totals": {
-  "responses": 292,
+  "responses": 293,
   "countries": 55,
   "by_category": {
-   "Clinical practitioners": 235,
+   "Clinical practitioners": 236,
    "Academic researchers": 140,
    "Policy & system leaders": 27,
    "Advocacy & lived experience": 99,
@@ -749,7 +749,7 @@
   },
   "by_language": {
    "ptbr": 95,
-   "en": 109,
+   "en": 110,
    "es": 44,
    "fr": 37,
    "ar": 6,
