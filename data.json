@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-23T10:53:36+00:00",
+ "generated_at": "2026-08-23T11:41:52+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -22,7 +22,7 @@
   {
    "country": "Brazil",
    "cells": {
-    "Clinical practitioners": 31,
+    "Clinical practitioners": 32,
     "Academic researchers": 16,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 34,
@@ -30,7 +30,7 @@
     "Education": 17,
     "Other": 5
    },
-   "total": 66
+   "total": 67
   },
   {
    "country": "United States",
@@ -736,10 +736,10 @@
   }
  ],
  "totals": {
-  "responses": 296,
+  "responses": 297,
   "countries": 55,
   "by_category": {
-   "Clinical practitioners": 237,
+   "Clinical practitioners": 238,
    "Academic researchers": 142,
    "Policy & system leaders": 27,
    "Advocacy & lived experience": 101,
@@ -748,7 +748,7 @@
    "Other": 17
   },
   "by_language": {
-   "ptbr": 97,
+   "ptbr": 98,
    "en": 111,
    "es": 44,
    "fr": 37,
@@ -758,7 +758,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 424,
+  "skipped_incomplete": 423,
   "skipped_no_country": 8,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
