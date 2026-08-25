@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-25T22:59:22+00:00",
+ "generated_at": "2026-08-25T23:51:49+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -332,6 +332,19 @@
    "total": 3
   },
   {
+   "country": "New Zealand",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Romania",
    "cells": {
     "Clinical practitioners": 3,
@@ -416,19 +429,6 @@
     "Academic researchers": 1,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "New Zealand",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
@@ -736,10 +736,10 @@
   }
  ],
  "totals": {
-  "responses": 310,
+  "responses": 311,
   "countries": 55,
   "by_category": {
-   "Clinical practitioners": 245,
+   "Clinical practitioners": 246,
    "Academic researchers": 146,
    "Policy & system leaders": 28,
    "Advocacy & lived experience": 108,
@@ -749,7 +749,7 @@
   },
   "by_language": {
    "ptbr": 99,
-   "en": 117,
+   "en": 118,
    "es": 46,
    "fr": 41,
    "ar": 6,
@@ -758,7 +758,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 438,
+  "skipped_incomplete": 437,
   "skipped_no_country": 8,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
