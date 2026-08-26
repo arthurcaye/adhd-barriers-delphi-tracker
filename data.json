@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-26T11:49:18+00:00",
+ "generated_at": "2026-08-26T14:24:58+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -126,7 +126,7 @@
   {
    "country": "Belgium",
    "cells": {
-    "Clinical practitioners": 6,
+    "Clinical practitioners": 7,
     "Academic researchers": 4,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 3,
@@ -134,7 +134,7 @@
     "Education": 1,
     "Other": 0
    },
-   "total": 9
+   "total": 10
   },
   {
    "country": "Argentina",
@@ -736,10 +736,10 @@
   }
  ],
  "totals": {
-  "responses": 312,
+  "responses": 313,
   "countries": 55,
   "by_category": {
-   "Clinical practitioners": 247,
+   "Clinical practitioners": 248,
    "Academic researchers": 146,
    "Policy & system leaders": 28,
    "Advocacy & lived experience": 108,
@@ -749,7 +749,7 @@
   },
   "by_language": {
    "ptbr": 99,
-   "en": 119,
+   "en": 120,
    "es": 46,
    "fr": 41,
    "ar": 6,
