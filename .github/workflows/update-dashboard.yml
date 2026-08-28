@@ -43,6 +43,12 @@ jobs:
           echo "nenhum arquivo sensivel versionado"
 
       - name: Commit data.json if it changed
+        # As credenciais precisam existir TAMBEM aqui: se o remote andar durante
+        # o job, o laco abaixo roda o agregador de novo para regerar o arquivo.
+        env:
+          REDCAP_API_URL: ${{ secrets.REDCAP_API_URL }}
+          REDCAP_API_TOKEN: ${{ secrets.REDCAP_API_TOKEN }}
+          EXCLUDE_EMAILS: ${{ secrets.EXCLUDE_EMAILS }}
         run: |
           git config user.name  "delphi-dashboard-bot"
           git config user.email "actions@github.com"
