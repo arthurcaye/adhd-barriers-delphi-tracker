@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T01:16:33+00:00",
+ "generated_at": "2026-08-31T01:31:29+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -72,6 +72,19 @@
    "total": 21
   },
   {
+   "country": "Taiwan",
+   "cells": {
+    "Clinical practitioners": 18,
+    "Academic researchers": 6,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 5,
+    "Equity specialists": 1,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 18
+  },
+  {
    "country": "Portugal",
    "cells": {
     "Clinical practitioners": 13,
@@ -81,19 +94,6 @@
     "Equity specialists": 1,
     "Education": 4,
     "Other": 1
-   },
-   "total": 17
-  },
-  {
-   "country": "Taiwan",
-   "cells": {
-    "Clinical practitioners": 17,
-    "Academic researchers": 6,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 5,
-    "Equity specialists": 1,
-    "Education": 1,
-    "Other": 0
    },
    "total": 17
   },
@@ -788,10 +788,10 @@
   }
  ],
  "totals": {
-  "responses": 346,
+  "responses": 347,
   "countries": 59,
   "by_category": {
-   "Clinical practitioners": 278,
+   "Clinical practitioners": 279,
    "Academic researchers": 160,
    "Policy & system leaders": 33,
    "Advocacy & lived experience": 119,
@@ -806,7 +806,7 @@
    "fr": 41,
    "ar": 6,
    "it": 3,
-   "zh": 16
+   "zh": 17
   }
  },
  "notes": {
