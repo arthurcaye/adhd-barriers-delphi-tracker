@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-31T10:02:01+00:00",
+ "generated_at": "2026-08-31T10:16:42+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -61,15 +61,15 @@
   {
    "country": "Taiwan",
    "cells": {
-    "Clinical practitioners": 23,
-    "Academic researchers": 8,
+    "Clinical practitioners": 24,
+    "Academic researchers": 9,
     "Policy & system leaders": 2,
     "Advocacy & lived experience": 7,
     "Equity specialists": 2,
-    "Education": 2,
+    "Education": 3,
     "Other": 0
    },
-   "total": 23
+   "total": 24
   },
   {
    "country": "United Kingdom",
@@ -788,15 +788,15 @@
   }
  ],
  "totals": {
-  "responses": 357,
+  "responses": 358,
   "countries": 59,
   "by_category": {
-   "Clinical practitioners": 286,
-   "Academic researchers": 163,
+   "Clinical practitioners": 287,
+   "Academic researchers": 164,
    "Policy & system leaders": 34,
    "Advocacy & lived experience": 124,
    "Equity specialists": 15,
-   "Education": 46,
+   "Education": 47,
    "Other": 18
   },
   "by_language": {
@@ -806,7 +806,7 @@
    "fr": 41,
    "ar": 6,
    "it": 3,
-   "zh": 22
+   "zh": 23
   }
  },
  "notes": {
