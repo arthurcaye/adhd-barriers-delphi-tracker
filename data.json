@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T11:47:52+00:00",
+ "generated_at": "2026-09-01T12:03:14+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -618,6 +618,19 @@
    "total": 1
   },
   {
+   "country": "Hungary",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Indonesia",
    "cells": {
     "Clinical practitioners": 1,
@@ -801,10 +814,10 @@
   }
  ],
  "totals": {
-  "responses": 371,
-  "countries": 60,
+  "responses": 372,
+  "countries": 61,
   "by_category": {
-   "Clinical practitioners": 298,
+   "Clinical practitioners": 299,
    "Academic researchers": 169,
    "Policy & system leaders": 39,
    "Advocacy & lived experience": 127,
@@ -814,7 +827,7 @@
   },
   "by_language": {
    "ptbr": 100,
-   "en": 146,
+   "en": 147,
    "es": 48,
    "fr": 41,
    "ar": 6,
