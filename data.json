@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T13:48:58+00:00",
+ "generated_at": "2026-09-01T14:02:48+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -90,12 +90,12 @@
     "Clinical practitioners": 10,
     "Academic researchers": 5,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 6,
+    "Advocacy & lived experience": 7,
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
    },
-   "total": 17
+   "total": 18
   },
   {
    "country": "Portugal",
@@ -814,20 +814,20 @@
   }
  ],
  "totals": {
-  "responses": 372,
+  "responses": 373,
   "countries": 61,
   "by_category": {
    "Clinical practitioners": 299,
    "Academic researchers": 169,
    "Policy & system leaders": 39,
-   "Advocacy & lived experience": 127,
+   "Advocacy & lived experience": 128,
    "Equity specialists": 15,
    "Education": 49,
    "Other": 18
   },
   "by_language": {
    "ptbr": 100,
-   "en": 147,
+   "en": 148,
    "es": 48,
    "fr": 41,
    "ar": 6,
@@ -837,7 +837,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 527,
+  "skipped_incomplete": 526,
   "skipped_no_country": 13,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
