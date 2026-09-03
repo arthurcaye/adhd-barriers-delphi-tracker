@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T17:22:09+00:00",
+ "generated_at": "2026-09-03T19:58:06+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -150,6 +150,19 @@
    "total": 12
   },
   {
+   "country": "Italy",
+   "cells": {
+    "Clinical practitioners": 8,
+    "Academic researchers": 4,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 1
+   },
+   "total": 10
+  },
+  {
    "country": "Greece",
    "cells": {
     "Clinical practitioners": 7,
@@ -185,19 +198,6 @@
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
-   },
-   "total": 8
-  },
-  {
-   "country": "Italy",
-   "cells": {
-    "Clinical practitioners": 6,
-    "Academic researchers": 4,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 1
    },
    "total": 8
   },
@@ -319,6 +319,19 @@
    "total": 5
   },
   {
+   "country": "Norway",
+   "cells": {
+    "Clinical practitioners": 5,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 5
+  },
+  {
    "country": "Chile",
    "cells": {
     "Clinical practitioners": 3,
@@ -429,19 +442,6 @@
     "Academic researchers": 1,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Norway",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 2,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
@@ -696,6 +696,19 @@
    "total": 1
   },
   {
+   "country": "Lebanon",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Malawi",
    "cells": {
     "Clinical practitioners": 0,
@@ -840,24 +853,24 @@
   }
  ],
  "totals": {
-  "responses": 417,
-  "countries": 63,
+  "responses": 422,
+  "countries": 64,
   "by_category": {
-   "Clinical practitioners": 334,
-   "Academic researchers": 191,
+   "Clinical practitioners": 339,
+   "Academic researchers": 192,
    "Policy & system leaders": 44,
-   "Advocacy & lived experience": 141,
+   "Advocacy & lived experience": 143,
    "Equity specialists": 19,
    "Education": 54,
    "Other": 22
   },
   "by_language": {
    "ptbr": 102,
-   "en": 182,
+   "en": 185,
    "es": 48,
    "fr": 42,
    "ar": 6,
-   "it": 5,
+   "it": 7,
    "zh": 32
   }
  },
