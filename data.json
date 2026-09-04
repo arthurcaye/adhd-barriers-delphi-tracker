@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04T16:50:25+00:00",
+ "generated_at": "2026-09-04T19:11:56+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -98,6 +98,32 @@
    "total": 25
   },
   {
+   "country": "Turkey",
+   "cells": {
+    "Clinical practitioners": 17,
+    "Academic researchers": 15,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 21
+  },
+  {
+   "country": "Norway",
+   "cells": {
+    "Clinical practitioners": 11,
+    "Academic researchers": 3,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 13,
+    "Equity specialists": 0,
+    "Education": 4,
+    "Other": 0
+   },
+   "total": 20
+  },
+  {
    "country": "Portugal",
    "cells": {
     "Clinical practitioners": 14,
@@ -109,32 +135,6 @@
     "Other": 1
    },
    "total": 18
-  },
-  {
-   "country": "Turkey",
-   "cells": {
-    "Clinical practitioners": 15,
-    "Academic researchers": 13,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 18
-  },
-  {
-   "country": "Norway",
-   "cells": {
-    "Clinical practitioners": 11,
-    "Academic researchers": 3,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 10,
-    "Equity specialists": 0,
-    "Education": 2,
-    "Other": 0
-   },
-   "total": 17
   },
   {
    "country": "Mexico",
@@ -853,20 +853,20 @@
   }
  ],
  "totals": {
-  "responses": 455,
+  "responses": 461,
   "countries": 64,
   "by_category": {
-   "Clinical practitioners": 361,
-   "Academic researchers": 204,
+   "Clinical practitioners": 363,
+   "Academic researchers": 206,
    "Policy & system leaders": 44,
-   "Advocacy & lived experience": 155,
+   "Advocacy & lived experience": 158,
    "Equity specialists": 20,
-   "Education": 57,
+   "Education": 59,
    "Other": 24
   },
   "by_language": {
    "ptbr": 102,
-   "en": 215,
+   "en": 221,
    "es": 48,
    "fr": 42,
    "ar": 6,
@@ -876,8 +876,8 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 625,
-  "skipped_no_country": 22,
+  "skipped_incomplete": 628,
+  "skipped_no_country": 23,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
