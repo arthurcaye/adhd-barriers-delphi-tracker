@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04T21:26:36+00:00",
+ "generated_at": "2026-09-04T23:07:57+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -191,7 +191,7 @@
   {
    "country": "Greece",
    "cells": {
-    "Clinical practitioners": 7,
+    "Clinical practitioners": 8,
     "Academic researchers": 4,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 1,
@@ -199,7 +199,7 @@
     "Education": 0,
     "Other": 1
    },
-   "total": 9
+   "total": 10
   },
   {
    "country": "Argentina",
@@ -853,10 +853,10 @@
   }
  ],
  "totals": {
-  "responses": 464,
+  "responses": 465,
   "countries": 64,
   "by_category": {
-   "Clinical practitioners": 366,
+   "Clinical practitioners": 367,
    "Academic researchers": 207,
    "Policy & system leaders": 44,
    "Advocacy & lived experience": 158,
@@ -866,7 +866,7 @@
   },
   "by_language": {
    "ptbr": 102,
-   "en": 224,
+   "en": 225,
    "es": 48,
    "fr": 42,
    "ar": 6,
