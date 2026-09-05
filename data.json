@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-05T19:27:40+00:00",
+ "generated_at": "2026-09-05T21:27:30+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -876,7 +876,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 661,
+  "skipped_incomplete": 662,
   "skipped_no_country": 24,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
