@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-05T12:38:52+00:00",
+ "generated_at": "2026-09-05T15:31:00+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -80,9 +80,9 @@
     "Advocacy & lived experience": 19,
     "Equity specialists": 1,
     "Education": 3,
-    "Other": 2
+    "Other": 3
    },
-   "total": 30
+   "total": 31
   },
   {
    "country": "Belgium",
@@ -853,7 +853,7 @@
   }
  ],
  "totals": {
-  "responses": 473,
+  "responses": 474,
   "countries": 64,
   "by_category": {
    "Clinical practitioners": 371,
@@ -862,11 +862,11 @@
    "Advocacy & lived experience": 164,
    "Equity specialists": 20,
    "Education": 60,
-   "Other": 25
+   "Other": 26
   },
   "by_language": {
    "ptbr": 102,
-   "en": 233,
+   "en": 234,
    "es": 48,
    "fr": 42,
    "ar": 6,
@@ -876,7 +876,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 653,
+  "skipped_incomplete": 657,
   "skipped_no_country": 24,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
