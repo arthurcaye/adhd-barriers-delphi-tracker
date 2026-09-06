@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T05:15:29+00:00",
+ "generated_at": "2026-09-06T09:32:14+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -165,7 +165,7 @@
   {
    "country": "Italy",
    "cells": {
-    "Clinical practitioners": 10,
+    "Clinical practitioners": 11,
     "Academic researchers": 4,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 1,
@@ -173,7 +173,7 @@
     "Education": 0,
     "Other": 1
    },
-   "total": 12
+   "total": 13
   },
   {
    "country": "Mozambique",
@@ -853,10 +853,10 @@
   }
  ],
  "totals": {
-  "responses": 475,
+  "responses": 476,
   "countries": 64,
   "by_category": {
-   "Clinical practitioners": 371,
+   "Clinical practitioners": 372,
    "Academic researchers": 207,
    "Policy & system leaders": 44,
    "Advocacy & lived experience": 164,
@@ -870,13 +870,13 @@
    "es": 48,
    "fr": 42,
    "ar": 6,
-   "it": 9,
+   "it": 10,
    "zh": 33
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 662,
+  "skipped_incomplete": 664,
   "skipped_no_country": 24,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
