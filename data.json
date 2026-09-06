@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T18:16:49+00:00",
+ "generated_at": "2026-09-06T20:33:22+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -90,17 +90,17 @@
     "Clinical practitioners": 13,
     "Academic researchers": 4,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 20,
+    "Advocacy & lived experience": 21,
     "Equity specialists": 0,
-    "Education": 5,
+    "Education": 6,
     "Other": 1
    },
-   "total": 28
+   "total": 29
   },
   {
    "country": "Belgium",
    "cells": {
-    "Clinical practitioners": 17,
+    "Clinical practitioners": 18,
     "Academic researchers": 10,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 7,
@@ -108,7 +108,7 @@
     "Education": 1,
     "Other": 1
    },
-   "total": 27
+   "total": 28
   },
   {
    "country": "Turkey",
@@ -163,6 +163,19 @@
    "total": 14
   },
   {
+   "country": "Greece",
+   "cells": {
+    "Clinical practitioners": 10,
+    "Academic researchers": 4,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 2,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 1
+   },
+   "total": 13
+  },
+  {
    "country": "Italy",
    "cells": {
     "Clinical practitioners": 11,
@@ -174,19 +187,6 @@
     "Other": 1
    },
    "total": 13
-  },
-  {
-   "country": "Greece",
-   "cells": {
-    "Clinical practitioners": 9,
-    "Academic researchers": 4,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 2,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 1
-   },
-   "total": 12
   },
   {
    "country": "Mozambique",
@@ -853,20 +853,20 @@
   }
  ],
  "totals": {
-  "responses": 481,
+  "responses": 484,
   "countries": 64,
   "by_category": {
-   "Clinical practitioners": 375,
+   "Clinical practitioners": 377,
    "Academic researchers": 207,
    "Policy & system leaders": 44,
-   "Advocacy & lived experience": 166,
+   "Advocacy & lived experience": 167,
    "Equity specialists": 20,
-   "Education": 60,
+   "Education": 61,
    "Other": 27
   },
   "by_language": {
    "ptbr": 103,
-   "en": 237,
+   "en": 240,
    "es": 49,
    "fr": 42,
    "ar": 6,
@@ -876,7 +876,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 666,
+  "skipped_incomplete": 665,
   "skipped_no_country": 24,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
