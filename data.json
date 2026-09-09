@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-09T04:55:17+00:00",
+ "generated_at": "2026-09-09T09:17:12+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -144,10 +144,10 @@
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 2,
     "Equity specialists": 0,
-    "Education": 0,
+    "Education": 1,
     "Other": 1
    },
-   "total": 15
+   "total": 16
   },
   {
    "country": "Mexico",
@@ -345,6 +345,19 @@
    "total": 5
   },
   {
+   "country": "Singapore",
+   "cells": {
+    "Clinical practitioners": 5,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 5
+  },
+  {
    "country": "Chile",
    "cells": {
     "Clinical practitioners": 3,
@@ -377,19 +390,6 @@
     "Academic researchers": 3,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 3,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 4
-  },
-  {
-   "country": "Singapore",
-   "cells": {
-    "Clinical practitioners": 4,
-    "Academic researchers": 2,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
@@ -866,31 +866,31 @@
   }
  ],
  "totals": {
-  "responses": 506,
+  "responses": 508,
   "countries": 65,
   "by_category": {
-   "Clinical practitioners": 392,
+   "Clinical practitioners": 393,
    "Academic researchers": 212,
    "Policy & system leaders": 45,
    "Advocacy & lived experience": 172,
    "Equity specialists": 21,
-   "Education": 61,
+   "Education": 62,
    "Other": 27
   },
   "by_language": {
    "ptbr": 104,
-   "en": 254,
+   "en": 255,
    "es": 50,
    "fr": 42,
    "ar": 6,
-   "it": 13,
+   "it": 14,
    "zh": 36,
    "zhcn": 1
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 699,
+  "skipped_incomplete": 704,
   "skipped_no_country": 27,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
