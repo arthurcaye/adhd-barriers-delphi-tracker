@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-12T18:31:51+00:00",
+ "generated_at": "2026-09-12T20:56:32+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -267,6 +267,19 @@
    "total": 8
   },
   {
+   "country": "Israel",
+   "cells": {
+    "Clinical practitioners": 8,
+    "Academic researchers": 4,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 8
+  },
+  {
    "country": "Peru",
    "cells": {
     "Clinical practitioners": 7,
@@ -284,19 +297,6 @@
    "cells": {
     "Clinical practitioners": 6,
     "Academic researchers": 6,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 7
-  },
-  {
-   "country": "Israel",
-   "cells": {
-    "Clinical practitioners": 7,
-    "Academic researchers": 3,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
@@ -905,11 +905,11 @@
   }
  ],
  "totals": {
-  "responses": 553,
+  "responses": 554,
   "countries": 68,
   "by_category": {
-   "Clinical practitioners": 416,
-   "Academic researchers": 222,
+   "Clinical practitioners": 417,
+   "Academic researchers": 223,
    "Policy & system leaders": 45,
    "Advocacy & lived experience": 192,
    "Equity specialists": 24,
@@ -918,7 +918,7 @@
   },
   "by_language": {
    "ptbr": 104,
-   "en": 267,
+   "en": 268,
    "es": 75,
    "fr": 43,
    "ar": 6,
