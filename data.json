@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T18:44:32+00:00",
+ "generated_at": "2026-09-15T21:46:05+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -131,10 +131,10 @@
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 11,
     "Equity specialists": 0,
-    "Education": 2,
+    "Education": 3,
     "Other": 3
    },
-   "total": 27
+   "total": 28
   },
   {
    "country": "Turkey",
@@ -905,7 +905,7 @@
   }
  ],
  "totals": {
-  "responses": 571,
+  "responses": 572,
   "countries": 68,
   "by_category": {
    "Clinical practitioners": 427,
@@ -913,7 +913,7 @@
    "Policy & system leaders": 45,
    "Advocacy & lived experience": 200,
    "Equity specialists": 24,
-   "Education": 73,
+   "Education": 74,
    "Other": 30
   },
   "by_language": {
@@ -922,7 +922,7 @@
    "es": 85,
    "fr": 43,
    "ar": 6,
-   "it": 25,
+   "it": 26,
    "zh": 38,
    "zhcn": 1
   }
