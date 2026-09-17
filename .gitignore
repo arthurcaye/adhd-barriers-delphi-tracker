@@ -6,6 +6,16 @@
 registros.txt
 abandono_contatos.csv
 abandono_resumo.txt
+travamento_australia.csv
+travamento_resumo.txt
+ultima_pagina_resumo.txt
+australia_caso_a_caso.txt
+coreano_registros.csv
+coreano_conferencia.txt
+onde_para_exato.txt
+check_geral.txt
+check_recuperaveis.csv
+check_duplicados.csv
 paises_inferidos.txt
 paises_nao_reconhecidos.txt
 
