@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17T15:48:20+00:00",
+ "generated_at": "2026-09-17T19:22:38+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -25,25 +25,25 @@
     "Clinical practitioners": 33,
     "Academic researchers": 16,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 35,
+    "Advocacy & lived experience": 36,
     "Equity specialists": 5,
     "Education": 19,
     "Other": 6
    },
-   "total": 72
+   "total": 73
   },
   {
    "country": "Spain",
    "cells": {
-    "Clinical practitioners": 27,
-    "Academic researchers": 10,
+    "Clinical practitioners": 28,
+    "Academic researchers": 12,
     "Policy & system leaders": 1,
-    "Advocacy & lived experience": 14,
+    "Advocacy & lived experience": 16,
     "Equity specialists": 2,
-    "Education": 8,
+    "Education": 9,
     "Other": 0
    },
-   "total": 43
+   "total": 47
   },
   {
    "country": "Norway",
@@ -113,15 +113,15 @@
   {
    "country": "United Kingdom",
    "cells": {
-    "Clinical practitioners": 19,
+    "Clinical practitioners": 20,
     "Academic researchers": 16,
     "Policy & system leaders": 2,
-    "Advocacy & lived experience": 19,
+    "Advocacy & lived experience": 20,
     "Equity specialists": 1,
     "Education": 3,
     "Other": 3
    },
-   "total": 34
+   "total": 35
   },
   {
    "country": "Belgium",
@@ -161,6 +161,19 @@
     "Other": 0
    },
    "total": 28
+  },
+  {
+   "country": "South Korea",
+   "cells": {
+    "Clinical practitioners": 17,
+    "Academic researchers": 15,
+    "Policy & system leaders": 5,
+    "Advocacy & lived experience": 6,
+    "Equity specialists": 1,
+    "Education": 3,
+    "Other": 1
+   },
+   "total": 26
   },
   {
    "country": "Portugal",
@@ -397,6 +410,19 @@
    "total": 5
   },
   {
+   "country": "— resposta regional, sem país —",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 3,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 2
+   },
+   "total": 5
+  },
+  {
    "country": "Chile",
    "cells": {
     "Clinical practitioners": 3,
@@ -432,19 +458,6 @@
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
-   },
-   "total": 4
-  },
-  {
-   "country": "— resposta regional, sem país —",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 2,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 3,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 1
    },
    "total": 4
   },
@@ -535,6 +548,19 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 1,
+    "Other": 0
+   },
+   "total": 2
+  },
+  {
+   "country": "Tunisia",
+   "cells": {
+    "Clinical practitioners": 2,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
     "Other": 0
    },
    "total": 2
@@ -800,19 +826,6 @@
    "total": 1
   },
   {
-   "country": "South Korea",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 1,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 1,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
    "country": "Sudan",
    "cells": {
     "Clinical practitioners": 1,
@@ -905,34 +918,35 @@
   }
  ],
  "totals": {
-  "responses": 617,
-  "countries": 68,
+  "responses": 651,
+  "countries": 69,
   "by_category": {
-   "Clinical practitioners": 468,
-   "Academic researchers": 235,
-   "Policy & system leaders": 45,
-   "Advocacy & lived experience": 208,
+   "Clinical practitioners": 488,
+   "Academic researchers": 251,
+   "Policy & system leaders": 49,
+   "Advocacy & lived experience": 217,
    "Equity specialists": 24,
-   "Education": 77,
-   "Other": 30
+   "Education": 80,
+   "Other": 32
   },
   "by_language": {
-   "ptbr": 104,
-   "en": 272,
-   "es": 89,
-   "fr": 43,
+   "ptbr": 105,
+   "en": 273,
+   "es": 93,
+   "fr": 46,
    "ar": 6,
    "it": 27,
    "zh": 38,
    "ja": 35,
+   "ko": 25,
    "zhcn": 1,
    "de": 2
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 863,
-  "skipped_no_country": 31,
+  "skipped_incomplete": 874,
+  "skipped_no_country": 26,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
