@@ -2,8 +2,10 @@
 .env
 
 # === NUNCA versionar: dados de participante ===
-# registros.txt tem nome/e-mail de quem respondeu
+# registros.txt e abandono_contatos.csv tem nome e e-mail de participantes
 registros.txt
+abandono_contatos.csv
+abandono_resumo.txt
 paises_inferidos.txt
 paises_nao_reconhecidos.txt
 
