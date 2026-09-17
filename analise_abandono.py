@@ -60,6 +60,7 @@ FONTES = {
     "delphi_round1_de":      ("de",   "de_email",    "de_name"),
     "delphi_round1_ja":      ("ja",   "ja_email",    "ja_name"),
     "delphi_round1_ko":      ("ko",   "ko_email",    "ko_name"),
+    "delphi_round1_ru":      ("ru",   "ru_email",    "ru_name"),
 }
 
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[A-Za-z]{2,}$")
