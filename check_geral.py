@@ -76,6 +76,7 @@ def main():
     cfg = json.load(open(os.path.join(HERE, "config.json"), encoding="utf-8"))
     fontes = {s["form"]: s for s in cfg["sources"]}
     aliases = cfg.get("country_aliases", {})
+    alias_norm = {ag.country_key(k) for k in aliases}
 
     meta = ag.api({"content": "metadata"})
     instrumentos = sorted({f["form_name"] for f in meta
@@ -172,9 +173,11 @@ def main():
             if not txt:
                 desconhecidos["(campo vazio)"] += 1
                 continue
-            for p in re.split(r"[,;/]| e | and | y ", txt):
-                p = p.strip()
-                if p and p not in aliases:
+            # Usar EXATAMENTE a normalizacao do agregador. Comparar texto cru
+            # contra o dicionario cru da 118 falsos positivos so de caixa alta
+            # ("UK" x "Uk", "italia" x "Italia"), que o agregador resolve.
+            for p in ag.split_countries(txt):
+                if ag.country_key(p) not in alias_norm:
                     desconhecidos[p[:40]] += 1
     if desconhecidos:
         L.append(f"  {sum(desconhecidos.values())} ocorrencias nao reconhecidas"
