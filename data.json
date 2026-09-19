@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T09:02:47+00:00",
+ "generated_at": "2026-09-19T13:05:50+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -228,6 +228,32 @@
    "total": 13
   },
   {
+   "country": "Russia",
+   "cells": {
+    "Clinical practitioners": 9,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 7,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 13
+  },
+  {
+   "country": "Australia",
+   "cells": {
+    "Clinical practitioners": 9,
+    "Academic researchers": 4,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 6,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 12
+  },
+  {
    "country": "Colombia",
    "cells": {
     "Clinical practitioners": 11,
@@ -252,32 +278,6 @@
     "Other": 0
    },
    "total": 12
-  },
-  {
-   "country": "Russia",
-   "cells": {
-    "Clinical practitioners": 8,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 7,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 12
-  },
-  {
-   "country": "Australia",
-   "cells": {
-    "Clinical practitioners": 8,
-    "Academic researchers": 4,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 6,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 11
   },
   {
    "country": "Argentina",
@@ -918,10 +918,10 @@
   }
  ],
  "totals": {
-  "responses": 682,
+  "responses": 684,
   "countries": 69,
   "by_category": {
-   "Clinical practitioners": 508,
+   "Clinical practitioners": 510,
    "Academic researchers": 258,
    "Policy & system leaders": 52,
    "Advocacy & lived experience": 231,
@@ -931,7 +931,7 @@
   },
   "by_language": {
    "ptbr": 106,
-   "en": 281,
+   "en": 282,
    "es": 95,
    "fr": 46,
    "ar": 6,
@@ -941,12 +941,12 @@
    "ko": 31,
    "zhcn": 1,
    "de": 2,
-   "ru": 11
+   "ru": 12
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 911,
+  "skipped_incomplete": 914,
   "skipped_no_country": 26,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
