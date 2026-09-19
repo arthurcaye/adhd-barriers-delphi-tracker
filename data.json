@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T20:59:12+00:00",
+ "generated_at": "2026-09-19T22:41:18+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -46,6 +46,19 @@
    "total": 49
   },
   {
+   "country": "United States",
+   "cells": {
+    "Clinical practitioners": 28,
+    "Academic researchers": 25,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 16,
+    "Equity specialists": 2,
+    "Education": 5,
+    "Other": 2
+   },
+   "total": 43
+  },
+  {
    "country": "Norway",
    "cells": {
     "Clinical practitioners": 15,
@@ -54,19 +67,6 @@
     "Advocacy & lived experience": 32,
     "Equity specialists": 0,
     "Education": 7,
-    "Other": 2
-   },
-   "total": 42
-  },
-  {
-   "country": "United States",
-   "cells": {
-    "Clinical practitioners": 27,
-    "Academic researchers": 24,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 16,
-    "Equity specialists": 2,
-    "Education": 5,
     "Other": 2
    },
    "total": 42
@@ -126,15 +126,15 @@
   {
    "country": "Italy",
    "cells": {
-    "Clinical practitioners": 15,
-    "Academic researchers": 4,
+    "Clinical practitioners": 16,
+    "Academic researchers": 5,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 15,
     "Equity specialists": 0,
     "Education": 5,
     "Other": 3
    },
-   "total": 33
+   "total": 34
   },
   {
    "country": "South Korea",
@@ -165,7 +165,7 @@
   {
    "country": "Turkey",
    "cells": {
-    "Clinical practitioners": 24,
+    "Clinical practitioners": 25,
     "Academic researchers": 19,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
@@ -173,7 +173,7 @@
     "Education": 0,
     "Other": 0
    },
-   "total": 29
+   "total": 30
   },
   {
    "country": "Portugal",
@@ -918,11 +918,11 @@
   }
  ],
  "totals": {
-  "responses": 695,
+  "responses": 697,
   "countries": 69,
   "by_category": {
-   "Clinical practitioners": 516,
-   "Academic researchers": 265,
+   "Clinical practitioners": 519,
+   "Academic researchers": 267,
    "Policy & system leaders": 52,
    "Advocacy & lived experience": 238,
    "Equity specialists": 24,
@@ -931,7 +931,7 @@
   },
   "by_language": {
    "ptbr": 108,
-   "en": 287,
+   "en": 289,
    "es": 96,
    "fr": 46,
    "ar": 6,
@@ -946,7 +946,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 911,
+  "skipped_incomplete": 910,
   "skipped_no_country": 26,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
