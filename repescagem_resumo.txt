@@ -1,0 +1,22 @@
+LISTA DE REPESCAGEM — painel Delphi de barreiras
+
+Corte por PESSOA (e-mail), nao por registro: quem tem qualquer
+registro completo sai da lista inteira.
+
+  e-mails distintos encontrados        2582
+  fora: ja completou (em algum registro)    698
+  fora: recusou o consentimento               9
+  registros sem e-mail valido            45  (nao contactaveis)
+
+GRUPOS (numeracao do Rohde)
+  G1  nao respondeu nenhuma barreira   1492
+  G2  respondeu de 1 a 25               264
+  G3  respondeu 26 ou mais              119
+      destes, so falta apertar Enviar    48
+      TOTAL A CONTATAR                 1875
+
+POR IDIOMA (para saber quantas traducoes de cada e-mail)
+
+  G1  ptbr:655  en:369  es:195  zh:112  it:60  ja:59  ru:21  ar:14  de:5  ko:2
+  G2  en:118  ptbr:70  ja:23  zh:22  it:18  ru:5  de:4  ko:2  fr:1  ar:1
+  G3  en:47  ptbr:44  it:11  zh:6  fr:5  ja:4  ko:1  ru:1

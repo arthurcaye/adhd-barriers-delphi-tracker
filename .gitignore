@@ -16,6 +16,14 @@ onde_para_exato.txt
 check_geral.txt
 check_recuperaveis.csv
 check_duplicados.csv
+email_todos_para_importar.csv
+email_invalidos_para_revisar.csv
+regionais_encontrados.txt
+repescagem_G1_nao_comecou.csv
+repescagem_G2_de_1_a_25.csv
+repescagem_G3_de_26_em_diante.csv
+repescagem_links_cache.json
+repescagem_para_importar.csv
 paises_inferidos.txt
 paises_nao_reconhecidos.txt
 
@@ -25,3 +33,18 @@ campos.txt
 __pycache__/
 *.pyc
 .DS_Store
+repescagem_importar_grupo1.csv
+repescagem_importar_grupo2.csv
+repescagem_importar_grupo3.csv
+repescagem_TESTE_uma_linha.csv
+repescagem_TESTE_sobrio.csv
+*_conferido.csv
+Invited*
+
+# === mapa ===
+# fonte bruta do Natural Earth (819 KB): o prepara_geo_web.py a reduz para
+# world.geojson, que e o versionado. Esta pode ser rebaixada quando precisar.
+world_countries.geojson
+mapa_respostas_delphi.pdf
+mapa_respostas_delphi.svg
+mapa_respostas_delphi.png

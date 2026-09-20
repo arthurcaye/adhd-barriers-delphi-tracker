@@ -78,6 +78,24 @@
           padding:11px 15px;border-radius:8px;font-size:13.5px;margin-bottom:20px}
   .dot.stale{background:#d8912b}
   .dot.dead{background:#c94a3d}
+  .mapbox{margin:0 0 26px}
+  .mapbox h2{font-size:12.5px;font-weight:600;color:var(--muted);margin:0 0 9px;
+             text-transform:uppercase;letter-spacing:.05em}
+  .mapwrap{position:relative;background:#fff;border:1px solid var(--line);
+           border-radius:9px;padding:10px 12px 6px}
+  .mapwrap svg{display:block;width:100%;height:auto}
+  .mapwrap path{stroke:#fff;stroke-width:.35;vector-effect:non-scaling-stroke}
+  .mapwrap path.hit{cursor:default}
+  .mapwrap path.hot{stroke:var(--ink);stroke-width:1.1}
+  .maplegend{display:flex;flex-wrap:wrap;gap:13px;align-items:center;
+             margin:8px 2px 2px;font-size:12px;color:var(--muted)}
+  .maplegend i{display:inline-block;width:15px;height:10px;border-radius:2px;
+               margin-right:5px;vertical-align:-1px;border:1px solid #fff}
+  .mapnote{font-size:11.5px;color:var(--muted);margin:6px 2px 0;line-height:1.5}
+  .maptip{position:absolute;pointer-events:none;background:var(--ink);color:#fff;
+          padding:5px 9px;border-radius:5px;font-size:12.5px;white-space:nowrap;
+          opacity:0;transition:opacity .12s;transform:translate(-50%,-135%);z-index:5}
+  .maptip.on{opacity:1}
   .langs{margin:0 0 26px}
   .langs h2{font-size:12.5px;font-weight:600;color:var(--muted);margin:0 0 9px;
             text-transform:uppercase;letter-spacing:.05em}
@@ -105,6 +123,8 @@
   <div id="demo"></div>
 
   <div class="cards" id="cards"></div>
+
+  <div id="mapbox"></div>
 
   <div id="langbox"></div>
 
@@ -168,6 +188,145 @@ function langs(d){
       const n = by[code] || 0;
       return `<div class="lang${n?'':' off'}"><b>${n}</b><span>${label}</span></div>`;
     }).join('') + '</div></div>';
+}
+
+// ----------------------------------------------------------------- mapa
+// Projecao Robinson, a mesma da figura em PDF que vai para a publicacao,
+// para que a versao online e a impressa nao se contradigam. A tabela de
+// fatores e a oficial, a cada 5 graus de latitude, com interpolacao linear
+// entre os pontos — a projecao nao tem forma fechada.
+const ROB_X = [1.0000,0.9986,0.9954,0.9900,0.9822,0.9730,0.9600,0.9427,
+               0.9216,0.8962,0.8679,0.8350,0.7986,0.7597,0.7186,0.6732,
+               0.6213,0.5722,0.5322];
+const ROB_Y = [0.0000,0.0620,0.1240,0.1860,0.2480,0.3100,0.3720,0.4340,
+               0.4958,0.5571,0.6176,0.6769,0.7346,0.7903,0.8435,0.8936,
+               0.9394,0.9761,1.0000];
+
+function robinson(lon, lat){
+  const a = Math.abs(lat)/5, i = Math.min(17, Math.floor(a)), t = a - i;
+  const x = ROB_X[i] + t*(ROB_X[i+1]-ROB_X[i]);
+  const y = ROB_Y[i] + t*(ROB_Y[i+1]-ROB_Y[i]);
+  return [0.8487*x*lon*Math.PI/180, 1.3523*Math.sign(lat)*y];
+}
+
+// Nome no nosso config -> nome no Natural Earth. So os que divergem.
+const EQUIV = {
+  'United States':'United States of America',
+  'Czech Republic':'Czechia',
+  'Serbia':'Republic of Serbia',
+  'Tanzania':'United Republic of Tanzania'
+};
+const FAIXAS = [
+  [50, Infinity, '#1D4E5E', '≥50'],
+  [25, 49,       '#3B7A8E', '25–49'],
+  [10, 24,       '#6FA3B4', '10–24'],
+  [5,  9,        '#A6C8D3', '5–9'],
+  [1,  4,        '#D6E5EA', '1–4']
+];
+const SEM_DADO = '#F2F2F2';
+// Territorios pequenos demais para existirem como poligono proprio na
+// escala 1:110m. Nao somem da contagem, so nao aparecem no desenho.
+const SEM_POLIGONO = ['Singapore','Hong Kong','Macau'];
+
+let GEO = null;
+
+function corDe(n){
+  for(const [lo,hi,c] of FAIXAS) if(n>=lo && n<=hi) return c;
+  return SEM_DADO;
+}
+
+function caminhoDe(geom){
+  const anelPara = anel => {
+    let d = '';
+    for(let k=0;k<anel.length;k++){
+      const [X,Y] = robinson(anel[k][0], anel[k][1]);
+      d += (k ? 'L' : 'M') + X.toFixed(4) + ' ' + (-Y).toFixed(4);
+    }
+    return d + 'Z';
+  };
+  const polis = geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+  // fill-rule evenodd abre os buracos (o Lesoto dentro da Africa do Sul)
+  // sem depender do sentido de giro dos aneis, que nem todo arquivo respeita.
+  return polis.map(p => p.map(anelPara).join('')).join('');
+}
+
+async function desenhaMapa(d){
+  const caixa = document.getElementById('mapbox');
+  if(!GEO){
+    try{
+      const r = await fetch('world.geojson', {cache:'force-cache'});
+      if(!r.ok) throw new Error(r.status);
+      GEO = await r.json();
+    }catch(e){ caixa.innerHTML = ''; return; }   // sem mapa, resto da pagina segue
+  }
+
+  const cont = {};
+  let somaPaises = 0, foraDoMapa = 0;
+  for(const r of d.rows){
+    if(/resposta regional/.test(r.country)) continue;
+    cont[EQUIV[r.country] || r.country] = r.total;
+    somaPaises += r.total;
+  }
+  const nomesGeo = new Set(GEO.features.map(f => f.properties.n));
+  const ausentes = [];
+  for(const [p,n] of Object.entries(cont))
+    if(!nomesGeo.has(p)){ ausentes.push([p,n]); foraDoMapa += n; }
+
+  // Enquadra a faixa habitada, nao o globo inteiro: sem a Antartida, tudo
+  // abaixo de -57 (Cabo Horn) e espaco vazio, e o mapa encolheria a toa.
+  let minX=1e9,maxX=-1e9,minY=1e9,maxY=-1e9;
+  for(const lon of [-180,180]) for(const lat of [-57,-30,0,30,60,83]){
+    const [X,Y] = robinson(lon,lat);
+    minX=Math.min(minX,X); maxX=Math.max(maxX,X);
+    minY=Math.min(minY,-Y); maxY=Math.max(maxY,-Y);
+  }
+  const m = 0.03*(maxX-minX);
+  const vb = [minX-m, minY-m, (maxX-minX)+2*m, (maxY-minY)+2*m].map(v=>v.toFixed(3)).join(' ');
+
+  const partes = GEO.features.map(f => {
+    const n = cont[f.properties.n] || 0;
+    const rot = n ? `${f.properties.n}: ${n}` : `${f.properties.n}: no responses`;
+    return `<path class="hit" fill="${corDe(n)}" fill-rule="evenodd" `
+         + `data-r="${rot.replace(/"/g,'&quot;')}" d="${caminhoDe(f.geometry)}"></path>`;
+  }).join('');
+
+  const legenda = FAIXAS.slice().reverse()
+      .map(([,,c,r]) => `<span><i style="background:${c}"></i>${r}</span>`).join('')
+    + `<span><i style="background:${SEM_DADO}"></i>No responses</span>`;
+
+  let nota = `Respondents could name more than one country, so counts sum to `
+           + `${somaPaises} across ${d.totals.responses} respondents.`;
+  if(ausentes.length){
+    const lista = ausentes.sort((a,b)=>b[1]-a[1])
+      .map(([p,n]) => `${p} (${n})`).join(', ');
+    nota += ` Not shown, too small to appear at this scale: ${lista}.`;
+  }
+
+  caixa.innerHTML =
+    '<div class="mapbox"><h2>Where the responses come from</h2>'
+    + `<div class="mapwrap"><svg viewBox="${vb}" preserveAspectRatio="xMidYMid meet" `
+    + `role="img" aria-label="World map of completed responses by country">${partes}</svg>`
+    + `<div class="maptip" id="maptip"></div></div>`
+    + `<div class="maplegend">${legenda}</div>`
+    + `<p class="mapnote">${nota}</p></div>`;
+
+  const wrap = caixa.querySelector('.mapwrap');
+  const tip = document.getElementById('maptip');
+  wrap.addEventListener('mousemove', ev => {
+    const alvo = ev.target.closest('path');
+    wrap.querySelectorAll('path.hot').forEach(p => p.classList.remove('hot'));
+    if(!alvo){ tip.classList.remove('on'); return; }
+    alvo.classList.add('hot');
+    const cx = wrap.getBoundingClientRect();
+    tip.textContent = alvo.dataset.r;
+    tip.style.left = (ev.clientX - cx.left) + 'px';
+    tip.style.top  = (ev.clientY - cx.top) + 'px';
+    tip.classList.add('on');
+  });
+  wrap.addEventListener('mouseleave', () => {
+    tip.classList.remove('on');
+    wrap.querySelectorAll('path.hot').forEach(p => p.classList.remove('hot'));
+  });
 }
 
 function render(){
@@ -253,6 +412,7 @@ async function load(){
     }
     document.getElementById('demo').innerHTML = warn;
     cards(DATA);
+    desenhaMapa(DATA);
     langs(DATA);
     render();
   }catch(e){

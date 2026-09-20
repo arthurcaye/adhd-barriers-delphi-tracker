@@ -34,6 +34,8 @@ CONFIG_PATH = os.path.join(HERE, "config.json")
 OUTPUT_PATH = os.path.join(HERE, "data.json")
 UNMAPPED_PATH = os.path.join(HERE, "paises_nao_reconhecidos.txt")
 
+REGIONAL_MARKER = "— resposta regional, sem país —"
+
 COUNTRY_HINTS = ("country", "pais", "país", "pays", "nation", "countries")
 CATEGORY_HINTS = ("stakeholder", "category", "categoria", "role", "expertise",
                   "profession", "respondent", "perfil")
@@ -375,6 +377,13 @@ def main():
                     if require_known:
                         continue          # texto nao reconhecido nao vira pais
                     name = piece.title()
+                if name == REGIONAL_MARKER:
+                    # "Europe", "Latin America" etc: a pessoa respondeu uma
+                    # regiao, nao um pais. Nao vira linha na tabela - se ela
+                    # tambem citou um pais de verdade no mesmo campo, ele ja
+                    # foi capturado separadamente; se so citou a regiao, o
+                    # registro fica sem pais (nao aparece no painel).
+                    continue
                 countries.append(name)
             countries = list(dict.fromkeys(countries))
             if not countries:

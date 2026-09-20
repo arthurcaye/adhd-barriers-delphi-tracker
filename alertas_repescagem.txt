@@ -1,0 +1,320 @@
+CORPOS DOS 10 ALERTAS DE REPESCAGEM — versao aprovada no teste de entregabilidade
+=================================================================================
+
+POR QUE O TEXTO E ASSIM
+  Testamos tres versoes, mesmo remetente e mesmo destinatario, mudando so o
+  conteudo:
+
+    1. versao original do Rohde ......... caiu em PROMOCOES
+    2. versao curta e seca .............. caiu na principal, mas fraca
+    3. versao hibrida (esta aqui) ....... caiu na PRINCIPAL
+
+  Ou seja: o problema nunca foi autenticacao do remetente, foi a FORMA do
+  texto. O classificador do Gmail reage a marcas de campanha publicitaria,
+  nao ao argumento. Entao mantivemos tudo o que convence e tiramos so o que
+  parece propaganda.
+
+  O QUE NAO PODE VOLTAR, sob risco de cair em Promocoes de novo:
+    - botao em caixa alta e negrito ("FINISH YOUR SURVEY")
+    - exclamacao no assunto
+    - paragrafos de uma linha empilhados em ritmo de campanha
+    - sequencias tipo "Please X. Please Y. Please Z."
+    - bloco de estatisticas solto, separado do texto
+
+  O QUE PODE FICAR, e ficou:
+    - o apelo pessoal e a urgencia
+    - os numeros (678 respostas, 69 paises), contados dentro da prosa
+    - o ponto sobre paises sub-representados
+    - a dica de que basta apertar Enviar
+    - a oferta de ajuda tecnica e a saida da lista
+
+COMO USAR
+  No alerta, Step 3, no editor da mensagem, clique em "Source" (ou < >),
+  cole o bloco inteiro, e clique em "Source" de novo para conferir.
+  Colar no modo visual come as quebras de linha.
+
+  [link_repescagem] e trocado pelo REDCap pelo link individual de cada
+  pessoa. Deixe sozinho num paragrafo, como URL nua: e assim que ele deixa
+  de parecer botao de propaganda.
+
+  Numeros: 678 respostas, 69 paises (dashboard de 18/09/2026).
+
+OS 10 ALERTAS. Em todos:
+  Step 1A .... terceira opcao ("...during a data import...")
+  Step 2 ..... Send immediately  +  Just once
+  Email From . lrohde@terra.com.br
+  Email To ... email_todos
+
+  logica                        pessoas   bloco
+  [grupo_repescagem]="3en"          69    G3 INGLES
+  [grupo_repescagem]="3ptbr"        44    G3 PORTUGUES
+  [grupo_repescagem]="3zh"           6    G3 CHINES
+  [grupo_repescagem]="2en"         172    G2 INGLES
+  [grupo_repescagem]="2ptbr"        70    G2 PORTUGUES
+  [grupo_repescagem]="2zh"          22    G2 CHINES
+  [grupo_repescagem]="1en"         530    G1 INGLES
+  [grupo_repescagem]="1ptbr"       655    G1 PORTUGUES
+  [grupo_repescagem]="1es"         195    G1 ESPANHOL
+  [grupo_repescagem]="1zh"         112    G1 CHINES
+
+
+##########################################################################
+#  G3  —  respondeu 26 barreiras ou mais
+##########################################################################
+
+=== G3 INGLES =========================== logica: [grupo_repescagem]="3en"
+Assunto: You are almost at the end of the Delphi questionnaire
+
+<p>Dear colleague,</p>
+
+<p>You started our Global Delphi Study on Barriers to ADHD Care and got a long way into it before stopping. Many of the people receiving this message are only a few questions from the end, and I am writing to ask you, personally, to come back and finish it.</p>
+
+<p>I know how easily this happens: you begin a survey, something interrupts you, you mean to return, and weeks pass. Your answers are still there, saved exactly where you left them &mdash; but they only enter the analysis once the questionnaire is submitted.</p>
+
+<p>For some of you it is in fact answered from beginning to end and was simply never submitted. If that is your case, it is a matter of opening the link, going to the last page and pressing Submit, which takes under a minute. For most others, fewer than ten minutes of questions remain.</p>
+
+<p>Here is the link back to your own questionnaire, at the point where you stopped:</p>
+
+<p>[link_repescagem]</p>
+
+<p>678 people from 69 countries have now finished it, far beyond anything we expected when we started, and we would like to pass a thousand. What is emerging is a genuinely global account of what keeps people with ADHD and their families from getting care &mdash; and it sharpens with every person who completes it, most of all for the countries whose voices rarely reach the literature at all.</p>
+
+<p>Ten more minutes of your time can help us understand barriers that shape years, sometimes whole lives.</p>
+
+<p>If a technical problem is stopping you, reply to this message and we will help you personally, as fast as we can. If you would rather not continue, or would prefer not to hear from us again about this study, just reply and say so and we will take you off the list.</p>
+
+<p>With thanks,</p>
+
+<p>Luis Augusto Rohde<br>
+on behalf of the Global ADHD Barriers to Care Study Team</p>
+
+
+=== G3 PORTUGUES ====================== logica: [grupo_repescagem]="3ptbr"
+Assunto: Você está quase no fim do questionário Delphi
+
+<p>Prezado colega,</p>
+
+<p>Você começou nosso Estudo Delphi Global sobre Barreiras ao Cuidado do TDAH e avançou bastante antes de parar. Muitas das pessoas que recebem esta mensagem estão a poucas perguntas do fim, e escrevo para pedir, pessoalmente, que você volte e conclua.</p>
+
+<p>Sei como isso acontece com facilidade: a pessoa começa um questionário, algo interrompe, ela pretende voltar, e as semanas passam. Suas respostas continuam lá, salvas exatamente onde você parou &mdash; mas elas só entram na análise quando o questionário é enviado.</p>
+
+<p>Para alguns de vocês ele está, na verdade, respondido do início ao fim, e apenas nunca foi enviado. Se for o seu caso, basta abrir o link, ir até a última página e clicar em Enviar, o que leva menos de um minuto. Para a maioria dos outros, faltam menos de dez minutos de perguntas.</p>
+
+<p>Este é o link de volta ao seu próprio questionário, no ponto em que você parou:</p>
+
+<p>[link_repescagem]</p>
+
+<p>678 pessoas de 69 países já o concluíram, muito além do que esperávamos quando começamos, e gostaríamos de ultrapassar mil. O que está surgindo é um retrato verdadeiramente global do que impede pessoas com TDAH e suas famílias de receber cuidado &mdash; e ele fica mais nítido a cada pessoa que conclui, sobretudo no caso dos países cujas vozes quase nunca chegam à literatura científica.</p>
+
+<p>Dez minutos a mais do seu tempo podem nos ajudar a compreender barreiras que moldam anos, às vezes vidas inteiras.</p>
+
+<p>Se algum problema técnico estiver impedindo você, responda a esta mensagem e nós ajudamos pessoalmente, o mais rápido que pudermos. Se preferir não continuar, ou não receber mais mensagens sobre este estudo, basta responder dizendo isso e retiramos você da lista.</p>
+
+<p>Com meus agradecimentos,</p>
+
+<p>Luis Augusto Rohde<br>
+em nome da equipe do Global ADHD Barriers to Care Study</p>
+
+
+=== G3 CHINES ========================== logica: [grupo_repescagem]="3zh"
+Assunto: 您距離德爾菲問卷的完成只差幾題
+
+<p>親愛的同仁：</p>
+
+<p>您開始填寫了我們的「全球 ADHD 照護障礙德爾菲研究」，並且已經進行到相當後面才停下來。收到這封信的人當中，有許多距離最後一題只剩幾步之遙，我想親自請您回來把它完成。</p>
+
+<p>我明白這種情況有多容易發生：開始填寫問卷，中途被打斷，心裡想著稍後再回來，然後幾個星期就過去了。您的作答仍然保留著，就停在您離開的地方 &mdash; 只是要等問卷送出之後，它們才會進入分析。</p>
+
+<p>其中有些人的問卷，其實已經從頭到尾填答完畢，只是從未送出。若您屬於這種情況，只需開啟連結、翻到最後一頁並按下「送出」，前後不到一分鐘。對多數其他人而言，剩下的題目不到十分鐘。</p>
+
+<p>以下是回到您自己那份問卷的連結，會停在您上次中斷的位置：</p>
+
+<p>[link_repescagem]</p>
+
+<p>目前已有來自 69 個國家的 678 位人士完成問卷，遠遠超出我們起初的預期，而我們希望能突破一千份。正在成形的，是一幅真正具有全球視野的圖像，呈現究竟是什麼阻礙了 ADHD 患者與其家庭獲得照護 &mdash; 每多一個人完成，這幅圖像就更清晰一分，對那些聲音極少出現在科學文獻中的國家而言尤其如此。</p>
+
+<p>您多付出的十分鐘，能幫助我們理解那些形塑數年、有時形塑一生的障礙。</p>
+
+<p>如果有技術問題讓您無法繼續，請回覆這封郵件，我們會盡快親自協助您。若您不想繼續，或不希望再收到本研究的相關訊息，也請直接回覆告知，我們會將您從名單中移除。</p>
+
+<p>謹致謝意，</p>
+
+<p>Luis Augusto Rohde<br>
+謹代表 Global ADHD Barriers to Care 研究團隊</p>
+
+
+##########################################################################
+#  G2  —  respondeu de 1 a 25 barreiras
+##########################################################################
+
+=== G2 INGLES =========================== logica: [grupo_repescagem]="2en"
+Assunto: Your answers to the Delphi questionnaire are saved
+
+<p>Dear colleague,</p>
+
+<p>Some weeks ago you began our Global Delphi Study on Barriers to ADHD Care and answered part of it before stopping. Everything you entered was saved, and I am writing to ask whether you would be willing to come back and finish.</p>
+
+<p>The link below returns you to your own questionnaire, at the point where you stopped. Nothing needs to be entered again:</p>
+
+<p>[link_repescagem]</p>
+
+<p>One thing worth saying, because it stops people more often than the length does: you are not expected to have a view on every barrier. Where an item falls outside what you know well, "N/A or outside my expertise" is a legitimate and useful answer, and choosing it costs you nothing.</p>
+
+<p>678 people from 69 countries have now completed the questionnaire &mdash; clinicians, researchers, people with ADHD, family members, advocates, educators, and people who run health systems. That is far beyond what we expected of a study we designed as something much more modest, and we would like to pass a thousand. Every completed response makes the picture more representative, and it matters most for the countries and populations that research usually leaves out.</p>
+
+<p>If a technical problem is stopping you, or the survey dropped out on you partway through, reply to this message and we will help you personally. If you would rather not continue, or would prefer not to hear from us again about this study, just reply and say so and we will take you off the list.</p>
+
+<p>With thanks for the time you have already given,</p>
+
+<p>Luis Augusto Rohde<br>
+on behalf of the Global ADHD Barriers to Care Study Team</p>
+
+
+=== G2 PORTUGUES ====================== logica: [grupo_repescagem]="2ptbr"
+Assunto: Suas respostas ao questionário Delphi estão salvas
+
+<p>Prezado colega,</p>
+
+<p>Algumas semanas atrás você começou nosso Estudo Delphi Global sobre Barreiras ao Cuidado do TDAH e respondeu parte dele antes de parar. Tudo o que você preencheu foi salvo, e escrevo para perguntar se você toparia voltar e concluir.</p>
+
+<p>O link abaixo devolve você ao seu próprio questionário, no ponto em que parou. Nada precisa ser preenchido de novo:</p>
+
+<p>[link_repescagem]</p>
+
+<p>Vale dizer uma coisa, porque ela trava as pessoas com mais frequência do que o tamanho do questionário: não se espera que você tenha opinião sobre todas as barreiras. Quando um item estiver fora do que você conhece bem, "N/A ou fora da minha área de atuação" é uma resposta legítima e útil, e escolhê-la não custa nada.</p>
+
+<p>678 pessoas de 69 países já concluíram o questionário &mdash; clínicos, pesquisadores, pessoas com TDAH, familiares, ativistas, educadores e gestores de sistemas de saúde. É muito além do que esperávamos de um estudo que desenhamos de forma bem mais modesta, e gostaríamos de ultrapassar mil. Cada resposta completa torna o retrato mais representativo, e isso pesa mais justamente nos países e populações que a pesquisa costuma deixar de fora.</p>
+
+<p>Se algum problema técnico estiver impedindo você, ou se o questionário caiu no meio do caminho, responda a esta mensagem e nós ajudamos pessoalmente. Se preferir não continuar, ou não receber mais mensagens sobre este estudo, basta responder dizendo isso e retiramos você da lista.</p>
+
+<p>Com meus agradecimentos pelo tempo que você já dedicou,</p>
+
+<p>Luis Augusto Rohde<br>
+em nome da equipe do Global ADHD Barriers to Care Study</p>
+
+
+=== G2 CHINES ========================== logica: [grupo_repescagem]="2zh"
+Assunto: 您在德爾菲問卷中的作答已經保存
+
+<p>親愛的同仁：</p>
+
+<p>幾週前，您開始填寫我們的「全球 ADHD 照護障礙德爾菲研究」，完成了一部分之後停了下來。您填寫的所有內容都已保存，我寫這封信，是想問您是否願意回來把它完成。</p>
+
+<p>下方的連結會帶您回到自己那份問卷，停在您上次中斷的位置。任何內容都不需要重新填寫：</p>
+
+<p>[link_repescagem]</p>
+
+<p>有一點值得說明，因為它讓人卻步的頻率比問卷長度還高：我們並不期待您對每一項障礙都有看法。當某一題超出您熟悉的範圍時，「不適用／超出我的專業範圍」是一個正當而且有用的答案，選它不會有任何損失。</p>
+
+<p>目前已有來自 69 個國家的 678 位人士完成問卷 &mdash; 包括臨床工作者、研究人員、ADHD 患者、家屬、倡議者、教育工作者，以及衛生體系的管理者。這遠遠超出我們對一項原本規模小得多的研究的預期，而我們希望能突破一千份。每一份完整的回覆，都讓這幅圖像更具代表性，而這對於研究通常忽略的國家與族群來說尤其重要。</p>
+
+<p>如果有技術問題讓您無法繼續，或問卷在中途中斷，請回覆這封郵件，我們會親自協助您。若您不想繼續，或不希望再收到本研究的相關訊息，也請直接回覆告知，我們會將您從名單中移除。</p>
+
+<p>感謝您已經付出的時間，</p>
+
+<p>Luis Augusto Rohde<br>
+謹代表 Global ADHD Barriers to Care 研究團隊</p>
+
+
+##########################################################################
+#  G1  —  nao respondeu nenhuma barreira
+##########################################################################
+
+=== G1 INGLES =========================== logica: [grupo_repescagem]="1en"
+Assunto: Asking for thirty minutes of your time
+
+<p>Dear colleague,</p>
+
+<p>A few weeks ago you expressed your willingness to take part in our Global Delphi Study on Barriers to ADHD Care. You opened the questionnaire but did not reach the rating questions, and I am writing once to ask whether you would still be willing to give it the time.</p>
+
+<p>Here is the link:</p>
+
+<p>[link_repescagem]</p>
+
+<p>I owe you an honest word about the length. When we designed the study we had a choice between a short questionnaire that would maximise responses and a comprehensive one built on the findings of a systematic review our team spent months conducting. We chose the comprehensive version, and the result is 51 items and closer to thirty minutes than the fifteen or twenty we first estimated. Thirty minutes is a real imposition on anyone's week, and I am aware of it.</p>
+
+<p>What we did not expect is that the world would answer anyway. 678 people from 69 countries have already given those thirty minutes, and we would like to pass a thousand. Their answers are turning into something none of us anticipated: a genuinely global account of what stops people with ADHD and their families from getting care. It matters most where evidence is thinnest &mdash; in low- and middle-income countries, where data of this kind can actually shape services, advocacy and policy, and where it almost never exists.</p>
+
+<p>Thirty minutes is a small part of one person's week. Put together with everyone else's, it may help explain barriers that shape entire lives. If you meant to take part and simply never found the moment, this may be the moment.</p>
+
+<p>If a technical problem is stopping you, reply to this message and we will help you personally. If you would prefer not to take part, or not to hear from us again about this study, just reply and say so and we will take you off the list.</p>
+
+<p>With thanks for considering it,</p>
+
+<p>Luis Augusto Rohde<br>
+on behalf of the Global ADHD Barriers to Care Study Team</p>
+
+
+=== G1 PORTUGUES ====================== logica: [grupo_repescagem]="1ptbr"
+Assunto: Um pedido de trinta minutos do seu tempo
+
+<p>Prezado colega,</p>
+
+<p>Algumas semanas atrás você manifestou disposição em participar do nosso Estudo Delphi Global sobre Barreiras ao Cuidado do TDAH. Você abriu o questionário, mas não chegou às perguntas de avaliação, e escrevo uma única vez para perguntar se ainda toparia dedicar esse tempo.</p>
+
+<p>O link é este:</p>
+
+<p>[link_repescagem]</p>
+
+<p>Devo a você uma palavra honesta sobre o tamanho. Quando desenhamos o estudo, tínhamos a escolha entre um questionário curto, que maximizaria as respostas, e um questionário abrangente, construído sobre os achados de uma revisão sistemática que nossa equipe levou meses conduzindo. Escolhemos o abrangente, e o resultado são 51 itens e algo mais perto de trinta minutos do que dos quinze ou vinte que estimamos no início. Trinta minutos são uma imposição real na semana de qualquer pessoa, e tenho consciência disso.</p>
+
+<p>O que não esperávamos é que o mundo respondesse mesmo assim. 678 pessoas de 69 países já deram esses trinta minutos, e gostaríamos de ultrapassar mil. As respostas delas estão se transformando em algo que nenhum de nós antecipava: um retrato verdadeiramente global do que impede pessoas com TDAH e suas famílias de receber cuidado. E isso pesa mais onde as evidências são mais escassas &mdash; em países de baixa e média renda, onde dados desse tipo podem de fato orientar serviços, advocacy e políticas públicas, e onde eles quase nunca existem.</p>
+
+<p>Trinta minutos são uma parte pequena da semana de uma pessoa. Somados aos de todo mundo, podem ajudar a explicar barreiras que moldam vidas inteiras. Se você pretendia participar e apenas não encontrou o momento, talvez este seja o momento.</p>
+
+<p>Se algum problema técnico estiver impedindo você, responda a esta mensagem e nós ajudamos pessoalmente. Se preferir não participar, ou não receber mais mensagens sobre este estudo, basta responder dizendo isso e retiramos você da lista.</p>
+
+<p>Com meus agradecimentos por considerar,</p>
+
+<p>Luis Augusto Rohde<br>
+em nome da equipe do Global ADHD Barriers to Care Study</p>
+
+
+=== G1 ESPANHOL ======================== logica: [grupo_repescagem]="1es"
+Assunto: Una petición de treinta minutos de su tiempo
+
+<p>Estimado colega:</p>
+
+<p>Hace algunas semanas usted manifestó su disposición a participar en nuestro Estudio Delphi Global sobre Barreras en la Atención del TDAH. Abrió el cuestionario, pero no llegó a las preguntas de evaluación, y le escribo una sola vez para preguntarle si todavía estaría dispuesto a dedicarle ese tiempo.</p>
+
+<p>Este es el enlace:</p>
+
+<p>[link_repescagem]</p>
+
+<p>Le debo una palabra honesta sobre la extensión. Cuando diseñamos el estudio teníamos que elegir entre un cuestionario breve, que habría maximizado las respuestas, y uno exhaustivo, construido a partir de los hallazgos de una revisión sistemática que nuestro equipo dedicó meses a realizar. Elegimos el exhaustivo, y el resultado son 51 ítems y un tiempo más cercano a treinta minutos que a los quince o veinte que estimamos al principio. Treinta minutos son una imposición real en la semana de cualquiera, y soy consciente de ello.</p>
+
+<p>Lo que no esperábamos es que el mundo respondiera de todos modos. 678 personas de 69 países ya han dedicado esos treinta minutos, y nos gustaría superar las mil. Sus respuestas se están convirtiendo en algo que ninguno de nosotros anticipaba: un retrato verdaderamente global de lo que impide que las personas con TDAH y sus familias reciban atención. Y eso pesa más donde la evidencia es más escasa &mdash; en los países de ingresos bajos y medios, donde datos de este tipo sí pueden orientar servicios, incidencia y políticas públicas, y donde casi nunca existen.</p>
+
+<p>Treinta minutos son una parte pequeña de la semana de una persona. Sumados a los de todos los demás, pueden ayudar a explicar barreras que moldean vidas enteras. Si tenía intención de participar y simplemente no encontró el momento, quizá este sea el momento.</p>
+
+<p>Si algún problema técnico se lo impide, responda a este mensaje y le ayudaremos personalmente. Si prefiere no participar, o no recibir más mensajes sobre este estudio, basta con responder indicándolo y lo retiraremos de la lista.</p>
+
+<p>Con mi agradecimiento por considerarlo,</p>
+
+<p>Luis Augusto Rohde<br>
+en nombre del equipo del Global ADHD Barriers to Care Study</p>
+
+
+=== G1 CHINES ========================== logica: [grupo_repescagem]="1zh"
+Assunto: 懇請您撥出三十分鐘
+
+<p>親愛的同仁：</p>
+
+<p>幾週前，您曾表示願意參與我們的「全球 ADHD 照護障礙德爾菲研究」。您開啟了問卷，但沒有進入評分的部分。我僅此一次寫信，想問您是否仍願意撥出這段時間。</p>
+
+<p>連結如下：</p>
+
+<p>[link_repescagem]</p>
+
+<p>關於問卷的長度，我應該誠實地向您說明。設計這項研究時，我們必須在兩者之間取捨：一份簡短的問卷，可以讓回覆率最高；或是一份完整的問卷，建立在我們團隊花費數月完成的系統性回顧之上。我們選擇了完整的那一份，結果是 51 個項目，所需時間比起最初估計的十五到二十分鐘，更接近三十分鐘。三十分鐘對任何人的一週來說都是實實在在的負擔，這一點我心裡清楚。</p>
+
+<p>我們沒有預料到的是，世界仍然回應了。已有來自 69 個國家的 678 位人士付出了這三十分鐘，而我們希望能突破一千份。他們的回答正在匯聚成一件我們誰都沒有預期到的事：一幅真正具有全球視野的圖像，呈現究竟是什麼讓 ADHD 患者與其家庭無法獲得照護。而這在證據最為稀薄的地方最為重要 &mdash; 在中低收入國家，這類資料確實能夠指引服務、倡議與政策，卻幾乎從不存在。</p>
+
+<p>三十分鐘只是一個人一週當中很小的一部分。但與其他所有人的時間加總起來，或許能夠解釋那些形塑一生的障礙。如果您原本就打算參與，只是始終沒有找到合適的時機，也許此刻就是那個時機。</p>
+
+<p>如果有技術問題讓您無法進行，請回覆這封郵件，我們會親自協助您。若您不願參與，或不希望再收到本研究的相關訊息，也請直接回覆告知，我們會將您從名單中移除。</p>
+
+<p>感謝您的考量，</p>
+
+<p>Luis Augusto Rohde<br>
+謹代表 Global ADHD Barriers to Care 研究團隊</p>
