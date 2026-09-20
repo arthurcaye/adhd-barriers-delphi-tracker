@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T09:46:28+00:00",
+ "generated_at": "2026-09-20T13:46:52+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -202,6 +202,19 @@
    "total": 16
   },
   {
+   "country": "Russia",
+   "cells": {
+    "Clinical practitioners": 10,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 8,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 14
+  },
+  {
    "country": "South Africa",
    "cells": {
     "Clinical practitioners": 12,
@@ -237,19 +250,6 @@
     "Equity specialists": 0,
     "Education": 0,
     "Other": 1
-   },
-   "total": 13
-  },
-  {
-   "country": "Russia",
-   "cells": {
-    "Clinical practitioners": 9,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 7,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
    },
    "total": 13
   },
@@ -905,13 +905,13 @@
   }
  ],
  "totals": {
-  "responses": 699,
+  "responses": 700,
   "countries": 68,
   "by_category": {
-   "Clinical practitioners": 523,
+   "Clinical practitioners": 524,
    "Academic researchers": 267,
    "Policy & system leaders": 51,
-   "Advocacy & lived experience": 237,
+   "Advocacy & lived experience": 238,
    "Equity specialists": 24,
    "Education": 83,
    "Other": 31
@@ -928,12 +928,12 @@
    "ko": 32,
    "zhcn": 1,
    "de": 2,
-   "ru": 12
+   "ru": 13
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 912,
+  "skipped_incomplete": 914,
   "skipped_no_country": 29,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
