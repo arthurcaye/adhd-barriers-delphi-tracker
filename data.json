@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T01:23:35+00:00",
+ "generated_at": "2026-09-21T06:36:58+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -36,14 +36,14 @@
    "country": "Spain",
    "cells": {
     "Clinical practitioners": 29,
-    "Academic researchers": 12,
+    "Academic researchers": 13,
     "Policy & system leaders": 1,
-    "Advocacy & lived experience": 17,
+    "Advocacy & lived experience": 18,
     "Equity specialists": 2,
     "Education": 9,
     "Other": 0
    },
-   "total": 49
+   "total": 50
   },
   {
    "country": "United States",
@@ -139,15 +139,15 @@
   {
    "country": "South Korea",
    "cells": {
-    "Clinical practitioners": 22,
-    "Academic researchers": 20,
+    "Clinical practitioners": 23,
+    "Academic researchers": 21,
     "Policy & system leaders": 7,
     "Advocacy & lived experience": 6,
     "Equity specialists": 1,
     "Education": 5,
     "Other": 1
    },
-   "total": 33
+   "total": 34
   },
   {
    "country": "Belgium",
@@ -905,13 +905,13 @@
   }
  ],
  "totals": {
-  "responses": 705,
+  "responses": 707,
   "countries": 68,
   "by_category": {
-   "Clinical practitioners": 527,
-   "Academic researchers": 269,
+   "Clinical practitioners": 528,
+   "Academic researchers": 271,
    "Policy & system leaders": 51,
-   "Advocacy & lived experience": 241,
+   "Advocacy & lived experience": 242,
    "Equity specialists": 24,
    "Education": 83,
    "Other": 32
@@ -919,13 +919,13 @@
   "by_language": {
    "ptbr": 108,
    "en": 295,
-   "es": 95,
+   "es": 96,
    "fr": 45,
    "ar": 6,
    "it": 32,
    "zh": 38,
    "ja": 38,
-   "ko": 32,
+   "ko": 33,
    "zhcn": 1,
    "de": 2,
    "ru": 13
@@ -933,8 +933,8 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 920,
-  "skipped_no_country": 29,
+  "skipped_incomplete": 918,
+  "skipped_no_country": 30,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
