@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T18:11:48+00:00",
+ "generated_at": "2026-09-22T18:50:35+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -308,15 +308,15 @@
   {
    "country": "Canada",
    "cells": {
-    "Clinical practitioners": 7,
+    "Clinical practitioners": 8,
     "Academic researchers": 4,
-    "Policy & system leaders": 5,
+    "Policy & system leaders": 6,
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
     "Education": 0,
     "Other": 0
    },
-   "total": 9
+   "total": 10
   },
   {
    "country": "Argentina",
@@ -931,12 +931,12 @@
   }
  ],
  "totals": {
-  "responses": 732,
+  "responses": 733,
   "countries": 70,
   "by_category": {
-   "Clinical practitioners": 545,
+   "Clinical practitioners": 546,
    "Academic researchers": 275,
-   "Policy & system leaders": 52,
+   "Policy & system leaders": 53,
    "Advocacy & lived experience": 255,
    "Equity specialists": 25,
    "Education": 91,
@@ -944,7 +944,7 @@
   },
   "by_language": {
    "ptbr": 110,
-   "en": 309,
+   "en": 310,
    "es": 99,
    "fr": 45,
    "ar": 6,
@@ -959,7 +959,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 939,
+  "skipped_incomplete": 938,
   "skipped_no_country": 30,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
