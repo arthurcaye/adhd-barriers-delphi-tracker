@@ -170,19 +170,29 @@ def link_de_retomada(record_id, instrumento, tentativas=4):
 
 
 def campos_por_instrumento(meta):
-    """Descobre, por instrumento, os campos de importancia/viabilidade/recomendacao."""
-    imp = defaultdict(set)
-    feas = defaultdict(set)
-    rec = defaultdict(set)
+    """Descobre, por instrumento, os campos de importancia/viabilidade/recomendacao.
+
+    Guarda o NOME REAL de cada campo, nao so o numero da barreira. A versao
+    anterior guardava o numero e remontava o nome como f"{prefixo}_b{n}_imp",
+    o que funciona em onze instrumentos e falha no espanhol: la os campos se
+    chamam es_b01_importance, es_b01_feasibility e es_b01_recommendation.
+    O resultado foi contar zero barreira para todo respondente em espanhol e
+    classificar os 195 como se nunca tivessem comecado.
+
+    Ler o nome do dicionario em vez de deduzi-lo elimina a classe inteira de
+    erro: se amanhã um instrumento novo usar outra convencao, isto continua
+    funcionando.
+    """
+    imp = defaultdict(dict)
+    feas = defaultdict(dict)
+    rec = defaultdict(dict)
     for f in meta:
-        nome = f["field_name"]
-        form = f["form_name"]
-        if RE_IMP.search(nome):
-            imp[form].add(RE_IMP.search(nome).group(1))
-        elif RE_FEAS.search(nome):
-            feas[form].add(RE_FEAS.search(nome).group(1))
-        elif RE_REC.search(nome):
-            rec[form].add(RE_REC.search(nome).group(1))
+        nome, form = f["field_name"], f["form_name"]
+        for regex, destino in ((RE_IMP, imp), (RE_FEAS, feas), (RE_REC, rec)):
+            m = regex.search(nome)
+            if m:
+                destino[form][m.group(1)] = nome
+                break
     return imp, feas, rec
 
 
@@ -203,11 +213,8 @@ def main():
         for c in (email, nome, f"{pref}_consent_agree", f"{form}_complete"):
             if c in nomes_campos or c.endswith("_complete"):
                 pedidos.add(c)
-        for b in imp_ids.get(form, set()):
-            for sufixo in ("imp", "feas", "rec"):
-                for variante in (f"{pref}_b{b}_{sufixo}",):
-                    if variante in nomes_campos:
-                        pedidos.add(variante)
+        for mapa in (imp_ids, feas_ids, rec_ids):
+            pedidos.update(mapa.get(form, {}).values())
 
     print(f"consultando {len(pedidos)} campos no REDCap (pode demorar)...")
     registros = ag.api({
@@ -227,15 +234,18 @@ def main():
             consent = str(rec.get(f"{pref}_consent_agree", "") or "").strip()
             completo = str(rec.get(f"{form}_complete", "") or "").strip() == "2"
 
-            ids = imp_ids.get(form, set())
-            n_imp = sum(1 for b in ids if str(rec.get(f"{pref}_b{b}_imp", "") or "").strip())
+            d_imp = imp_ids.get(form, {})
+            d_feas = feas_ids.get(form, {})
+            d_rec = rec_ids.get(form, {})
+            preenchido = lambda c: bool(str(rec.get(c, "") or "").strip())
+            n_imp = sum(1 for c in d_imp.values() if preenchido(c))
             n_trio = sum(
-                1 for b in ids
-                if str(rec.get(f"{pref}_b{b}_imp", "") or "").strip()
-                and str(rec.get(f"{pref}_b{b}_feas", "") or "").strip()
-                and str(rec.get(f"{pref}_b{b}_rec", "") or "").strip()
+                1 for b, c in d_imp.items()
+                if preenchido(c)
+                and b in d_feas and preenchido(d_feas[b])
+                and b in d_rec and preenchido(d_rec[b])
             )
-            total_b = len(ids) or 1
+            total_b = len(d_imp) or 1
 
             # a pessoa tocou neste instrumento?
             if not (email or nome or consent or n_imp):

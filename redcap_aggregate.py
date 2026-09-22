@@ -33,6 +33,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(HERE, "config.json")
 OUTPUT_PATH = os.path.join(HERE, "data.json")
 UNMAPPED_PATH = os.path.join(HERE, "paises_nao_reconhecidos.txt")
+IGNORADOS_PATH = os.path.join(HERE, "paises_ignorados.json")
+NOVOS_PATH = os.path.join(HERE, "paises_nao_triados.txt")
 
 REGIONAL_MARKER = "— resposta regional, sem país —"
 
@@ -179,7 +181,14 @@ def list_records():
 # ------------------------------------------------------------------- normaliza
 
 SPLIT_RE = re.compile(
-    r"\s*(?:[,;/|&+]|\band\b|\be\b|\by\b|\bet\b|\bو\b|、|，|und)\s*",
+    r"\s*(?:[,;/|&+]|\band\b|\be\b|\by\b|\bet\b|\bو\b|、|，|und)\s*"
+    # quebra de linha: gente digita um pais por linha na caixa de texto
+    r"|\s*[\r\n]+\s*"
+    # espaco ideografico (U+3000): separa "日本　Japan"
+    r"|\s*　\s*"
+    # espaco comum APENAS entre dois ideogramas: separa "台灣 美國" sem
+    # quebrar "United States" nem "South Africa"
+    r"|(?<=[一-鿿])\s+(?=[一-鿿])",
     re.IGNORECASE,
 )
 
@@ -468,6 +477,49 @@ def main():
                 fh.write(f"{n:>5}  {name}\n")
         print(f"    {len(unknown_countries)} grafias de pais nao reconhecidas -> "
               f"{os.path.basename(UNMAPPED_PATH)}")
+
+    # ---------------------------------------------------------------- alarme
+    # Este arquivo ja existia e ja listava "Hong Kong SAR" havia dias. Ninguem
+    # abriu, porque nada pedia que abrisse, e 26 respostas completas ficaram
+    # fora da contagem ate um painelista reclamar. Registrar em silencio nao e
+    # o mesmo que avisar.
+    ignorados = set()
+    if os.path.exists(IGNORADOS_PATH):
+        try:
+            with open(IGNORADOS_PATH, encoding="utf-8") as fh:
+                ignorados = {country_key(k)
+                             for k in json.load(fh).get("ignorados", {})}
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    novos = {nome: n for nome, n in unknown_countries.items()
+             if country_key(nome) not in ignorados}
+
+    if novos:
+        with open(NOVOS_PATH, "w", encoding="utf-8") as fh:
+            fh.write("TEXTO DE PAIS NAO RECONHECIDO E AINDA NAO TRIADO\n\n")
+            fh.write("Cada linha abaixo e uma ou mais respostas COMPLETAS que\n")
+            fh.write("nao estao entrando na contagem por pais do painel.\n\n")
+            for nome, n in sorted(novos.items(), key=lambda x: -x[1]):
+                fh.write(f"{n:>5}  {nome}\n")
+            fh.write("\nO que fazer com cada uma:\n")
+            fh.write("  e pais escrito de outro jeito -> country_aliases "
+                     "no config.json\n")
+            fh.write("  nao e pais                    -> paises_ignorados.json\n")
+        perdidas = sum(novos.values())
+        print()
+        print("  " + "!" * 62)
+        print(f"  {len(novos)} TEXTO(S) DE PAIS NAO RECONHECIDO, "
+              f"{perdidas} resposta(s) fora da contagem")
+        for nome, n in sorted(novos.items(), key=lambda x: -x[1])[:8]:
+            print(f"     {n:>3}x  {nome[:52]}")
+        print(f"  detalhe em {os.path.basename(NOVOS_PATH)}")
+        print("  " + "!" * 62)
+        if os.environ.get("GITHUB_ACTIONS"):
+            print(f"::error title=Pais nao reconhecido::{len(novos)} grafia(s) "
+                  f"nova(s), {perdidas} resposta(s) fora da contagem")
+    elif os.path.exists(NOVOS_PATH):
+        os.remove(NOVOS_PATH)
 
 
 if __name__ == "__main__":

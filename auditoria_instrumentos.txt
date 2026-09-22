@@ -1,0 +1,2192 @@
+AUDITORIA DOS INSTRUMENTOS
+
+12 instrumentos comparados contra o ingles.
+
+ATENCAO: 2 instrumento(s) no REDCap fora do config.json: language_router, repescagem
+
+delphi_round1_en              652       26             51 de 51
+delphi_round1_ptbr            648       26             51 de 51
+delphi_round1_spanish         653       27              0 de 0
+delphi_round1_fr              648       26             51 de 51
+delphi_round1_ar              648       26             51 de 51
+delphi_round1_zh              648       26             51 de 51
+delphi_round1_zh_cn           648       26             51 de 51
+delphi_round1_it              648       26             51 de 51
+delphi_round1_de              648       26             51 de 51
+delphi_round1_ja              648       26             51 de 51
+delphi_round1_ko              648       26             51 de 51
+delphi_round1_ru              594       26             51 de 51
+
+achados: 1084 altos, 0 medios, 12 baixos
+
+====================================================================
+GRAVIDADE ALTA — verificar um por um
+====================================================================
+  [ar] ar_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [ar] ar_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [ar] ar_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [ar] ar_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [de] de_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [de] de_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [de] de_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [de] de_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [fr] fr_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [fr] fr_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [fr] fr_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [fr] fr_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [it] it_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [it] it_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [it] it_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [it] it_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [ja] ja_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [ja] ja_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [ja] ja_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [ja] ja_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [ko] ko_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [ko] ko_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [ko] ko_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [ko] ko_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [ptbr] name
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [ptbr] ptbr_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [ptbr] ptbr_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [ptbr] ptbr_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [ptbr] ptbr_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [ptbr] ptbt_email
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [ptbr] ptbt_nome
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [ru] b01_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b02_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b03_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b04_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b05_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b06_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b07_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b08_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b09_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b10_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b11_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b12a_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b12b_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b12c_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b12d_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b13_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b14_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b15_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b16_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b17_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b18_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b19_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b20_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b21_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b22_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b23_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b24_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b25_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b26_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b27_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b28_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b29_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b30_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b31_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b32_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b33_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b34_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b35_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b36_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b37_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b38_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b39_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b40_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b41_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b42_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b43_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b44_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b45_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b46_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b47_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] b48_ctxspec
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [ru] bg_gender
+      campo faltando: existe em 10 dos 12 instrumentos (radio), e nao aqui
+  [ru] bg_gender_selfid
+      campo faltando: existe em 10 dos 12 instrumentos (text), e nao aqui
+  [ru] ctx_any
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [ru] ctx_items
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [ru] ru_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [ru] ru_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [ru] ru_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [ru] ru_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [ru] ru_bg_sex
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] b01_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b01_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b01_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b01_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b01_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b01_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b01_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b01_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b01_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b02_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b02_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b02_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b02_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b02_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b02_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b02_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b02_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b02_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b03_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b03_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b03_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b03_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b03_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b03_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b03_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b03_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b03_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b04_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b04_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b04_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b04_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b04_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b04_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b04_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b04_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b04_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b05_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b05_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b05_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b05_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b05_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b05_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b05_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b05_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b05_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b06_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b06_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b06_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b06_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b06_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b06_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b06_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b06_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b06_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b07_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b07_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b07_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b07_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b07_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b07_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b07_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b07_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b07_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b08_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b08_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b08_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b08_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b08_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b08_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b08_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b08_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b08_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b09_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b09_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b09_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b09_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b09_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b09_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b09_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b09_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b09_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b10_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b10_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b10_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b10_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b10_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b10_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b10_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b10_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b10_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b11_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b11_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b11_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b11_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b11_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b11_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b11_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b11_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b11_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12a_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12a_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b12a_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12a_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12a_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b12a_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12a_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12a_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12a_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12b_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12b_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b12b_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12b_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12b_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b12b_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12b_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12b_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12b_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12c_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12c_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b12c_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12c_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12c_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b12c_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12c_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12c_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12c_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12d_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12d_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b12d_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12d_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12d_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b12d_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12d_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b12d_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b12d_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b13_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b13_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b13_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b13_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b13_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b13_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b13_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b13_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b13_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b14_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b14_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b14_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b14_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b14_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b14_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b14_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b14_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b14_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b15_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b15_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b15_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b15_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b15_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b15_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b15_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b15_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b15_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b16_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b16_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b16_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b16_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b16_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b16_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b16_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b16_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b16_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b17_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b17_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b17_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b17_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b17_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b17_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b17_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b17_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b17_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b18_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b18_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b18_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b18_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b18_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b18_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b18_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b18_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b18_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b19_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b19_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b19_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b19_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b19_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b19_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b19_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b19_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b19_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b20_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b20_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b20_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b20_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b20_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b20_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b20_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b20_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b20_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b21_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b21_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b21_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b21_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b21_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b21_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b21_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b21_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b21_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b22_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b22_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b22_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b22_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b22_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b22_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b22_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b22_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b22_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b23_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b23_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b23_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b23_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b23_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b23_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b23_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b23_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b23_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b24_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b24_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b24_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b24_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b24_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b24_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b24_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b24_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b24_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b25_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b25_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b25_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b25_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b25_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b25_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b25_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b25_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b25_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b26_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b26_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b26_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b26_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b26_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b26_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b26_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b26_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b26_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b27_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b27_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b27_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b27_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b27_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b27_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b27_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b27_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b27_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b28_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b28_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b28_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b28_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b28_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b28_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b28_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b28_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b28_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b29_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b29_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b29_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b29_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b29_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b29_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b29_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b29_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b29_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b30_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b30_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b30_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b30_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b30_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b30_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b30_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b30_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b30_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b31_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b31_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b31_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b31_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b31_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b31_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b31_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b31_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b31_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b32_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b32_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b32_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b32_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b32_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b32_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b32_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b32_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b32_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b33_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b33_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b33_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b33_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b33_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b33_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b33_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b33_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b33_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b34_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b34_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b34_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b34_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b34_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b34_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b34_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b34_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b34_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b35_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b35_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b35_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b35_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b35_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b35_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b35_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b35_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b35_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b36_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b36_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b36_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b36_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b36_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b36_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b36_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b36_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b36_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b37_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b37_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b37_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b37_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b37_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b37_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b37_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b37_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b37_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b38_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b38_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b38_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b38_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b38_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b38_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b38_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b38_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b38_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b39_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b39_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b39_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b39_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b39_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b39_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b39_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b39_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b39_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b40_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b40_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b40_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b40_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b40_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b40_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b40_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b40_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b40_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b41_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b41_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b41_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b41_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b41_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b41_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b41_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b41_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b41_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b42_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b42_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b42_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b42_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b42_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b42_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b42_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b42_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b42_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b43_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b43_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b43_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b43_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b43_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b43_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b43_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b43_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b43_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b44_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b44_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b44_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b44_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b44_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b44_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b44_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b44_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b44_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b45_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b45_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b45_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b45_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b45_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b45_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b45_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b45_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b45_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b46_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b46_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b46_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b46_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b46_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b46_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b46_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b46_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b46_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b47_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b47_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b47_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b47_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b47_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b47_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b47_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b47_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b47_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b48_comment
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b48_desc
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] b48_feas
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b48_imp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b48_merge
+      campo faltando: existe em 11 dos 12 instrumentos (dropdown), e nao aqui
+  [spanish] b48_mergewhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b48_rec
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] b48_revtxt
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] b48_rmwhy
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] barrier_section_intro
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] bg_agegroups
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_countries
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [spanish] bg_expertise
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_expertise_other
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [spanish] bg_gender
+      campo faltando: existe em 10 dos 12 instrumentos (radio), e nao aqui
+  [spanish] bg_gender_selfid
+      campo faltando: existe em 10 dos 12 instrumentos (text), e nao aqui
+  [spanish] bg_lived_exp
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] bg_lived_exp_desc
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] bg_populations
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_regions
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_role
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_role_other
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [spanish] bg_settings
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] bg_settings_other
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [spanish] bg_years
+      campo faltando: existe em 11 dos 12 instrumentos (radio), e nao aqui
+  [spanish] consent_check_1
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] consent_check_2
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] consent_check_3
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] consent_check_4
+      campo faltando: existe em 11 dos 12 instrumentos (checkbox), e nao aqui
+  [spanish] consent_decline_note
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] consent_info
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] consent_signature
+      campo faltando: existe em 11 dos 12 instrumentos (text), e nao aqui
+  [spanish] consent_timestamp_note
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] definitions_text
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] es_b01_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b01_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b02_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b03_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b04_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b05_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b06_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b07_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b08_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b09_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b10_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b11_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12a_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12b_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12c_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b12d_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b13_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b14_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b15_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b16_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b17_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b18_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b19_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b20_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b21_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b22_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b23_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b24_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b25_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b26_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b27_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b28_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b29_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b30_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b31_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b32_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b33_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b34_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b35_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b36_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b37_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b38_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b39_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b40_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b41_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b42_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b43_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b44_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b45_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b46_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b47_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_feasibility
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_importance
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_item
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_merge_explanation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_merge_with
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_optional_comments
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_recommendation
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_remove_reason
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_b48_revise_suggestion
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_barrier_intro
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_closing_item_intro
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_consent_confirmations
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_consent_information
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_context_barriers
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_definitions
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_global_refinement_intro
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_missing_barriers
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_no_consent_message
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_panel_intro
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q10_settings
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q11_other_specify
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q12_populations
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q13_lived_experience
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q14_exp_desc
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q15_other_specify
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q1_expertise
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q1a_other_specify
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q2_gender
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q2_self_identify
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q3_role
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q4_role_other_specify
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q5_regions
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q6_countries
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q7_years_experience
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_q8_age_groups
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_rating_instructions
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_redcap_datetime_note
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_section_b01
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_section_b12a
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_section_b19
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_section_b31
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_section_b40
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_signature
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] es_study_info
+      campo so existe aqui: nenhum outro dos 12 instrumentos tem equivalente
+  [spanish] global_missing_barriers
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] global_priority_contexts
+      campo faltando: existe em 11 dos 12 instrumentos (notes), e nao aqui
+  [spanish] intro_text
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] profile_intro
+      campo faltando: existe em 11 dos 12 instrumentos (descriptive), e nao aqui
+  [spanish] rating_instructions_text
+      campo faltando: existe em 9 dos 12 instrumentos (descriptive), e nao aqui
+  [zh] rating_instructions_text
+      campo faltando: existe em 9 dos 12 instrumentos (descriptive), e nao aqui
+  [zh] zh_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [zh] zh_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [zh] zh_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [zh] zh_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)
+  [zh_cn] rating_instructions_text
+      campo faltando: existe em 9 dos 12 instrumentos (descriptive), e nao aqui
+  [zh_cn] zhcn_bg_expertise
+      numero de opcoes: aqui 9 opcoes (1,2,3,4,5,6,7,8,99), no ingles 8 (1,2,3,4,5,6,7,99)
+  [zh_cn] zhcn_bg_populations
+      numero de opcoes: aqui 12 opcoes (1,2,3,4,5,6,7,8,9,10,11,12), no ingles 10 (1,2,3,4,5,6,7,8,9,10)
+  [zh_cn] zhcn_bg_role
+      numero de opcoes: aqui 14 opcoes (1,2,3,4,5,6,7,8,9,10,11,12,13,99), no ingles 12 (1,2,3,4,5,6,7,8,9,10,11,99)
+  [zh_cn] zhcn_bg_settings
+      numero de opcoes: aqui 10 opcoes (1,2,3,4,5,6,7,8,9,99), no ingles 9 (1,2,3,4,5,6,7,8,99)

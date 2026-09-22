@@ -85,3 +85,22 @@ jobs:
 
           echo "nao consegui publicar depois de 5 tentativas"
           exit 1
+
+      # Este passo vem DEPOIS de publicar, de proposito. Falhar aqui marca a
+      # execucao como vermelha e o GitHub manda e-mail, que e justamente o
+      # objetivo: sem isso, um texto de pais novo so seria notado quando um
+      # painelista reclamasse de nao aparecer no painel. Como o data.json ja
+      # foi publicado acima, a falha nao atrasa o painel em nada.
+      - name: Avisar se ha texto de pais nao reconhecido e nao triado
+        run: |
+          if [ ! -s paises_nao_triados.txt ]; then
+            echo "nenhum texto de pais pendente de triagem"
+            exit 0
+          fi
+          echo "::error title=Pais nao reconhecido::respostas completas estao fora da contagem por pais"
+          cat paises_nao_triados.txt
+          echo ""
+          echo "Para resolver: se for pais escrito de outro jeito, acrescente"
+          echo "em country_aliases no config.json; se nao for pais, acrescente"
+          echo "em paises_ignorados.json. Enquanto nao fizer, este aviso repete."
+          exit 1

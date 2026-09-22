@@ -1,0 +1,26 @@
+{
+ "_comentario": [
+  "Textos que aparecem no campo de pais e que NAO sao pais, ou que nao ha",
+  "como resolver. Enquanto um texto estiver nesta lista, o agregador nao",
+  "alarma por causa dele.",
+  "",
+  "Qualquer texto nao reconhecido que NAO esteja aqui dispara um aviso e faz",
+  "a execucao do GitHub Actions falhar, para chegar um e-mail. A falha vem",
+  "DEPOIS de publicar o data.json, entao o painel continua atualizando.",
+  "",
+  "Para silenciar um texto novo ha dois caminhos, e o primeiro e quase sempre",
+  "o certo:",
+  "  1. e um pais escrito de outro jeito -> acrescente em country_aliases no",
+  "     config.json, e a resposta volta a ser contada",
+  "  2. nao e pais de verdade -> acrescente aqui, com o motivo",
+  "",
+  "Nunca ponha aqui algo que seja um pais com grafia diferente: isso silencia",
+  "o aviso e mantem a resposta fora da contagem, que e o pior dos dois mundos.",
+  "Foi exatamente assim que 26 respostas ficaram invisiveis ate 22/09/2026."
+ ],
+ "ignorados": {
+  "職能治療師": "profissao em chines (terapeuta ocupacional), nao pais",
+  "but with a global perspective": "fragmento de frase, nao pais",
+  "REPUBLIC OF": "truncado e ambiguo: pode ser Coreia, Irlanda ou Congo"
+ }
+}
