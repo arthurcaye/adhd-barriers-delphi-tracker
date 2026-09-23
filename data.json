@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T02:13:21+00:00",
+ "generated_at": "2026-09-23T07:44:46+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -189,6 +189,19 @@
    "total": 18
   },
   {
+   "country": "Australia",
+   "cells": {
+    "Clinical practitioners": 12,
+    "Academic researchers": 4,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 9,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 1
+   },
+   "total": 17
+  },
+  {
    "country": "Mexico",
    "cells": {
     "Clinical practitioners": 17,
@@ -215,19 +228,6 @@
    "total": 17
   },
   {
-   "country": "Australia",
-   "cells": {
-    "Clinical practitioners": 11,
-    "Academic researchers": 4,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 9,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 1
-   },
-   "total": 16
-  },
-  {
    "country": "Greece",
    "cells": {
     "Clinical practitioners": 12,
@@ -239,6 +239,19 @@
     "Other": 1
    },
    "total": 15
+  },
+  {
+   "country": "Hong Kong",
+   "cells": {
+    "Clinical practitioners": 8,
+    "Academic researchers": 6,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 5,
+    "Equity specialists": 1,
+    "Education": 6,
+    "Other": 0
+   },
+   "total": 14
   },
   {
    "country": "South Africa",
@@ -332,19 +345,6 @@
    "total": 9
   },
   {
-   "country": "Hong Kong",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 4,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 4,
-    "Equity specialists": 0,
-    "Education": 4,
-    "Other": 0
-   },
-   "total": 9
-  },
-  {
    "country": "Germany",
    "cells": {
     "Clinical practitioners": 2,
@@ -397,6 +397,32 @@
    "total": 8
   },
   {
+   "country": "China",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 3,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 6
+  },
+  {
+   "country": "Singapore",
+   "cells": {
+    "Clinical practitioners": 6,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 6
+  },
+  {
    "country": "Egypt",
    "cells": {
     "Clinical practitioners": 5,
@@ -414,19 +440,6 @@
    "cells": {
     "Clinical practitioners": 4,
     "Academic researchers": 3,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 5
-  },
-  {
-   "country": "Singapore",
-   "cells": {
-    "Clinical practitioners": 5,
-    "Academic researchers": 2,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
@@ -457,19 +470,6 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 0,
-    "Other": 0
-   },
-   "total": 4
-  },
-  {
-   "country": "China",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 3,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 1,
     "Other": 0
    },
    "total": 4
@@ -983,25 +983,25 @@
   }
  ],
  "totals": {
-  "responses": 764,
+  "responses": 772,
   "countries": 74,
   "by_category": {
-   "Clinical practitioners": 569,
-   "Academic researchers": 288,
-   "Policy & system leaders": 56,
-   "Advocacy & lived experience": 268,
-   "Equity specialists": 26,
-   "Education": 97,
+   "Clinical practitioners": 578,
+   "Academic researchers": 290,
+   "Policy & system leaders": 57,
+   "Advocacy & lived experience": 269,
+   "Equity specialists": 27,
+   "Education": 99,
    "Other": 41
   },
   "by_language": {
    "ptbr": 110,
-   "en": 324,
+   "en": 330,
    "es": 101,
    "fr": 45,
    "ar": 9,
    "it": 32,
-   "zh": 47,
+   "zh": 49,
    "ja": 39,
    "ko": 36,
    "zhcn": 2,
