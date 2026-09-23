@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T07:44:46+00:00",
+ "generated_at": "2026-09-23T12:19:07+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -228,6 +228,19 @@
    "total": 17
   },
   {
+   "country": "Hong Kong",
+   "cells": {
+    "Clinical practitioners": 9,
+    "Academic researchers": 6,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 6,
+    "Equity specialists": 1,
+    "Education": 6,
+    "Other": 0
+   },
+   "total": 16
+  },
+  {
    "country": "Greece",
    "cells": {
     "Clinical practitioners": 12,
@@ -241,14 +254,14 @@
    "total": 15
   },
   {
-   "country": "Hong Kong",
+   "country": "Netherlands",
    "cells": {
-    "Clinical practitioners": 8,
-    "Academic researchers": 6,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 5,
-    "Equity specialists": 1,
-    "Education": 6,
+    "Clinical practitioners": 10,
+    "Academic researchers": 7,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 6,
+    "Equity specialists": 0,
+    "Education": 1,
     "Other": 0
    },
    "total": 14
@@ -265,19 +278,6 @@
     "Other": 0
    },
    "total": 14
-  },
-  {
-   "country": "Netherlands",
-   "cells": {
-    "Clinical practitioners": 9,
-    "Academic researchers": 6,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 6,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 13
   },
   {
    "country": "Colombia",
@@ -983,20 +983,20 @@
   }
  ],
  "totals": {
-  "responses": 772,
+  "responses": 775,
   "countries": 74,
   "by_category": {
-   "Clinical practitioners": 578,
-   "Academic researchers": 290,
+   "Clinical practitioners": 580,
+   "Academic researchers": 291,
    "Policy & system leaders": 57,
-   "Advocacy & lived experience": 269,
+   "Advocacy & lived experience": 270,
    "Equity specialists": 27,
    "Education": 99,
    "Other": 41
   },
   "by_language": {
    "ptbr": 110,
-   "en": 330,
+   "en": 333,
    "es": 101,
    "fr": 45,
    "ar": 9,
@@ -1011,7 +1011,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 946,
+  "skipped_incomplete": 954,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
