@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T22:40:18+00:00",
+ "generated_at": "2026-09-24T22:48:54+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -371,6 +371,19 @@
    "total": 11
   },
   {
+   "country": "Dominican Republic",
+   "cells": {
+    "Clinical practitioners": 10,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 10
+  },
+  {
    "country": "Germany",
    "cells": {
     "Clinical practitioners": 3,
@@ -382,19 +395,6 @@
     "Other": 0
    },
    "total": 10
-  },
-  {
-   "country": "Dominican Republic",
-   "cells": {
-    "Clinical practitioners": 9,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 9
   },
   {
    "country": "Israel",
@@ -996,21 +996,21 @@
   }
  ],
  "totals": {
-  "responses": 814,
+  "responses": 815,
   "countries": 75,
   "by_category": {
-   "Clinical practitioners": 627,
+   "Clinical practitioners": 628,
    "Academic researchers": 323,
    "Policy & system leaders": 58,
    "Advocacy & lived experience": 277,
    "Equity specialists": 29,
-   "Education": 105,
+   "Education": 106,
    "Other": 42
   },
   "by_language": {
    "ptbr": 111,
    "en": 347,
-   "es": 116,
+   "es": 117,
    "fr": 45,
    "ar": 9,
    "it": 32,
@@ -1024,8 +1024,8 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 987,
-  "skipped_no_country": 4,
+  "skipped_incomplete": 988,
+  "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
