@@ -706,7 +706,13 @@
   "Черногория": "Montenegro",
   "Montenegro": "Montenegro",
   "Сербия": "Serbia",
-  "대한민군": "South Korea"
+  "대한민군": "South Korea",
+  "RD": "Dominican Republic",
+  "R.D.": "Dominican Republic",
+  "R. D.": "Dominican Republic",
+  "Rep Dominicana": "Dominican Republic",
+  "Republica Dominicana": "Dominican Republic",
+  "Rep.Dom.": "Dominican Republic"
  },
  "infer_country_from_email": false,
  "exclude_record_ids": [],
