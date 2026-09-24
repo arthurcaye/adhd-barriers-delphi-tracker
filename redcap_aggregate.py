@@ -17,11 +17,13 @@ Usage
 """
 
 import argparse
+import http.client
 import json
 import os
 import re
 import ssl
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -67,7 +69,17 @@ def ssl_context():
         return ssl.create_default_context()
 
 
-def api(payload):
+def api(payload, tentativas=4):
+    """Chamada ao REDCap, com repeticao em falha de transporte.
+
+    O dicionario de dados ja passa de 16 MB e o servidor as vezes corta a
+    resposta no meio (IncompleteRead). Nao e erro de token nem de parametro:
+    e a conexao caindo com o corpo pela metade. Sem repeticao, o script morre
+    e o trabalho inteiro se perde - foi o que aconteceu em 22/09/2026.
+
+    Repetimos so o que faz sentido repetir. Erro de permissao ou de parametro
+    (4xx) nao melhora tentando de novo, entao esses param na hora.
+    """
     url = os.environ.get("REDCAP_API_URL", "").strip()
     token = os.environ.get("REDCAP_API_TOKEN", "").strip()
     if not url or not token:
@@ -79,28 +91,52 @@ def api(payload):
     body.setdefault("returnFormat", "json")
 
     data = urllib.parse.urlencode(body).encode()
-    req = urllib.request.Request(url, data=data, method="POST")
-    req.add_header("Content-Type", "application/x-www-form-urlencoded")
 
-    try:
-        with urllib.request.urlopen(req, context=ssl_context(), timeout=180) as resp:
-            raw = resp.read().decode("utf-8")
-    except urllib.error.HTTPError as err:
-        detail = err.read().decode("utf-8", "replace")[:400]
-        if err.code == 403:
-            sys.exit(
-                "ERRO 403: o REDCap recusou o token.\n"
-                "  - confira se o token no .env esta completo e sem espacos\n"
-                "  - confira se o usuario tem permissao de API Export neste projeto\n"
-                "  - alguns REDCaps restringem a API por IP\n"
-                f"Resposta: {detail}"
-            )
-        sys.exit(f"ERRO HTTP {err.code} do REDCap:\n{detail}")
-    except urllib.error.URLError as err:
-        reason = getattr(err, "reason", err)
-        if isinstance(reason, ssl.SSLCertVerificationError):
-            sys.exit(CERT_HELP.format(ver="%d.%d" % sys.version_info[:2]))
-        sys.exit(f"ERRO de conexao com {url}\n  {reason}")
+    espera = 3
+    for tentativa in range(1, tentativas + 1):
+        req = urllib.request.Request(url, data=data, method="POST")
+        req.add_header("Content-Type", "application/x-www-form-urlencoded")
+        try:
+            with urllib.request.urlopen(req, context=ssl_context(), timeout=300) as resp:
+                raw = resp.read().decode("utf-8")
+            break
+        except (http.client.IncompleteRead, http.client.RemoteDisconnected,
+                ConnectionError, TimeoutError) as err:
+            if tentativa == tentativas:
+                sys.exit(f"ERRO de transporte apos {tentativas} tentativas: "
+                         f"{type(err).__name__}: {err}\n"
+                         f"O dicionario ja passa de 16 MB; se isto virar rotina, "
+                         f"vale pedir os campos em lotes.")
+            print(f"  conexao caiu ({type(err).__name__}), "
+                  f"tentando de novo em {espera}s "
+                  f"[{tentativa}/{tentativas - 1}]")
+            time.sleep(espera)
+            espera *= 2
+            continue
+        except urllib.error.HTTPError as err:
+            detail = err.read().decode("utf-8", "replace")[:400]
+            if err.code == 403:
+                sys.exit(
+                    "ERRO 403: o REDCap recusou o token.\n"
+                    "  - confira se o token no .env esta completo e sem espacos\n"
+                    "  - confira se o usuario tem permissao de API Export neste projeto\n"
+                    "  - alguns REDCaps restringem a API por IP\n"
+                    f"Resposta: {detail}"
+                )
+            sys.exit(f"ERRO HTTP {err.code} do REDCap:\n{detail}")
+        except urllib.error.URLError as err:
+            reason = getattr(err, "reason", err)
+            if isinstance(reason, ssl.SSLCertVerificationError):
+                sys.exit(CERT_HELP.format(ver="%d.%d" % sys.version_info[:2]))
+            # URLError tambem embrulha queda de conexao; se ainda ha tentativa,
+            # vale repetir em vez de desistir.
+            if tentativa < tentativas and isinstance(reason, (OSError, TimeoutError)):
+                print(f"  conexao caiu ({reason}), tentando de novo em {espera}s "
+                      f"[{tentativa}/{tentativas - 1}]")
+                time.sleep(espera)
+                espera *= 2
+                continue
+            sys.exit(f"ERRO de conexao com {url}\n  {reason}")
 
     try:
         return json.loads(raw)
@@ -209,10 +245,66 @@ def country_key(raw):
     return " ".join(key.split())
 
 
+# Numeracao de lista no inicio do texto: "1. Republica Dominicana", "2) Peru",
+# "3 - Chile". Aparece quando a pessoa lista varios paises um por linha e
+# numera. O split por quebra de linha separa as linhas, mas o numero fica
+# colado no nome e o alias nunca casa. Nenhum pais comeca com digito, entao
+# retirar a numeracao e seguro.
+ENUM_RE = re.compile(r"^\s*\d{1,2}\s*[.)\]\-–—:]\s*")
+
+# Paises cujo nome CONTEM uma das conjuncoes que usamos como separador.
+# Sem isto, "Bosnia and Herzegovina" vira dois paises inexistentes, e o
+# mesmo vale para "Trinidad and Tobago", "Antigua y Barbuda" etc. Sao
+# poucos e conhecidos, entao a lista e fechada. Os pares estao sem acento
+# e em minusculas porque a busca e feita sobre o texto dobrado.
+PARES_PROTEGIDOS = [
+    ("bosnia", "herzegovina"), ("bosnie", "herzegovine"),
+    ("bosnien", "herzegowina"), ("bosnia", "hercegovina"),
+    ("trinidad", "tobago"), ("trinite", "tobago"), ("trindade", "tobago"),
+    ("antigua", "barbuda"), ("antiga", "barbuda"),
+    ("saint kitts", "nevis"), ("st kitts", "nevis"),
+    ("san cristobal", "nieves"),
+    ("saint vincent", "the grenadines"), ("saint vincent", "grenadines"),
+    ("san vicente", "las granadinas"), ("san vicente", "granadinas"),
+    ("sao tome", "principe"), ("santo tome", "principe"),
+    ("turks", "caicos"),
+    ("papua", "new guinea"),
+]
+_CONJ = r"\s*(?:and|y|e|et|und|&|,|-|–|—)\s*"
+PROTEGIDOS_RE = [re.compile(a + _CONJ + b, re.IGNORECASE)
+                 for a, b in PARES_PROTEGIDOS]
+
+
+def _dobra(texto):
+    """Minusculas sem acento PRESERVANDO o comprimento.
+
+    strip_accents usa NFKD e pode mudar o numero de caracteres, o que
+    desalinharia os indices. Aqui cada caractere vira exatamente um.
+    """
+    return "".join(unicodedata.normalize("NFD", ch)[0] for ch in texto).lower()
+
+
 def split_countries(raw):
     """O campo e texto livre e pede 'o pais ou paises'. Devolve a lista."""
-    parts = [p.strip(" .\t") for p in SPLIT_RE.split(raw or "")]
-    return [p for p in parts if len(p) > 1]
+    texto = raw or ""
+    # protege os nomes compostos trocando-os por um marcador sem separadores
+    guardados = []
+    dobrado = _dobra(texto)
+    for rx in PROTEGIDOS_RE:
+        for m in reversed(list(rx.finditer(dobrado))):
+            i, f = m.span()
+            guardados.append(texto[i:f])
+            marca = "\x00%d\x00" % (len(guardados) - 1)
+            texto = texto[:i] + marca + texto[f:]
+            dobrado = dobrado[:i] + marca + dobrado[f:]
+
+    partes = [ENUM_RE.sub("", p).strip(" .\t") for p in SPLIT_RE.split(texto)]
+
+    def devolve(p):
+        return re.sub(r"\x00(\d+)\x00",
+                      lambda m: guardados[int(m.group(1))], p)
+
+    return [devolve(p) for p in partes if len(p) > 1]
 
 
 # ccTLDs mais provaveis neste estudo. Fica de fora .com/.org/.net/.edu porque
