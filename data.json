@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T15:42:41+00:00",
+ "generated_at": "2026-09-24T15:53:29+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -412,7 +412,7 @@
   {
    "country": "Dominican Republic",
    "cells": {
-    "Clinical practitioners": 6,
+    "Clinical practitioners": 7,
     "Academic researchers": 1,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
@@ -420,7 +420,7 @@
     "Education": 0,
     "Other": 0
    },
-   "total": 6
+   "total": 7
   },
   {
    "country": "Singapore",
@@ -996,10 +996,10 @@
   }
  ],
  "totals": {
-  "responses": 807,
+  "responses": 808,
   "countries": 75,
   "by_category": {
-   "Clinical practitioners": 613,
+   "Clinical practitioners": 614,
    "Academic researchers": 313,
    "Policy & system leaders": 58,
    "Advocacy & lived experience": 276,
@@ -1010,7 +1010,7 @@
   "by_language": {
    "ptbr": 111,
    "en": 345,
-   "es": 111,
+   "es": 112,
    "fr": 45,
    "ar": 9,
    "it": 32,
@@ -1025,7 +1025,7 @@
  "notes": {
   "only_complete": true,
   "skipped_incomplete": 979,
-  "skipped_no_country": 4,
+  "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
