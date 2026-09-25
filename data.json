@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T17:07:31+00:00",
+ "generated_at": "2026-09-25T20:22:34+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -930,6 +930,19 @@
    "total": 1
   },
   {
+   "country": "Saudi Arabia",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Serbia",
    "cells": {
     "Clinical practitioners": 1,
@@ -1048,11 +1061,11 @@
   }
  ],
  "totals": {
-  "responses": 834,
-  "countries": 79,
+  "responses": 835,
+  "countries": 80,
   "by_category": {
    "Clinical practitioners": 647,
-   "Academic researchers": 335,
+   "Academic researchers": 336,
    "Policy & system leaders": 60,
    "Advocacy & lived experience": 282,
    "Equity specialists": 30,
@@ -1061,7 +1074,7 @@
   },
   "by_language": {
    "ptbr": 112,
-   "en": 358,
+   "en": 359,
    "es": 119,
    "fr": 45,
    "ar": 10,
@@ -1077,7 +1090,7 @@
  "notes": {
   "only_complete": true,
   "skipped_incomplete": 997,
-  "skipped_no_country": 4,
+  "skipped_no_country": 5,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
