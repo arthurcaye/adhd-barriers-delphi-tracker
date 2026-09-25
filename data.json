@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T12:11:39+00:00",
+ "generated_at": "2026-09-25T15:41:31+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -943,6 +943,19 @@
    "total": 1
   },
   {
+   "country": "Sri Lanka",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Sudan",
    "cells": {
     "Clinical practitioners": 1,
@@ -1035,20 +1048,20 @@
   }
  ],
  "totals": {
-  "responses": 832,
-  "countries": 78,
+  "responses": 833,
+  "countries": 79,
   "by_category": {
-   "Clinical practitioners": 645,
-   "Academic researchers": 333,
-   "Policy & system leaders": 59,
-   "Advocacy & lived experience": 281,
+   "Clinical practitioners": 646,
+   "Academic researchers": 334,
+   "Policy & system leaders": 60,
+   "Advocacy & lived experience": 282,
    "Equity specialists": 30,
    "Education": 108,
    "Other": 42
   },
   "by_language": {
    "ptbr": 112,
-   "en": 356,
+   "en": 357,
    "es": 119,
    "fr": 45,
    "ar": 10,
@@ -1063,8 +1076,8 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 993,
-  "skipped_no_country": 3,
+  "skipped_incomplete": 995,
+  "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
