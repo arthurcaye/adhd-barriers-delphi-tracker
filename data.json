@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T06:35:03+00:00",
+ "generated_at": "2026-09-25T11:06:26+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -22,28 +22,41 @@
   {
    "country": "Brazil",
    "cells": {
-    "Clinical practitioners": 35,
-    "Academic researchers": 18,
+    "Clinical practitioners": 36,
+    "Academic researchers": 19,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 41,
     "Equity specialists": 5,
     "Education": 21,
     "Other": 8
    },
-   "total": 81
+   "total": 82
   },
   {
    "country": "Spain",
    "cells": {
-    "Clinical practitioners": 32,
-    "Academic researchers": 16,
+    "Clinical practitioners": 33,
+    "Academic researchers": 17,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 21,
     "Equity specialists": 2,
     "Education": 9,
     "Other": 0
    },
-   "total": 55
+   "total": 56
+  },
+  {
+   "country": "United States",
+   "cells": {
+    "Clinical practitioners": 34,
+    "Academic researchers": 29,
+    "Policy & system leaders": 3,
+    "Advocacy & lived experience": 19,
+    "Equity specialists": 3,
+    "Education": 5,
+    "Other": 3
+   },
+   "total": 52
   },
   {
    "country": "Japan",
@@ -55,19 +68,6 @@
     "Equity specialists": 0,
     "Education": 3,
     "Other": 0
-   },
-   "total": 51
-  },
-  {
-   "country": "United States",
-   "cells": {
-    "Clinical practitioners": 33,
-    "Academic researchers": 28,
-    "Policy & system leaders": 3,
-    "Advocacy & lived experience": 19,
-    "Equity specialists": 3,
-    "Education": 5,
-    "Other": 3
    },
    "total": 51
   },
@@ -178,7 +178,7 @@
   {
    "country": "Hong Kong",
    "cells": {
-    "Clinical practitioners": 14,
+    "Clinical practitioners": 15,
     "Academic researchers": 9,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 6,
@@ -186,7 +186,7 @@
     "Education": 7,
     "Other": 0
    },
-   "total": 22
+   "total": 23
   },
   {
    "country": "Australia",
@@ -233,12 +233,12 @@
     "Clinical practitioners": 12,
     "Academic researchers": 0,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 10,
+    "Advocacy & lived experience": 11,
     "Equity specialists": 0,
     "Education": 1,
     "Other": 1
    },
-   "total": 17
+   "total": 18
   },
   {
    "country": "Argentina",
@@ -306,6 +306,19 @@
    "total": 13
   },
   {
+   "country": "Peru",
+   "cells": {
+    "Clinical practitioners": 12,
+    "Academic researchers": 8,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 1,
+    "Education": 0,
+    "Other": 1
+   },
+   "total": 13
+  },
+  {
    "country": "Colombia",
    "cells": {
     "Clinical practitioners": 11,
@@ -341,19 +354,6 @@
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
-   },
-   "total": 12
-  },
-  {
-   "country": "Peru",
-   "cells": {
-    "Clinical practitioners": 11,
-    "Academic researchers": 7,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 1,
-    "Education": 0,
-    "Other": 1
    },
    "total": 12
   },
@@ -501,6 +501,19 @@
    "total": 5
   },
   {
+   "country": "Romania",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Finland",
    "cells": {
     "Clinical practitioners": 2,
@@ -527,19 +540,6 @@
    "total": 3
   },
   {
-   "country": "Romania",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
    "country": "Sweden",
    "cells": {
     "Clinical practitioners": 2,
@@ -549,6 +549,19 @@
     "Equity specialists": 0,
     "Education": 0,
     "Other": 1
+   },
+   "total": 3
+  },
+  {
+   "country": "Uganda",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
    },
    "total": 3
   },
@@ -663,19 +676,6 @@
     "Academic researchers": 0,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Uganda",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
@@ -834,6 +834,19 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
     "Education": 1,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
+   "country": "Kosovo",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
     "Other": 0
    },
    "total": 1
@@ -1022,21 +1035,21 @@
   }
  ],
  "totals": {
-  "responses": 826,
-  "countries": 77,
+  "responses": 832,
+  "countries": 78,
   "by_category": {
-   "Clinical practitioners": 637,
-   "Academic researchers": 326,
+   "Clinical practitioners": 645,
+   "Academic researchers": 333,
    "Policy & system leaders": 59,
-   "Advocacy & lived experience": 280,
+   "Advocacy & lived experience": 281,
    "Equity specialists": 30,
    "Education": 108,
    "Other": 42
   },
   "by_language": {
    "ptbr": 112,
-   "en": 352,
-   "es": 118,
+   "en": 356,
+   "es": 119,
    "fr": 45,
    "ar": 10,
    "it": 32,
@@ -1045,12 +1058,12 @@
    "ko": 36,
    "zhcn": 2,
    "de": 4,
-   "ru": 16
+   "ru": 17
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 987,
+  "skipped_incomplete": 991,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
