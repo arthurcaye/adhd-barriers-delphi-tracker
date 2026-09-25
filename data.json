@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T03:49:42+00:00",
+ "generated_at": "2026-09-25T06:35:03+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -46,6 +46,19 @@
    "total": 55
   },
   {
+   "country": "Japan",
+   "cells": {
+    "Clinical practitioners": 47,
+    "Academic researchers": 17,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 9,
+    "Equity specialists": 0,
+    "Education": 3,
+    "Other": 0
+   },
+   "total": 51
+  },
+  {
    "country": "United States",
    "cells": {
     "Clinical practitioners": 33,
@@ -57,19 +70,6 @@
     "Other": 3
    },
    "total": 51
-  },
-  {
-   "country": "Japan",
-   "cells": {
-    "Clinical practitioners": 46,
-    "Academic researchers": 17,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 9,
-    "Equity specialists": 0,
-    "Education": 3,
-    "Other": 0
-   },
-   "total": 50
   },
   {
    "country": "Taiwan",
@@ -178,7 +178,7 @@
   {
    "country": "Hong Kong",
    "cells": {
-    "Clinical practitioners": 13,
+    "Clinical practitioners": 14,
     "Academic researchers": 9,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 6,
@@ -186,20 +186,20 @@
     "Education": 7,
     "Other": 0
    },
-   "total": 21
+   "total": 22
   },
   {
    "country": "Australia",
    "cells": {
-    "Clinical practitioners": 13,
+    "Clinical practitioners": 14,
     "Academic researchers": 5,
     "Policy & system leaders": 1,
-    "Advocacy & lived experience": 9,
+    "Advocacy & lived experience": 10,
     "Equity specialists": 0,
     "Education": 1,
     "Other": 1
    },
-   "total": 18
+   "total": 19
   },
   {
    "country": "Mexico",
@@ -410,6 +410,19 @@
    "total": 8
   },
   {
+   "country": "Nigeria",
+   "cells": {
+    "Clinical practitioners": 7,
+    "Academic researchers": 5,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 8
+  },
+  {
    "country": "China",
    "cells": {
     "Clinical practitioners": 4,
@@ -418,19 +431,6 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 1,
-    "Other": 0
-   },
-   "total": 7
-  },
-  {
-   "country": "Nigeria",
-   "cells": {
-    "Clinical practitioners": 6,
-    "Academic researchers": 5,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
     "Other": 0
    },
    "total": 7
@@ -709,6 +709,19 @@
    "total": 1
   },
   {
+   "country": "Bangladesh",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Bolivia",
    "cells": {
     "Clinical practitioners": 1,
@@ -808,6 +821,19 @@
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
+   "country": "Jordan",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 1,
+    "Education": 1,
     "Other": 0
    },
    "total": 1
@@ -996,26 +1022,26 @@
   }
  ],
  "totals": {
-  "responses": 820,
-  "countries": 75,
+  "responses": 826,
+  "countries": 77,
   "by_category": {
-   "Clinical practitioners": 631,
-   "Academic researchers": 324,
-   "Policy & system leaders": 58,
-   "Advocacy & lived experience": 278,
-   "Equity specialists": 29,
-   "Education": 107,
+   "Clinical practitioners": 637,
+   "Academic researchers": 326,
+   "Policy & system leaders": 59,
+   "Advocacy & lived experience": 280,
+   "Equity specialists": 30,
+   "Education": 108,
    "Other": 42
   },
   "by_language": {
    "ptbr": 112,
-   "en": 348,
+   "en": 352,
    "es": 118,
    "fr": 45,
-   "ar": 9,
+   "ar": 10,
    "it": 32,
    "zh": 52,
-   "ja": 46,
+   "ja": 47,
    "ko": 36,
    "zhcn": 2,
    "de": 4,
@@ -1024,7 +1050,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 989,
+  "skipped_incomplete": 987,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
