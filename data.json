@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-25T01:39:33+00:00",
+ "generated_at": "2026-09-25T03:49:42+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -61,15 +61,15 @@
   {
    "country": "Japan",
    "cells": {
-    "Clinical practitioners": 45,
-    "Academic researchers": 16,
+    "Clinical practitioners": 46,
+    "Academic researchers": 17,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 9,
     "Equity specialists": 0,
     "Education": 3,
     "Other": 0
    },
-   "total": 48
+   "total": 50
   },
   {
    "country": "Taiwan",
@@ -493,12 +493,12 @@
     "Clinical practitioners": 4,
     "Academic researchers": 1,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
+    "Advocacy & lived experience": 2,
     "Equity specialists": 0,
-    "Education": 0,
+    "Education": 1,
     "Other": 0
    },
-   "total": 4
+   "total": 5
   },
   {
    "country": "Finland",
@@ -564,6 +564,19 @@
     "Other": 0
    },
    "total": 3
+  },
+  {
+   "country": "Angola",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 2
   },
   {
    "country": "Denmark",
@@ -691,19 +704,6 @@
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
-   "country": "Angola",
-   "cells": {
-    "Clinical practitioners": 0,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 1,
     "Other": 0
    },
    "total": 1
@@ -996,26 +996,26 @@
   }
  ],
  "totals": {
-  "responses": 816,
+  "responses": 820,
   "countries": 75,
   "by_category": {
-   "Clinical practitioners": 629,
-   "Academic researchers": 323,
+   "Clinical practitioners": 631,
+   "Academic researchers": 324,
    "Policy & system leaders": 58,
-   "Advocacy & lived experience": 277,
+   "Advocacy & lived experience": 278,
    "Equity specialists": 29,
-   "Education": 106,
+   "Education": 107,
    "Other": 42
   },
   "by_language": {
-   "ptbr": 111,
-   "en": 347,
+   "ptbr": 112,
+   "en": 348,
    "es": 118,
    "fr": 45,
    "ar": 9,
    "it": 32,
    "zh": 52,
-   "ja": 44,
+   "ja": 46,
    "ko": 36,
    "zhcn": 2,
    "de": 4,
@@ -1024,7 +1024,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 988,
+  "skipped_incomplete": 989,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
