@@ -24,6 +24,9 @@ repescagem_G2_de_1_a_25.csv
 repescagem_G3_de_26_em_diante.csv
 repescagem_links_cache.json
 repescagem_para_importar.csv
+*_cruzado.csv
+*_convidar.csv
+mede_repescagem_detalhe.csv
 paises_inferidos.txt
 paises_nao_reconhecidos.txt
 
