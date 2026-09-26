@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T11:45:52+00:00",
+ "generated_at": "2026-09-26T14:27:33+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -527,6 +527,19 @@
    "total": 4
   },
   {
+   "country": "Uganda",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 2,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Finland",
    "cells": {
     "Clinical practitioners": 2,
@@ -549,19 +562,6 @@
     "Equity specialists": 1,
     "Education": 0,
     "Other": 1
-   },
-   "total": 3
-  },
-  {
-   "country": "Uganda",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 2,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
    },
    "total": 3
   },
@@ -1074,20 +1074,20 @@
   }
  ],
  "totals": {
-  "responses": 840,
+  "responses": 841,
   "countries": 81,
   "by_category": {
    "Clinical practitioners": 652,
    "Academic researchers": 338,
    "Policy & system leaders": 60,
-   "Advocacy & lived experience": 283,
+   "Advocacy & lived experience": 284,
    "Equity specialists": 30,
-   "Education": 109,
+   "Education": 110,
    "Other": 42
   },
   "by_language": {
    "ptbr": 112,
-   "en": 360,
+   "en": 361,
    "es": 120,
    "fr": 45,
    "ar": 11,
@@ -1102,7 +1102,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1005,
+  "skipped_incomplete": 1006,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
