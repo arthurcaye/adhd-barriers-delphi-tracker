@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-27T20:04:23+00:00",
+ "generated_at": "2026-09-27T20:11:22+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -761,6 +761,19 @@
    "total": 1
   },
   {
+   "country": "Azerbaijan",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Bangladesh",
    "cells": {
     "Clinical practitioners": 1,
@@ -925,6 +938,19 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
     "Education": 1,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
+   "country": "Kazakhstan",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
     "Other": 0
    },
    "total": 1
@@ -1165,11 +1191,11 @@
   }
  ],
  "totals": {
-  "responses": 871,
-  "countries": 88,
+  "responses": 873,
+  "countries": 90,
   "by_category": {
-   "Clinical practitioners": 674,
-   "Academic researchers": 350,
+   "Clinical practitioners": 675,
+   "Academic researchers": 352,
    "Policy & system leaders": 61,
    "Advocacy & lived experience": 292,
    "Equity specialists": 30,
@@ -1178,7 +1204,7 @@
   },
   "by_language": {
    "ptbr": 117,
-   "en": 374,
+   "en": 375,
    "es": 124,
    "fr": 48,
    "ar": 12,
@@ -1188,13 +1214,13 @@
    "ko": 36,
    "zhcn": 2,
    "de": 4,
-   "ru": 17
+   "ru": 18
   }
  },
  "notes": {
   "only_complete": true,
   "skipped_incomplete": 1010,
-  "skipped_no_country": 5,
+  "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
