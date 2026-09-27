@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-27T12:40:53+00:00",
+ "generated_at": "2026-09-27T13:00:04+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -982,6 +982,19 @@
    "total": 1
   },
   {
+   "country": "Moldova",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Montenegro",
    "cells": {
     "Clinical practitioners": 1,
@@ -1113,11 +1126,11 @@
   }
  ],
  "totals": {
-  "responses": 860,
-  "countries": 84,
+  "responses": 861,
+  "countries": 85,
   "by_category": {
    "Clinical practitioners": 667,
-   "Academic researchers": 344,
+   "Academic researchers": 345,
    "Policy & system leaders": 61,
    "Advocacy & lived experience": 289,
    "Equity specialists": 30,
@@ -1126,7 +1139,7 @@
   },
   "by_language": {
    "ptbr": 115,
-   "en": 368,
+   "en": 369,
    "es": 123,
    "fr": 48,
    "ar": 11,
@@ -1142,7 +1155,7 @@
  "notes": {
   "only_complete": true,
   "skipped_incomplete": 1007,
-  "skipped_no_country": 4,
+  "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
