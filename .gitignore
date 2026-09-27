@@ -27,6 +27,8 @@ repescagem_para_importar.csv
 *_cruzado.csv
 *_convidar.csv
 mede_repescagem_detalhe.csv
+dicionario/
+backup/
 paises_inferidos.txt
 paises_nao_reconhecidos.txt
 
