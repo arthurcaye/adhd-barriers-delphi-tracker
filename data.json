@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T13:31:53+00:00",
+ "generated_at": "2026-09-28T13:34:59+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -774,6 +774,19 @@
    "total": 1
   },
   {
+   "country": "American Samoa",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Andorra",
    "cells": {
     "Clinical practitioners": 1,
@@ -1204,10 +1217,10 @@
   }
  ],
  "totals": {
-  "responses": 892,
-  "countries": 91,
+  "responses": 893,
+  "countries": 92,
   "by_category": {
-   "Clinical practitioners": 687,
+   "Clinical practitioners": 688,
    "Academic researchers": 360,
    "Policy & system leaders": 63,
    "Advocacy & lived experience": 299,
@@ -1217,7 +1230,7 @@
   },
   "by_language": {
    "ptbr": 119,
-   "en": 387,
+   "en": 388,
    "es": 125,
    "fr": 48,
    "ar": 13,
@@ -1233,7 +1246,7 @@
  "notes": {
   "only_complete": true,
   "skipped_incomplete": 1022,
-  "skipped_no_country": 4,
+  "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 7
