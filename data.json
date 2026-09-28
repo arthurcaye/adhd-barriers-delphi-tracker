@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T00:13:08+00:00",
+ "generated_at": "2026-09-28T00:42:54+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -61,15 +61,15 @@
   {
    "country": "United States",
    "cells": {
-    "Clinical practitioners": 34,
-    "Academic researchers": 29,
+    "Clinical practitioners": 35,
+    "Academic researchers": 30,
     "Policy & system leaders": 3,
     "Advocacy & lived experience": 19,
     "Equity specialists": 3,
     "Education": 5,
     "Other": 3
    },
-   "total": 52
+   "total": 53
   },
   {
    "country": "Taiwan",
@@ -566,6 +566,19 @@
    "total": 3
   },
   {
+   "country": "Saudi Arabia",
+   "cells": {
+    "Clinical practitioners": 2,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "United Arab Emirates",
    "cells": {
     "Clinical practitioners": 3,
@@ -691,19 +704,6 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 1,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Saudi Arabia",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
     "Other": 0
    },
    "total": 2
@@ -1191,12 +1191,12 @@
   }
  ],
  "totals": {
-  "responses": 878,
+  "responses": 879,
   "countries": 90,
   "by_category": {
-   "Clinical practitioners": 678,
-   "Academic researchers": 354,
-   "Policy & system leaders": 62,
+   "Clinical practitioners": 680,
+   "Academic researchers": 356,
+   "Policy & system leaders": 63,
    "Advocacy & lived experience": 293,
    "Equity specialists": 30,
    "Education": 116,
@@ -1204,7 +1204,7 @@
   },
   "by_language": {
    "ptbr": 119,
-   "en": 377,
+   "en": 378,
    "es": 124,
    "fr": 48,
    "ar": 13,
@@ -1219,7 +1219,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1009,
+  "skipped_incomplete": 1008,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
