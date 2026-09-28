@@ -478,14 +478,22 @@ def main():
                     if require_known:
                         continue          # texto nao reconhecido nao vira pais
                     name = piece.title()
-                if name == REGIONAL_MARKER:
-                    # "Europe", "Latin America" etc: a pessoa respondeu uma
-                    # regiao, nao um pais. Nao vira linha na tabela - se ela
-                    # tambem citou um pais de verdade no mesmo campo, ele ja
-                    # foi capturado separadamente; se so citou a regiao, o
-                    # registro fica sem pais (nao aparece no painel).
-                    continue
-                countries.append(name)
+                # um alias pode mapear para mais de um pais, separados por
+                # "|" (ex: campo "Egito - Arabia Saudita" que o separador
+                # normal nao quebra em duas partes): conta a pessoa uma vez
+                # so (per_language/total abaixo), mas credita os paises
+                # citados. Sem "|" no valor, o split devolve so [name],
+                # igual a antes.
+                for nome_pais in name.split("|"):
+                    if nome_pais == REGIONAL_MARKER:
+                        # "Europe", "Latin America" etc: a pessoa respondeu
+                        # uma regiao, nao um pais. Nao vira linha na tabela -
+                        # se ela tambem citou um pais de verdade no mesmo
+                        # campo, ele ja foi capturado separadamente; se so
+                        # citou a regiao, o registro fica sem pais (nao
+                        # aparece no painel).
+                        continue
+                    countries.append(nome_pais)
             countries = list(dict.fromkeys(countries))
             if not countries:
                 skipped_no_country += 1
