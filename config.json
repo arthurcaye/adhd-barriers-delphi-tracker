@@ -866,7 +866,8 @@
   "Republica Dominicana": "Dominican Republic",
   "Rep.Dom.": "Dominican Republic",
   "اللملكة العربية السعودية": "Saudi Arabia",
-  "المملكة العربية السعودية": "Saudi Arabia"
+  "المملكة العربية السعودية": "Saudi Arabia",
+  "مصر - اللملكة العربية السعودية": "Egypt"
  },
  "infer_country_from_email": false,
  "exclude_record_ids": [],
