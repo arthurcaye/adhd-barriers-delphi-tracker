@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29T15:11:29+00:00",
+ "generated_at": "2026-09-29T19:58:31+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -25,12 +25,12 @@
     "Clinical practitioners": 40,
     "Academic researchers": 20,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 42,
+    "Advocacy & lived experience": 43,
     "Equity specialists": 5,
-    "Education": 22,
+    "Education": 23,
     "Other": 8
    },
-   "total": 88
+   "total": 89
   },
   {
    "country": "Japan",
@@ -100,28 +100,28 @@
   {
    "country": "United Kingdom",
    "cells": {
-    "Clinical practitioners": 25,
-    "Academic researchers": 22,
+    "Clinical practitioners": 26,
+    "Academic researchers": 23,
     "Policy & system leaders": 2,
     "Advocacy & lived experience": 22,
     "Equity specialists": 1,
     "Education": 4,
     "Other": 3
    },
-   "total": 44
+   "total": 45
   },
   {
    "country": "France",
    "cells": {
     "Clinical practitioners": 32,
-    "Academic researchers": 9,
+    "Academic researchers": 10,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 10,
     "Equity specialists": 0,
     "Education": 2,
     "Other": 7
    },
-   "total": 42
+   "total": 43
   },
   {
    "country": "South Korea",
@@ -605,6 +605,19 @@
    "total": 3
   },
   {
+   "country": "Palestine",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 2,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 1,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Saudi Arabia",
    "cells": {
     "Clinical practitioners": 2,
@@ -696,6 +709,19 @@
    "total": 2
   },
   {
+   "country": "Guatemala",
+   "cells": {
+    "Clinical practitioners": 2,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 2
+  },
+  {
    "country": "Kazakhstan",
    "cells": {
     "Clinical practitioners": 0,
@@ -727,19 +753,6 @@
     "Clinical practitioners": 2,
     "Academic researchers": 0,
     "Policy & system leaders": 1,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Palestine",
-   "cells": {
-    "Clinical practitioners": 0,
-    "Academic researchers": 2,
-    "Policy & system leaders": 0,
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 0,
@@ -969,19 +982,6 @@
    "total": 1
   },
   {
-   "country": "Guatemala",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
    "country": "Guinea-Bissau",
    "cells": {
     "Clinical practitioners": 0,
@@ -1138,6 +1138,19 @@
    "total": 1
   },
   {
+   "country": "Slovenia",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Sri Lanka",
    "cells": {
     "Clinical practitioners": 1,
@@ -1256,23 +1269,23 @@
   }
  ],
  "totals": {
-  "responses": 921,
-  "countries": 95,
+  "responses": 927,
+  "countries": 96,
   "by_category": {
-   "Clinical practitioners": 711,
-   "Academic researchers": 367,
-   "Policy & system leaders": 64,
-   "Advocacy & lived experience": 304,
-   "Equity specialists": 30,
-   "Education": 124,
+   "Clinical practitioners": 714,
+   "Academic researchers": 371,
+   "Policy & system leaders": 65,
+   "Advocacy & lived experience": 305,
+   "Equity specialists": 31,
+   "Education": 125,
    "Other": 45
   },
   "by_language": {
-   "ptbr": 120,
-   "en": 408,
-   "es": 125,
-   "fr": 48,
-   "ar": 15,
+   "ptbr": 121,
+   "en": 410,
+   "es": 126,
+   "fr": 49,
+   "ar": 16,
    "it": 32,
    "zh": 54,
    "ja": 55,
@@ -1284,7 +1297,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1041,
+  "skipped_incomplete": 1040,
   "skipped_no_country": 5,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
