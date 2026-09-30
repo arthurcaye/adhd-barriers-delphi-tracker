@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T19:26:09+00:00",
+ "generated_at": "2026-09-30T20:09:44+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -1138,6 +1138,19 @@
    "total": 1
   },
   {
+   "country": "Panama",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Poland",
    "cells": {
     "Clinical practitioners": 1,
@@ -1295,10 +1308,10 @@
   }
  ],
  "totals": {
-  "responses": 944,
-  "countries": 98,
+  "responses": 945,
+  "countries": 99,
   "by_category": {
-   "Clinical practitioners": 726,
+   "Clinical practitioners": 727,
    "Academic researchers": 379,
    "Policy & system leaders": 69,
    "Advocacy & lived experience": 310,
@@ -1309,7 +1322,7 @@
   "by_language": {
    "ptbr": 121,
    "en": 419,
-   "es": 126,
+   "es": 127,
    "fr": 49,
    "ar": 16,
    "it": 33,
