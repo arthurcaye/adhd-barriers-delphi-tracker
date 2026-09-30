@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T14:01:59+00:00",
+ "generated_at": "2026-09-30T15:16:35+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -139,15 +139,15 @@
   {
    "country": "Italy",
    "cells": {
-    "Clinical practitioners": 17,
-    "Academic researchers": 6,
+    "Clinical practitioners": 18,
+    "Academic researchers": 7,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 15,
     "Equity specialists": 0,
     "Education": 5,
     "Other": 3
    },
-   "total": 35
+   "total": 36
   },
   {
    "country": "Turkey",
@@ -1295,11 +1295,11 @@
   }
  ],
  "totals": {
-  "responses": 943,
+  "responses": 944,
   "countries": 98,
   "by_category": {
-   "Clinical practitioners": 725,
-   "Academic researchers": 378,
+   "Clinical practitioners": 726,
+   "Academic researchers": 379,
    "Policy & system leaders": 69,
    "Advocacy & lived experience": 310,
    "Equity specialists": 31,
@@ -1312,7 +1312,7 @@
    "es": 126,
    "fr": 49,
    "ar": 16,
-   "it": 32,
+   "it": 33,
    "zh": 55,
    "ja": 60,
    "ko": 38,
