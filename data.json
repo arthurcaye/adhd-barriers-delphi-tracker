@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T09:13:41+00:00",
+ "generated_at": "2026-10-01T12:55:10+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -553,6 +553,19 @@
    "total": 4
   },
   {
+   "country": "Slovenia",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 1,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Uganda",
    "cells": {
     "Clinical practitioners": 3,
@@ -622,19 +635,6 @@
    "cells": {
     "Clinical practitioners": 2,
     "Academic researchers": 2,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Slovenia",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 1,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
@@ -1308,20 +1308,20 @@
   }
  ],
  "totals": {
-  "responses": 950,
+  "responses": 951,
   "countries": 99,
   "by_category": {
-   "Clinical practitioners": 731,
+   "Clinical practitioners": 732,
    "Academic researchers": 379,
    "Policy & system leaders": 70,
-   "Advocacy & lived experience": 312,
+   "Advocacy & lived experience": 313,
    "Equity specialists": 31,
    "Education": 126,
    "Other": 45
   },
   "by_language": {
    "ptbr": 121,
-   "en": 422,
+   "en": 423,
    "es": 127,
    "fr": 49,
    "ar": 16,
@@ -1336,7 +1336,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1068,
+  "skipped_incomplete": 1072,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
