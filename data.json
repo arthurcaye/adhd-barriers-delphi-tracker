@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T12:55:10+00:00",
+ "generated_at": "2026-10-01T16:10:35+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -529,15 +529,15 @@
   {
    "country": "Palestine",
    "cells": {
-    "Clinical practitioners": 1,
+    "Clinical practitioners": 2,
     "Academic researchers": 3,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
-    "Education": 0,
+    "Education": 1,
     "Other": 0
    },
-   "total": 4
+   "total": 5
   },
   {
    "country": "Romania",
@@ -1308,15 +1308,15 @@
   }
  ],
  "totals": {
-  "responses": 951,
+  "responses": 952,
   "countries": 99,
   "by_category": {
-   "Clinical practitioners": 732,
+   "Clinical practitioners": 733,
    "Academic researchers": 379,
    "Policy & system leaders": 70,
    "Advocacy & lived experience": 313,
    "Equity specialists": 31,
-   "Education": 126,
+   "Education": 127,
    "Other": 45
   },
   "by_language": {
@@ -1324,7 +1324,7 @@
    "en": 423,
    "es": 127,
    "fr": 49,
-   "ar": 16,
+   "ar": 17,
    "it": 33,
    "zh": 55,
    "ja": 62,
@@ -1336,7 +1336,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1072,
+  "skipped_incomplete": 1074,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
