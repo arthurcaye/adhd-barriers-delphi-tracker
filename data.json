@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30T23:45:08+00:00",
+ "generated_at": "2026-10-01T02:27:42+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -415,12 +415,12 @@
     "Clinical practitioners": 7,
     "Academic researchers": 3,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 2,
+    "Advocacy & lived experience": 3,
     "Equity specialists": 0,
     "Education": 2,
     "Other": 0
    },
-   "total": 9
+   "total": 10
   },
   {
    "country": "Israel",
@@ -1308,20 +1308,20 @@
   }
  ],
  "totals": {
-  "responses": 945,
+  "responses": 946,
   "countries": 99,
   "by_category": {
    "Clinical practitioners": 727,
    "Academic researchers": 379,
    "Policy & system leaders": 69,
-   "Advocacy & lived experience": 310,
+   "Advocacy & lived experience": 311,
    "Equity specialists": 31,
    "Education": 126,
    "Other": 45
   },
   "by_language": {
    "ptbr": 121,
-   "en": 419,
+   "en": 420,
    "es": 127,
    "fr": 49,
    "ar": 16,
@@ -1336,7 +1336,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1064,
+  "skipped_incomplete": 1067,
   "skipped_no_country": 3,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
