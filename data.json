@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-02T18:37:35+00:00",
+ "generated_at": "2026-10-02T18:42:39+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -25,12 +25,12 @@
     "Clinical practitioners": 41,
     "Academic researchers": 24,
     "Policy & system leaders": 3,
-    "Advocacy & lived experience": 51,
+    "Advocacy & lived experience": 52,
     "Equity specialists": 7,
-    "Education": 25,
-    "Other": 10
+    "Education": 26,
+    "Other": 11
    },
-   "total": 101
+   "total": 102
   },
   {
    "country": "Japan",
@@ -566,6 +566,19 @@
    "total": 5
   },
   {
+   "country": "French Polynesia",
+   "cells": {
+    "Clinical practitioners": 2,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 3,
+    "Equity specialists": 0,
+    "Education": 3,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "Romania",
    "cells": {
     "Clinical practitioners": 4,
@@ -626,19 +639,6 @@
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 0,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "French Polynesia",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 2,
-    "Equity specialists": 0,
-    "Education": 2,
     "Other": 0
    },
    "total": 3
@@ -1360,22 +1360,22 @@
   }
  ],
  "totals": {
-  "responses": 1008,
+  "responses": 1010,
   "countries": 103,
   "by_category": {
-   "Clinical practitioners": 762,
+   "Clinical practitioners": 763,
    "Academic researchers": 392,
    "Policy & system leaders": 72,
-   "Advocacy & lived experience": 339,
+   "Advocacy & lived experience": 341,
    "Equity specialists": 40,
-   "Education": 136,
-   "Other": 47
+   "Education": 138,
+   "Other": 48
   },
   "by_language": {
-   "ptbr": 134,
+   "ptbr": 135,
    "en": 444,
    "es": 130,
-   "fr": 56,
+   "fr": 57,
    "ar": 17,
    "it": 42,
    "zh": 56,
@@ -1390,7 +1390,7 @@
   "only_complete": true,
   "skipped_incomplete": 1031,
   "counted_without_submit": 53,
-  "skipped_no_country": 8,
+  "skipped_no_country": 6,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 8
