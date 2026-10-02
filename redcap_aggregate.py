@@ -381,6 +381,10 @@ def main():
     infer_from_email = bool(cfg.get("infer_country_from_email", False))
     inferred_log = []
     drop_ids = {str(x) for x in cfg.get("exclude_record_ids", [])}
+    # record_id -> formulario: respondeu quase tudo mas nao apertou Enviar.
+    # Conta como completo no painel; o status no REDCap fica como esta.
+    force_complete = {str(k): str(v) for k, v in cfg.get("count_as_complete", {}).items()}
+    forced_count = 0
     require_known = bool(cfg.get("require_known_country", True))
     cutoff = str(cfg.get("exclude_before", "") or "")
     drop_mails = {str(x).strip().lower() for x in cfg.get("exclude_emails", [])}
@@ -448,8 +452,10 @@ def main():
 
             comp = src.get("complete_field")
             if only_complete and comp and str(rec.get(comp, "")) != "2":
-                skipped_incomplete += 1
-                continue
+                if force_complete.get(str(rec.get("record_id", ""))) != src["form"]:
+                    skipped_incomplete += 1
+                    continue
+                forced_count += 1
 
             inferred_here = False
             if not raw_country and infer_from_email and src.get("email_field"):
@@ -539,6 +545,7 @@ def main():
         "notes": {
             "only_complete": bool(only_complete),
             "skipped_incomplete": skipped_incomplete,
+            "counted_without_submit": forced_count,
             "skipped_no_country": skipped_no_country,
             "suppress_cells_below": min_cell,
             "inferred_from_email": inferred_count[0],
