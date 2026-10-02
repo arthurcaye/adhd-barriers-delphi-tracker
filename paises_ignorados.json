@@ -21,6 +21,7 @@
  "ignorados": {
   "職能治療師": "profissao em chines (terapeuta ocupacional), nao pais",
   "but with a global perspective": "fragmento de frase, nao pais",
-  "REPUBLIC OF": "truncado e ambiguo: pode ser Coreia, Irlanda ou Congo"
+  "REPUBLIC OF": "truncado e ambiguo: pode ser Coreia, Irlanda ou Congo",
+  "Global": "respondente escreveu Global no campo de pais; nao e pais"
  }
 }
