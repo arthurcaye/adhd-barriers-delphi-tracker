@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T01:09:37+00:00",
+ "generated_at": "2026-10-03T06:27:07+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -178,7 +178,7 @@
   {
    "country": "Australia",
    "cells": {
-    "Clinical practitioners": 20,
+    "Clinical practitioners": 21,
     "Academic researchers": 6,
     "Policy & system leaders": 1,
     "Advocacy & lived experience": 16,
@@ -186,7 +186,7 @@
     "Education": 1,
     "Other": 2
    },
-   "total": 27
+   "total": 28
   },
   {
    "country": "Hong Kong",
@@ -397,6 +397,19 @@
    "total": 12
   },
   {
+   "country": "Indonesia",
+   "cells": {
+    "Clinical practitioners": 11,
+    "Academic researchers": 4,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 2,
+    "Other": 0
+   },
+   "total": 12
+  },
+  {
    "country": "Canada",
    "cells": {
     "Clinical practitioners": 9,
@@ -405,19 +418,6 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
     "Education": 0,
-    "Other": 0
-   },
-   "total": 11
-  },
-  {
-   "country": "Indonesia",
-   "cells": {
-    "Clinical practitioners": 10,
-    "Academic researchers": 3,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 2,
     "Other": 0
    },
    "total": 11
@@ -1360,22 +1360,22 @@
   }
  ],
  "totals": {
-  "responses": 1013,
+  "responses": 1015,
   "countries": 103,
   "by_category": {
-   "Clinical practitioners": 764,
-   "Academic researchers": 393,
+   "Clinical practitioners": 766,
+   "Academic researchers": 394,
    "Policy & system leaders": 72,
-   "Advocacy & lived experience": 344,
+   "Advocacy & lived experience": 345,
    "Equity specialists": 40,
    "Education": 138,
    "Other": 48
   },
   "by_language": {
    "ptbr": 135,
-   "en": 447,
+   "en": 448,
    "es": 130,
-   "fr": 57,
+   "fr": 58,
    "ar": 17,
    "it": 42,
    "zh": 56,
@@ -1388,9 +1388,9 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1030,
-  "counted_without_submit": 53,
-  "skipped_no_country": 6,
+  "skipped_incomplete": 1032,
+  "counted_without_submit": 11,
+  "skipped_no_country": 5,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 8
