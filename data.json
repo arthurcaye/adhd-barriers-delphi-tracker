@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T10:26:34+00:00",
+ "generated_at": "2026-10-05T15:02:48+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -37,13 +37,13 @@
    "cells": {
     "Clinical practitioners": 59,
     "Academic researchers": 18,
-    "Policy & system leaders": 5,
+    "Policy & system leaders": 6,
     "Advocacy & lived experience": 13,
     "Equity specialists": 0,
     "Education": 6,
     "Other": 2
    },
-   "total": 69
+   "total": 70
   },
   {
    "country": "Spain",
@@ -293,6 +293,19 @@
    "total": 17
   },
   {
+   "country": "South Africa",
+   "cells": {
+    "Clinical practitioners": 13,
+    "Academic researchers": 5,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 7,
+    "Equity specialists": 0,
+    "Education": 3,
+    "Other": 0
+   },
+   "total": 16
+  },
+  {
    "country": "Peru",
    "cells": {
     "Clinical practitioners": 14,
@@ -302,19 +315,6 @@
     "Equity specialists": 1,
     "Education": 0,
     "Other": 1
-   },
-   "total": 15
-  },
-  {
-   "country": "South Africa",
-   "cells": {
-    "Clinical practitioners": 13,
-    "Academic researchers": 5,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 6,
-    "Equity specialists": 0,
-    "Education": 2,
-    "Other": 0
    },
    "total": 15
   },
@@ -1386,26 +1386,26 @@
   }
  ],
  "totals": {
-  "responses": 1017,
+  "responses": 1019,
   "countries": 105,
   "by_category": {
    "Clinical practitioners": 766,
    "Academic researchers": 396,
-   "Policy & system leaders": 71,
-   "Advocacy & lived experience": 345,
+   "Policy & system leaders": 72,
+   "Advocacy & lived experience": 346,
    "Equity specialists": 35,
-   "Education": 136,
+   "Education": 137,
    "Other": 52
   },
   "by_language": {
    "ptbr": 134,
-   "en": 451,
+   "en": 452,
    "es": 130,
    "fr": 58,
    "ar": 18,
    "it": 40,
    "zh": 56,
-   "ja": 65,
+   "ja": 66,
    "ko": 38,
    "zhcn": 2,
    "de": 4,
@@ -1414,7 +1414,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1056,
+  "skipped_incomplete": 1055,
   "counted_without_submit": 0,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
