@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T21:59:35+00:00",
+ "generated_at": "2026-10-05T22:05:08+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -1008,6 +1008,19 @@
    "total": 1
   },
   {
+   "country": "Cabo Verde",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Cambodia",
    "cells": {
     "Clinical practitioners": 1,
@@ -1203,6 +1216,19 @@
    "total": 1
   },
   {
+   "country": "New Caledonia",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "North Macedonia",
    "cells": {
     "Clinical practitioners": 0,
@@ -1386,19 +1412,19 @@
   }
  ],
  "totals": {
-  "responses": 1021,
-  "countries": 105,
+  "responses": 1022,
+  "countries": 107,
   "by_category": {
-   "Clinical practitioners": 767,
+   "Clinical practitioners": 769,
    "Academic researchers": 396,
    "Policy & system leaders": 72,
-   "Advocacy & lived experience": 348,
+   "Advocacy & lived experience": 349,
    "Equity specialists": 35,
    "Education": 137,
    "Other": 52
   },
   "by_language": {
-   "ptbr": 135,
+   "ptbr": 136,
    "en": 452,
    "es": 130,
    "fr": 59,
@@ -1416,7 +1442,7 @@
   "only_complete": true,
   "skipped_incomplete": 1058,
   "counted_without_submit": 0,
-  "skipped_no_country": 5,
+  "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 8
