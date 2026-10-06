@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T15:32:07+00:00",
+ "generated_at": "2026-10-06T20:32:56+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -865,6 +865,19 @@
    "total": 2
   },
   {
+   "country": "Slovakia",
+   "cells": {
+    "Clinical practitioners": 2,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 2
+  },
+  {
    "country": "Tanzania",
    "cells": {
     "Clinical practitioners": 1,
@@ -1281,19 +1294,6 @@
    "total": 1
   },
   {
-   "country": "Slovakia",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
    "country": "Sri Lanka",
    "cells": {
     "Clinical practitioners": 1,
@@ -1412,10 +1412,10 @@
   }
  ],
  "totals": {
-  "responses": 1027,
+  "responses": 1028,
   "countries": 107,
   "by_category": {
-   "Clinical practitioners": 771,
+   "Clinical practitioners": 772,
    "Academic researchers": 399,
    "Policy & system leaders": 72,
    "Advocacy & lived experience": 351,
@@ -1425,7 +1425,7 @@
   },
   "by_language": {
    "ptbr": 136,
-   "en": 454,
+   "en": 455,
    "es": 130,
    "fr": 59,
    "ar": 20,
@@ -1440,7 +1440,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1067,
+  "skipped_incomplete": 1069,
   "counted_without_submit": 0,
   "skipped_no_country": 6,
   "suppress_cells_below": 0,
