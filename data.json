@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T20:32:56+00:00",
+ "generated_at": "2026-10-06T23:06:21+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -74,7 +74,7 @@
   {
    "country": "Taiwan",
    "cells": {
-    "Clinical practitioners": 48,
+    "Clinical practitioners": 49,
     "Academic researchers": 18,
     "Policy & system leaders": 8,
     "Advocacy & lived experience": 17,
@@ -82,7 +82,7 @@
     "Education": 10,
     "Other": 3
    },
-   "total": 51
+   "total": 52
   },
   {
    "country": "Norway",
@@ -202,6 +202,19 @@
    "total": 24
   },
   {
+   "country": "Russia",
+   "cells": {
+    "Clinical practitioners": 13,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 13,
+    "Equity specialists": 0,
+    "Education": 2,
+    "Other": 1
+   },
+   "total": 21
+  },
+  {
    "country": "Portugal",
    "cells": {
     "Clinical practitioners": 16,
@@ -210,19 +223,6 @@
     "Advocacy & lived experience": 3,
     "Equity specialists": 2,
     "Education": 4,
-    "Other": 1
-   },
-   "total": 20
-  },
-  {
-   "country": "Russia",
-   "cells": {
-    "Clinical practitioners": 13,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 12,
-    "Equity specialists": 0,
-    "Education": 2,
     "Other": 1
    },
    "total": 20
@@ -1412,13 +1412,13 @@
   }
  ],
  "totals": {
-  "responses": 1028,
+  "responses": 1030,
   "countries": 107,
   "by_category": {
-   "Clinical practitioners": 772,
+   "Clinical practitioners": 773,
    "Academic researchers": 399,
    "Policy & system leaders": 72,
-   "Advocacy & lived experience": 351,
+   "Advocacy & lived experience": 352,
    "Equity specialists": 35,
    "Education": 139,
    "Other": 52
@@ -1430,19 +1430,19 @@
    "fr": 59,
    "ar": 20,
    "it": 40,
-   "zh": 56,
+   "zh": 57,
    "ja": 67,
    "ko": 38,
    "zhcn": 2,
    "de": 4,
-   "ru": 21
+   "ru": 22
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1069,
+  "skipped_incomplete": 1070,
   "counted_without_submit": 0,
-  "skipped_no_country": 6,
+  "skipped_no_country": 4,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 8
