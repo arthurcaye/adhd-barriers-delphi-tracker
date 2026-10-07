@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T05:51:35+00:00",
+ "generated_at": "2026-10-07T12:13:34+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -155,12 +155,12 @@
     "Clinical practitioners": 29,
     "Academic researchers": 23,
     "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
+    "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 0,
     "Other": 0
    },
-   "total": 34
+   "total": 35
   },
   {
    "country": "Belgium",
@@ -566,6 +566,19 @@
    "total": 5
   },
   {
+   "country": "Ethiopia",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 4,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 4
+  },
+  {
    "country": "French Polynesia",
    "cells": {
     "Clinical practitioners": 2,
@@ -624,19 +637,6 @@
     "Academic researchers": 1,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 3
-  },
-  {
-   "country": "Ethiopia",
-   "cells": {
-    "Clinical practitioners": 3,
-    "Academic researchers": 3,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
@@ -1412,20 +1412,20 @@
   }
  ],
  "totals": {
-  "responses": 1031,
+  "responses": 1033,
   "countries": 107,
   "by_category": {
-   "Clinical practitioners": 774,
-   "Academic researchers": 399,
+   "Clinical practitioners": 775,
+   "Academic researchers": 400,
    "Policy & system leaders": 72,
-   "Advocacy & lived experience": 352,
+   "Advocacy & lived experience": 353,
    "Equity specialists": 35,
    "Education": 139,
    "Other": 52
   },
   "by_language": {
    "ptbr": 136,
-   "en": 455,
+   "en": 457,
    "es": 130,
    "fr": 60,
    "ar": 20,
