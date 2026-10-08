@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T09:39:36+00:00",
+ "generated_at": "2026-10-08T16:56:00+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -1034,6 +1034,19 @@
    "total": 1
   },
   {
+   "country": "Botswana",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Bulgaria",
    "cells": {
     "Clinical practitioners": 1,
@@ -1425,11 +1438,11 @@
   }
  ],
  "totals": {
-  "responses": 1037,
-  "countries": 108,
+  "responses": 1038,
+  "countries": 109,
   "by_category": {
-   "Clinical practitioners": 779,
-   "Academic researchers": 401,
+   "Clinical practitioners": 780,
+   "Academic researchers": 402,
    "Policy & system leaders": 72,
    "Advocacy & lived experience": 354,
    "Equity specialists": 35,
@@ -1438,7 +1451,7 @@
   },
   "by_language": {
    "ptbr": 137,
-   "en": 458,
+   "en": 459,
    "es": 130,
    "fr": 60,
    "ar": 20,
