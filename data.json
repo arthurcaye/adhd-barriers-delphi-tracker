@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T19:23:45+00:00",
+ "generated_at": "2026-10-10T22:44:30+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -470,9 +470,9 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 1,
     "Education": 1,
-    "Other": 0
+    "Other": 1
    },
-   "total": 7
+   "total": 8
   },
   {
    "country": "Egypt",
@@ -1438,7 +1438,7 @@
   }
  ],
  "totals": {
-  "responses": 1044,
+  "responses": 1045,
   "countries": 109,
   "by_category": {
    "Clinical practitioners": 783,
@@ -1447,14 +1447,14 @@
    "Advocacy & lived experience": 357,
    "Equity specialists": 35,
    "Education": 140,
-   "Other": 53
+   "Other": 54
   },
   "by_language": {
    "ptbr": 138,
    "en": 461,
    "es": 130,
    "fr": 61,
-   "ar": 20,
+   "ar": 21,
    "it": 40,
    "zh": 57,
    "ja": 70,
@@ -1466,7 +1466,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1082,
+  "skipped_incomplete": 1081,
   "counted_without_submit": 0,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
