@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10T15:19:29+00:00",
+ "generated_at": "2026-10-10T19:23:45+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -100,7 +100,7 @@
   {
    "country": "France",
    "cells": {
-    "Clinical practitioners": 36,
+    "Clinical practitioners": 37,
     "Academic researchers": 10,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 12,
@@ -108,7 +108,7 @@
     "Education": 2,
     "Other": 7
    },
-   "total": 47
+   "total": 48
   },
   {
    "country": "United Kingdom",
@@ -631,6 +631,19 @@
    "total": 4
   },
   {
+   "country": "Benin",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 1,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Cabo Verde",
    "cells": {
     "Clinical practitioners": 2,
@@ -782,19 +795,6 @@
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
     "Education": 1,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Benin",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 1,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
     "Other": 0
    },
    "total": 2
@@ -1438,10 +1438,10 @@
   }
  ],
  "totals": {
-  "responses": 1043,
+  "responses": 1044,
   "countries": 109,
   "by_category": {
-   "Clinical practitioners": 781,
+   "Clinical practitioners": 783,
    "Academic researchers": 403,
    "Policy & system leaders": 72,
    "Advocacy & lived experience": 357,
@@ -1453,7 +1453,7 @@
    "ptbr": 138,
    "en": 461,
    "es": 130,
-   "fr": 60,
+   "fr": 61,
    "ar": 20,
    "it": 40,
    "zh": 57,
@@ -1466,7 +1466,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1081,
+  "skipped_incomplete": 1082,
   "counted_without_submit": 0,
   "skipped_no_country": 4,
   "suppress_cells_below": 0,
