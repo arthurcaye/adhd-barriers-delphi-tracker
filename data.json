@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T23:31:09+00:00",
+ "generated_at": "2026-10-10T02:44:22+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -436,6 +436,19 @@
    "total": 9
   },
   {
+   "country": "China",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 4,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 0,
+    "Education": 2,
+    "Other": 0
+   },
+   "total": 8
+  },
+  {
    "country": "Israel",
    "cells": {
     "Clinical practitioners": 8,
@@ -447,19 +460,6 @@
     "Other": 0
    },
    "total": 8
-  },
-  {
-   "country": "China",
-   "cells": {
-    "Clinical practitioners": 4,
-    "Academic researchers": 4,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 7
   },
   {
    "country": "Palestine",
@@ -1438,7 +1438,7 @@
   }
  ],
  "totals": {
-  "responses": 1041,
+  "responses": 1042,
   "countries": 109,
   "by_category": {
    "Clinical practitioners": 780,
@@ -1446,7 +1446,7 @@
    "Policy & system leaders": 72,
    "Advocacy & lived experience": 357,
    "Equity specialists": 35,
-   "Education": 139,
+   "Education": 140,
    "Other": 52
   },
   "by_language": {
@@ -1459,7 +1459,7 @@
    "zh": 57,
    "ja": 70,
    "ko": 38,
-   "zhcn": 2,
+   "zhcn": 3,
    "de": 4,
    "ru": 22
   }
