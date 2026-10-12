@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-11T22:34:16+00:00",
+ "generated_at": "2026-10-12T01:45:56+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -35,7 +35,7 @@
   {
    "country": "Japan",
    "cells": {
-    "Clinical practitioners": 62,
+    "Clinical practitioners": 63,
     "Academic researchers": 19,
     "Policy & system leaders": 6,
     "Advocacy & lived experience": 15,
@@ -43,7 +43,7 @@
     "Education": 7,
     "Other": 2
    },
-   "total": 74
+   "total": 75
   },
   {
    "country": "Spain",
@@ -540,6 +540,19 @@
    "total": 5
   },
   {
+   "country": "French Polynesia",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 0,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 3,
+    "Equity specialists": 0,
+    "Education": 3,
+    "Other": 0
+   },
+   "total": 5
+  },
+  {
    "country": "Pakistan",
    "cells": {
     "Clinical practitioners": 5,
@@ -587,19 +600,6 @@
     "Advocacy & lived experience": 1,
     "Equity specialists": 0,
     "Education": 1,
-    "Other": 0
-   },
-   "total": 4
-  },
-  {
-   "country": "French Polynesia",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 0,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 3,
-    "Equity specialists": 0,
-    "Education": 3,
     "Other": 0
    },
    "total": 4
@@ -1438,10 +1438,10 @@
   }
  ],
  "totals": {
-  "responses": 1045,
+  "responses": 1047,
   "countries": 109,
   "by_category": {
-   "Clinical practitioners": 783,
+   "Clinical practitioners": 785,
    "Academic researchers": 403,
    "Policy & system leaders": 72,
    "Advocacy & lived experience": 357,
@@ -1453,11 +1453,11 @@
    "ptbr": 138,
    "en": 461,
    "es": 130,
-   "fr": 61,
+   "fr": 62,
    "ar": 21,
    "it": 40,
    "zh": 57,
-   "ja": 70,
+   "ja": 71,
    "ko": 38,
    "zhcn": 3,
    "de": 4,
