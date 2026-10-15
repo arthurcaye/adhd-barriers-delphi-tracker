@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T06:38:48+00:00",
+ "generated_at": "2026-10-15T12:05:52+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -176,6 +176,19 @@
    "total": 32
   },
   {
+   "country": "Palestine",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 11,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 2,
+    "Equity specialists": 2,
+    "Education": 3,
+    "Other": 12
+   },
+   "total": 30
+  },
+  {
    "country": "Australia",
    "cells": {
     "Clinical practitioners": 21,
@@ -187,19 +200,6 @@
     "Other": 2
    },
    "total": 28
-  },
-  {
-   "country": "Palestine",
-   "cells": {
-    "Clinical practitioners": 4,
-    "Academic researchers": 10,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 2,
-    "Equity specialists": 2,
-    "Education": 3,
-    "Other": 8
-   },
-   "total": 25
   },
   {
    "country": "Hong Kong",
@@ -1438,23 +1438,23 @@
   }
  ],
  "totals": {
-  "responses": 1105,
+  "responses": 1110,
   "countries": 109,
   "by_category": {
    "Clinical practitioners": 808,
-   "Academic researchers": 423,
+   "Academic researchers": 424,
    "Policy & system leaders": 75,
    "Advocacy & lived experience": 368,
    "Equity specialists": 37,
    "Education": 148,
-   "Other": 65
+   "Other": 69
   },
   "by_language": {
    "ptbr": 140,
    "en": 468,
    "es": 130,
    "fr": 62,
-   "ar": 37,
+   "ar": 42,
    "it": 41,
    "zh": 60,
    "ja": 72,
@@ -1466,9 +1466,9 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1118,
+  "skipped_incomplete": 1121,
   "counted_without_submit": 0,
-  "skipped_no_country": 14,
+  "skipped_no_country": 16,
   "suppress_cells_below": 0,
   "inferred_from_email": 0,
   "excluded_records": 8
