@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T04:18:26+00:00",
+ "generated_at": "2026-10-17T08:40:59+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -982,6 +982,19 @@
    "total": 1
   },
   {
+   "country": "Armenia",
+   "cells": {
+    "Clinical practitioners": 0,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
    "country": "Austria",
    "cells": {
     "Clinical practitioners": 1,
@@ -1093,6 +1106,19 @@
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 1
+  },
+  {
+   "country": "Cameroon",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 1,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 1,
     "Education": 0,
     "Other": 0
    },
@@ -1438,22 +1464,22 @@
   }
  ],
  "totals": {
-  "responses": 1119,
-  "countries": 109,
+  "responses": 1121,
+  "countries": 111,
   "by_category": {
-   "Clinical practitioners": 815,
-   "Academic researchers": 425,
+   "Clinical practitioners": 816,
+   "Academic researchers": 427,
    "Policy & system leaders": 76,
-   "Advocacy & lived experience": 370,
-   "Equity specialists": 38,
-   "Education": 148,
+   "Advocacy & lived experience": 371,
+   "Equity specialists": 39,
+   "Education": 149,
    "Other": 71
   },
   "by_language": {
    "ptbr": 140,
-   "en": 470,
+   "en": 471,
    "es": 131,
-   "fr": 62,
+   "fr": 63,
    "ar": 44,
    "it": 41,
    "zh": 60,
@@ -1466,7 +1492,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1127,
+  "skipped_incomplete": 1128,
   "counted_without_submit": 0,
   "skipped_no_country": 17,
   "suppress_cells_below": 0,
