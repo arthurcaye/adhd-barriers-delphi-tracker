@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17T18:01:13+00:00",
+ "generated_at": "2026-10-17T20:31:33+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -475,6 +475,19 @@
    "total": 9
   },
   {
+   "country": "Armenia",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 6,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 1,
+    "Education": 3,
+    "Other": 0
+   },
+   "total": 8
+  },
+  {
    "country": "Egypt",
    "cells": {
     "Clinical practitioners": 6,
@@ -590,19 +603,6 @@
     "Other": 0
    },
    "total": 5
-  },
-  {
-   "country": "Armenia",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 3,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 2,
-    "Other": 0
-   },
-   "total": 4
   },
   {
    "country": "Cabo Verde",
@@ -1464,20 +1464,20 @@
   }
  ],
  "totals": {
-  "responses": 1125,
+  "responses": 1129,
   "countries": 111,
   "by_category": {
-   "Clinical practitioners": 820,
-   "Academic researchers": 431,
+   "Clinical practitioners": 821,
+   "Academic researchers": 434,
    "Policy & system leaders": 77,
    "Advocacy & lived experience": 372,
-   "Equity specialists": 40,
-   "Education": 151,
+   "Equity specialists": 41,
+   "Education": 152,
    "Other": 71
   },
   "by_language": {
    "ptbr": 140,
-   "en": 474,
+   "en": 477,
    "es": 131,
    "fr": 63,
    "ar": 44,
@@ -1487,12 +1487,12 @@
    "ko": 50,
    "zhcn": 13,
    "de": 14,
-   "ru": 23
+   "ru": 24
   }
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1133,
+  "skipped_incomplete": 1129,
   "counted_without_submit": 0,
   "skipped_no_country": 17,
   "suppress_cells_below": 0,
