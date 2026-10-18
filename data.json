@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-18T04:49:46+00:00",
+ "generated_at": "2026-10-18T09:12:27+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -163,6 +163,19 @@
    "total": 35
   },
   {
+   "country": "Palestine",
+   "cells": {
+    "Clinical practitioners": 4,
+    "Academic researchers": 11,
+    "Policy & system leaders": 0,
+    "Advocacy & lived experience": 2,
+    "Equity specialists": 2,
+    "Education": 3,
+    "Other": 15
+   },
+   "total": 33
+  },
+  {
    "country": "Belgium",
    "cells": {
     "Clinical practitioners": 20,
@@ -172,19 +185,6 @@
     "Equity specialists": 2,
     "Education": 1,
     "Other": 1
-   },
-   "total": 32
-  },
-  {
-   "country": "Palestine",
-   "cells": {
-    "Clinical practitioners": 4,
-    "Academic researchers": 11,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 2,
-    "Equity specialists": 2,
-    "Education": 3,
-    "Other": 14
    },
    "total": 32
   },
@@ -683,6 +683,19 @@
    "total": 4
   },
   {
+   "country": "Bangladesh",
+   "cells": {
+    "Clinical practitioners": 3,
+    "Academic researchers": 3,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 1,
+    "Equity specialists": 2,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 3
+  },
+  {
    "country": "Benin",
    "cells": {
     "Clinical practitioners": 3,
@@ -833,19 +846,6 @@
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
     "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 2
-  },
-  {
-   "country": "Bangladesh",
-   "cells": {
-    "Clinical practitioners": 2,
-    "Academic researchers": 2,
-    "Policy & system leaders": 1,
-    "Advocacy & lived experience": 1,
-    "Equity specialists": 1,
     "Education": 1,
     "Other": 0
    },
@@ -1477,23 +1477,23 @@
   }
  ],
  "totals": {
-  "responses": 1131,
+  "responses": 1133,
   "countries": 112,
   "by_category": {
-   "Clinical practitioners": 821,
-   "Academic researchers": 435,
+   "Clinical practitioners": 822,
+   "Academic researchers": 436,
    "Policy & system leaders": 77,
    "Advocacy & lived experience": 373,
-   "Equity specialists": 41,
+   "Equity specialists": 42,
    "Education": 152,
-   "Other": 71
+   "Other": 72
   },
   "by_language": {
    "ptbr": 140,
-   "en": 477,
+   "en": 478,
    "es": 131,
    "fr": 64,
-   "ar": 44,
+   "ar": 45,
    "it": 41,
    "zh": 60,
    "ja": 72,
@@ -1505,7 +1505,7 @@
  },
  "notes": {
   "only_complete": true,
-  "skipped_incomplete": 1130,
+  "skipped_incomplete": 1132,
   "counted_without_submit": 0,
   "skipped_no_country": 17,
   "suppress_cells_below": 0,
