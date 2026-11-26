@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T20:39:10+00:00",
+ "generated_at": "2026-11-26T03:04:54+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -371,6 +371,19 @@
    "total": 15
   },
   {
+   "country": "Mozambique",
+   "cells": {
+    "Clinical practitioners": 12,
+    "Academic researchers": 4,
+    "Policy & system leaders": 2,
+    "Advocacy & lived experience": 2,
+    "Equity specialists": 0,
+    "Education": 1,
+    "Other": 0
+   },
+   "total": 14
+  },
+  {
    "country": "New Zealand",
    "cells": {
     "Clinical practitioners": 8,
@@ -390,19 +403,6 @@
     "Academic researchers": 2,
     "Policy & system leaders": 0,
     "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 1,
-    "Other": 0
-   },
-   "total": 13
-  },
-  {
-   "country": "Mozambique",
-   "cells": {
-    "Clinical practitioners": 11,
-    "Academic researchers": 4,
-    "Policy & system leaders": 2,
-    "Advocacy & lived experience": 2,
     "Equity specialists": 0,
     "Education": 1,
     "Other": 0
@@ -1490,10 +1490,10 @@
   }
  ],
  "totals": {
-  "responses": 1145,
+  "responses": 1146,
   "countries": 113,
   "by_category": {
-   "Clinical practitioners": 829,
+   "Clinical practitioners": 830,
    "Academic researchers": 441,
    "Policy & system leaders": 77,
    "Advocacy & lived experience": 378,
@@ -1502,7 +1502,7 @@
    "Other": 74
   },
   "by_language": {
-   "ptbr": 140,
+   "ptbr": 141,
    "en": 479,
    "es": 131,
    "fr": 65,
