@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T03:52:24+00:00",
+ "generated_at": "2026-11-28T12:31:35+00:00",
  "columns": [
   "Clinical practitioners",
   "Academic researchers",
@@ -891,6 +891,19 @@
    "total": 2
   },
   {
+   "country": "Ivory Coast",
+   "cells": {
+    "Clinical practitioners": 1,
+    "Academic researchers": 2,
+    "Policy & system leaders": 1,
+    "Advocacy & lived experience": 0,
+    "Equity specialists": 0,
+    "Education": 0,
+    "Other": 0
+   },
+   "total": 2
+  },
+  {
    "country": "Kazakhstan",
    "cells": {
     "Clinical practitioners": 0,
@@ -1216,19 +1229,6 @@
    "total": 1
   },
   {
-   "country": "Ivory Coast",
-   "cells": {
-    "Clinical practitioners": 1,
-    "Academic researchers": 1,
-    "Policy & system leaders": 0,
-    "Advocacy & lived experience": 0,
-    "Equity specialists": 0,
-    "Education": 0,
-    "Other": 0
-   },
-   "total": 1
-  },
-  {
    "country": "Jordan",
    "cells": {
     "Clinical practitioners": 1,
@@ -1490,12 +1490,12 @@
   }
  ],
  "totals": {
-  "responses": 1146,
+  "responses": 1147,
   "countries": 113,
   "by_category": {
    "Clinical practitioners": 830,
-   "Academic researchers": 441,
-   "Policy & system leaders": 77,
+   "Academic researchers": 442,
+   "Policy & system leaders": 78,
    "Advocacy & lived experience": 378,
    "Equity specialists": 46,
    "Education": 152,
@@ -1505,7 +1505,7 @@
    "ptbr": 141,
    "en": 479,
    "es": 131,
-   "fr": 65,
+   "fr": 66,
    "ar": 52,
    "it": 41,
    "zh": 61,
